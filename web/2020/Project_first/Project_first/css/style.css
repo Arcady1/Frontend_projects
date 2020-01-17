@@ -358,8 +358,85 @@
 	background-color: #DCDCDC;
 }
 
+.tabs_menu {
+	display: inline-block;
+	width: 729px;
+	height: 31px;
+	background-color: #f0f0f0;
+}
+
+.r_y_g_buttoms {
+	float: left;
+	padding-top: 11px;
+}
+
+.red_but {
+	padding-left: 9px;
+}
+
+.yg_butt {
+	padding-left: 8px;
+}
+
+.vert_line {
+	float: left;
+	margin-left: 11px;
+}
+
+.folder_img {
+	float: left;
+	padding-left: 9px;
+	padding-top: 11px;
+}
+
+.text_tab_menu {
+	float: left;
+	color: #777;
+	font-family: "Open Sans Semi Bold", sans-serif;
+	font-size: 11px;
+	font-weight: 600;
+	padding-top: 8px;
+	padding-left: 10px;
+}
+
+.opened_tab {
+	float: left;
+	margin-left: 98px;
+	width: 220px;
+	height: 31px;
+	background-color: #ffffff;
+}
+
+.path_img_set {
+	float: left;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+.text_tab_add_set {
+	float: left;
+	color: #2e2e2e;
+	padding-top: 8px;
+	padding-left: 10px;
+}
+
+.x_img_set {
+	padding-top: 12px;
+	padding-left: 100px;
+}
+
+.x_img_set_2 {
+	float: left;
+	padding-top: 12px;
+	padding-left: 93px;
+}
+
 .left_menu {
 	width: 50px;
 	height: 255px;
 	background-color: #C0C0C0;
+}
+
+.low_tab_men_set {
+	
 }
