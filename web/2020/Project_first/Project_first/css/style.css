@@ -344,3 +344,26 @@
 	top: 6px;
 	left: 20px;
 }
+
+.bar_menu {
+	width: 729px;
+	height: 335px;
+	margin-top: 88px;
+	background-color: #F5F5F5;
+	position: relative;
+}
+
+.head_menu {
+	position: absolute;
+	width: 729px;
+	height: 80px;
+	background-color: #DCDCDC;
+}
+
+.left_menu {
+	position: absolute;
+	width: 50px;
+	height: 255px;
+	background-color: #C0C0C0;
+	top: 80px;
+}
