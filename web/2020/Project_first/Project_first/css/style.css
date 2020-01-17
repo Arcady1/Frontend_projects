@@ -355,7 +355,6 @@
 .head_menu {
 	width: 729px;
 	height: 80px;
-	background-color: #DCDCDC;
 }
 
 .tabs_menu {
@@ -438,5 +437,81 @@
 }
 
 .low_tab_men_set {
-	
+	width: 728px;
+	height: 49px;
+	background-color: #fff;
+}
+
+.avoc_img {
+	float: left;
+	padding-top: 15px;
+	padding-left: 20px;
+}
+
+.arrow_2_set {
+	padding-top: 20px;
+}
+
+.UI_text_set {
+	font-size: 13px;
+	padding-top: 17px;
+	padding-left: 20px;
+}
+
+.arrow_3_set {
+	padding-left: 21px;
+}
+
+.trainer_text_set {
+	color: #2e2e2e;
+	font-size: 13px;
+	padding-top: 17px;
+	padding-left: 20px;
+}
+
+.arrow_down_set {
+	padding-top: 22px;
+	padding-left: 10px;
+}
+
+.vert_line_set {
+	float: left;
+	padding-top: 15px;
+	padding-left: 30px;
+}
+
+.arr_lr_set {
+	padding-top: 19px;
+	padding-left: 30px;
+}
+
+.insp_txt_set {
+	color: #2e2e2e;
+	font-family: "Open Sans", sans-serif;
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding-top: 17px;
+	padding-left: 10px;
+}
+
+.mess_set {
+	position: relative;
+	float: left;
+	width: 20px;
+	height: 20px;
+	top: 18px;
+	left: 30px;
+}
+
+.mess_img_set {
+	position: absolute;
+	left: 0;
+	top: 2px;
+}
+
+.oval_mess_set {
+	position: absolute;
+	top: 0;
+	left: 10px;
 }
