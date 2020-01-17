@@ -1,0 +1,30 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	/*По умолчанию не учитываются отступы, поля и границы, поэтому box-sizing = border-box
+	для корректного подсчета. Свойство box-sizing позволяет сдеалть так, 
+	чтобы свойства width и height задавали размеры не содержимого, а размеры блока.*/
+	box-sizing: border-box;
+}
+
+.body {
+	font-size: 25px;
+}
+
+.full-block {
+	display: flex;
+	margin: 0 auto;
+   	overflow: auto;
+	width: 1000px;
+	height: 500px;
+	background-color:#DCDCDC;
+}
+
+.example-block {
+	width: 500px;
+	border: dashed;
+	background-color: #FFF;
+	padding: 20px 50px;
+	margin: 40px;
+}
