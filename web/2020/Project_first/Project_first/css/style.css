@@ -268,8 +268,8 @@
 
 .fourth_section {
 	width: 729px;
-	height: 602px;
-	margin: 80px auto;
+	height: 179px;
+	margin: 80px auto 0px;
 	text-align: center;
 }
 
@@ -344,196 +344,24 @@
 	left: 20px;
 }
 
-.bar_menu {
-	width: 729px;
-	height: 335px;
-	margin-top: 88px;
-	background-color: #FFFACD;
+.fifth_section {
+	height: 705px;
+	background-color: #f0f0f0;	
+	margin-top: 83px;
+	text-align: center;
 }
 
-.head_menu {
-	width: 729px;
-	height: 80px;
-	border: 1px solid #f0f0f0;
-	border-radius: 4px 4px 4px 0;
-	background-color: #ffffff;
-}
-
-.tabs_menu {
+.high_block_5 {
 	display: inline-block;
-	width: 727px;
-	height: 30px;
-	background-color: #f0f0f0;
+	width: 800px;
+	height: 298px;
+	background-color: #B0C4DE;	
+	margin-top: 81px;
 }
 
-.r_y_g_buttoms {
-	float: left;
-	padding-top: 11px;
-}
-
-.red_but {
-	padding-left: 9px;
-}
-
-.yg_butt {
-	padding-left: 8px;
-}
-
-.vert_line {
-	float: left;
-	margin-left: 11px;
-}
-
-.folder_img {
-	float: left;
-	padding-left: 9px;
-	padding-top: 11px;
-}
-
-.text_tab_menu {
-	float: left;
-	color: #777;
-	font-family: "Open Sans Semi Bold", sans-serif;
-	font-size: 11px;
-	font-weight: 600;
-	padding-top: 8px;
-	padding-left: 10px;
-}
-
-.opened_tab {
-	float: left;
-	margin-left: 98px;
-	width: 220px;
-	height: 31px;
-	background-color: #ffffff;
-}
-
-.path_img_set {
-	float: left;
-	padding-top: 10px;
-	padding-left: 10px;
-}
-
-.text_tab_add_set {
-	float: left;
-	color: #2e2e2e;
-	padding-top: 8px;
-	padding-left: 10px;
-}
-
-.x_img_set {
-	padding-top: 12px;
-	padding-left: 100px;
-}
-
-.x_img_set_2 {
-	float: left;
-	padding-top: 12px;
-	padding-left: 93px;
-}
-
-.low_tab_men_set {
-	width: 730px;
-	height: 49px;
-	background-color: #fff;
-	border: 1px solid #f0f0f0;
-	border-radius: 0 0 4px;
-	margin-left: -2px;
-}
-
-.avoc_img {
-	float: left;
-	padding-top: 15px;
-	padding-left: 20px;
-}
-
-.arrow_2_set {
-	padding-top: 20px;
-}
-
-.UI_text_set {
-	font-size: 13px;
-	padding-top: 17px;
-	padding-left: 20px;
-}
-
-.arrow_3_set {
-	padding-left: 21px;
-}
-
-.trainer_text_set {
-	color: #2e2e2e;
-	font-size: 13px;
-	padding-top: 17px;
-	padding-left: 20px;
-}
-
-.arrow_down_set {
-	padding-top: 22px;
-	padding-left: 10px;
-}
-
-.vert_line_set {
-	float: left;
-	padding-top: 15px;
-	padding-left: 30px;
-}
-
-.arr_lr_set {
-	padding-top: 19px;
-	padding-left: 30px;
-}
-
-.insp_txt_set {
-	color: #2e2e2e;
-	font-family: "Open Sans", sans-serif;
-	font-size: 12px;
-	font-weight: 700;
-	text-transform: uppercase;
-	padding-top: 17px;
-	padding-left: 10px;
-}
-
-.comments_div {
-	float: left;
-	width: 114px;
-	height: 18px;
-	margin-top: 17px;
-	margin-left: 30px;
-}
-
-.mess_set {
-	position: relative;
-	float: left;
-	width: 20px;
-	height: 20px;
-	marginn-top: 18px;
-}
-
-.mess_img_set {
-	position: absolute;
-	left: 0;
-	top: 2px;
-}
-
-.oval_mess_set {
-	position: absolute;
-	top: 0;
-	left: 10px;
-}
-
-.comments_txt_set {
-	font-family: "Open Sans", sans-serif;
-	font-size: 12px;
-	font-weight: 700;
-	text-transform: uppercase;
-	padding-top: 2px;
-	padding-left: 6px;
-}
-
-.left_menu {
-	width: 50px;
-	height: 255px;
-	background-color: #ffffff;
-	outline: 1px solid #f0f0f0;
+.bottom_block_5 {
+	width: 775px;
+	height: 132px;
+	background-color: #B0C4DE;
+	margin: 80px auto 0;
 }
