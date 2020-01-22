@@ -42,7 +42,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 
 .body {
-	font-family: "Times New Roman PSMT", sans-serif;
+	font-family: "Times New Roman PSMT";
 	font-weight: 400;
 	color: #273d46;
 }
@@ -64,8 +64,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	padding-top: 168px;
 }
 
-.text {
-	font-family: "Times New Roman PSMT";
+.text_up_iman {
 	font-size: 36px;
 	line-height: 50px;
 	text-align: center;
@@ -79,4 +78,44 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	outline: #fff solid 10px;
 	margin: 75px auto 0;
 	box-shadow: 0 15px 65px rgba(15, 16, 16, 0.15);
+}
+
+.t_und_iman {
+	width: 736px;
+	opacity: 0.8;
+	font-size: 24px;
+	line-height: 40px;
+	margin: 119px 0 -12px 312px;
+}
+
+.list {
+	margin-left: 309px;
+}
+
+.list li {
+	background: url(../img/check_icon.png) left 5px/25px 19px no-repeat;
+	padding-left: 36px;
+	font-family: "Arial MT", sans-serif;
+	font-size: 20px;
+	line-height: 36px;
+}
+
+.li_1_txt {
+	margin-top: 57px;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+}
+
+.li_2_txt {
+	color: #80b7b3;
+	font-style: italic;
+}
+
+.li_3_txt {
+	font-weight: 900;
+}
+
+.li_4_txt {
+	opacity: 0.3;
+	color: #273d46;
+	text-decoration: line-through;
 }
