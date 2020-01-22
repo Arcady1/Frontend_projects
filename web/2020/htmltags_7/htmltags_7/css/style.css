@@ -5,12 +5,30 @@
 	box-sizing: border-box;
 }
 
-.body {}
-
-.div {
-	width: 1000px;
-	height: 500px;
-	border: 2px solid #000;
-	margin-left: 250px;
-	background: url(../img/bab.jpg) 0 no-repeat, url(../img/bab.jpg) center no-repeat;
+.body {
+	font-family: "Times New Roman PSMT", sans-serif;
+	font-weight: 400;
+	color: #273d46;
 }
+
+.block {
+	width: 1440px;
+	height: 1700px;
+	background:
+		url(../img/light-man_copy.png) 299px 368px/821px 541px no-repeat,
+
+}
+
+/*.top_block {
+	display: inline-block;
+	width: 1190px;
+	height: 1064px;
+	margin: 106px 108px 0 142px;
+	background: 
+		#000 url(../img/Layer_1.png) 0/841px 561px no-repeat;
+}
+
+url(../img/Layer_1.png) 147px 252px/841px 561px no-repeat
+url(../img/light-man_copy.png) 157px 262px/821px 541px no-repeat,
+url(../img/Ellipse_1_copy.png) 0/1190px 1064px no-repeat;
+*/
