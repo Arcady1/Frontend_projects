@@ -50,7 +50,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .sheet {
 	width: 1440px;
 	height: 1700px;
-	background-color: #e8e8e8;
+	background: #e8e8e8 url(../img/Ellipse_1_copy.png) 142px 106px/1190px 1064px no-repeat;
 }
 
 .h1 {
@@ -69,9 +69,14 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	font-size: 36px;
 	line-height: 50px;
 	text-align: center;
-	margin-top: 4px;
+	margin-top: 14px;
 }
 
 .iman {
-
+	display: block;
+	width: 821px;
+	height: 541px;
+	outline: #fff solid 10px;
+	margin: 75px auto 0;
+	box-shadow: 0 15px 65px rgba(15, 16, 16, 0.15);
 }
