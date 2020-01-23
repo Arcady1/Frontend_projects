@@ -51,6 +51,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	width: 1440px;
 	height: 1700px;
 	background: #e8e8e8 url(../img/Ellipse_1_copy.png) 142px 106px/1190px 1064px no-repeat;
+	margin: 0 auto;
 }
 
 .h1 {
@@ -118,4 +119,31 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	opacity: 0.3;
 	color: #273d46;
 	text-decoration: line-through;
+}
+
+.button {
+	width: 199px;
+	height: 44px;
+	box-shadow: 0 6px 40px rgba(128, 183, 179, 0.54);
+	border-radius: 22px;
+	background-color: #80b7b3;
+	text-align: center;
+	margin: 52px 0 0 309px;
+}
+
+.button_text {
+	display: inline-block;
+	font-family: "Arial MT", sans-serif;
+	color: #fff;
+	font-size: 14px;
+	line-height: 40px;
+	text-transform: uppercase;
+	letter-spacing: 2.8px;
+	padding-top: 2px;
+}
+
+.img_arrow {
+	display: inline-block;
+	display: inline-block;
+	margin: 15px 0 0 9px;
 }
