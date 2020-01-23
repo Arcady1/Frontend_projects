@@ -45,12 +45,13 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	font-family: "Times New Roman PSMT";
 	font-weight: 400;
 	color: #273d46;
+	background-color: #e8e8e8;
 }
 
 .sheet {
 	width: 1440px;
 	height: 1700px;
-	background: #e8e8e8 url(../img/Ellipse_1_copy.png) 142px 106px/1190px 1064px no-repeat;
+	background: url(../img/Ellipse_1_copy.png) 142px 106px/1190px 1064px no-repeat;
 	margin: 0 auto;
 }
 
