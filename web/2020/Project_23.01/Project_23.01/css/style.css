@@ -116,8 +116,16 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	margin-left: 97px;
 }
 
+.BUTTONS div:nth-child(2):hover {
+	background-color: #3a5856;
+}
+
 .BUTTONS div:nth-child(3) {
 	margin-left: 96px;
+}
+
+.BUTTONS div:nth-child(3):active {
+	background: #818181;
 }
 
 .BUTTONS p:nth-child(n) {
@@ -127,6 +135,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	color: #fff;
 	line-height: 40px;
 	margin-top: 2px;
+	font-size: 14px;
 }
 
 .img {
