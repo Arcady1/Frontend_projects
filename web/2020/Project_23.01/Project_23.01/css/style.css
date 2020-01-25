@@ -37,3 +37,60 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
 
+.body {
+	color: #273d46;
+	font-family: "Arial MT", sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.block {
+	width: 1440px;
+	height: 1700px;
+	background-color: #e8e8e8;
+}
+
+.list {
+	padding: 161px 0 0 290px;
+}
+
+.list li {
+	background: url(../img/check_icon.png) left top/25px 19px no-repeat;
+	padding: 0 0 0 35px;
+	margin: 0 0 13px 0;
+	width: 542px;
+	height: 19px;
+}
+
+.list li:nth-child(1) {
+	text-decoration: line-through;
+}
+
+.list li:nth-child(2) {
+	font-weight: 900;
+}
+
+.list li:nth-child(3) {
+	font-style: italic;
+}
+
+.list li:nth-child(4) {
+	text-transform: uppercase;
+	margin: 0 0 0 0;
+}
+
+.list_sec {
+	padding: 75px 0 0 290px;
+}
+
+.list_sec li:nth-child(n) {
+	text-decoration: none;
+	font-weight: 400;
+	font-style: normal;
+	text-transform: none;
+}
+
+.list_sec li:nth-child(2):hover {
+	color: red;
+	background-image: url(../img/check_icon_red.png);
+}
