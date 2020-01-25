@@ -94,3 +94,42 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	color: red;
 	background-image: url(../img/check_icon_red.png);
 }
+
+.BUTTONS {
+	width: 790px;
+	height: 44px;
+	margin: 137px 0 0 315px;
+}
+
+.BUTTONS div:nth-child(n) {
+	display: inline-block;
+	width: 199px;
+	height: 44px;
+	background: #80b7b3;
+	box-shadow: 0 6px 40px rgba(128, 183, 179, 0.54);
+	border-radius: 22px;
+	text-align: center;
+	margin-right: -5px;
+}
+
+.BUTTONS div:nth-child(2) {
+	margin-left: 97px;
+}
+
+.BUTTONS div:nth-child(3) {
+	margin-left: 96px;
+}
+
+.BUTTONS p:nth-child(n) {
+	display: inline-block;
+	text-transform: uppercase;
+	letter-spacing: 2.8px;
+	color: #fff;
+	line-height: 40px;
+	margin-top: 2px;
+}
+
+.img {
+	display: inline-block;
+	margin-top: 15px;
+}
