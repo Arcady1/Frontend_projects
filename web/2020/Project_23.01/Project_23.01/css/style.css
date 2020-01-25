@@ -101,7 +101,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	margin: 137px 0 0 315px;
 }
 
-.BUTTONS div:nth-child(n) {
+.BUTTONS button:nth-child(n) {
 	display: inline-block;
 	width: 199px;
 	height: 44px;
@@ -112,19 +112,19 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	margin-right: -5px;
 }
 
-.BUTTONS div:nth-child(2) {
+.BUTTONS button:nth-child(2) {
 	margin-left: 97px;
 }
 
-.BUTTONS div:nth-child(2):hover {
+.BUTTONS button:nth-child(2):hover {
 	background-color: #3a5856;
 }
 
-.BUTTONS div:nth-child(3) {
+.BUTTONS button:nth-child(3) {
 	margin-left: 96px;
 }
 
-.BUTTONS div:nth-child(3):active {
+.BUTTONS button:nth-child(3):active {
 	background: #818181;
 }
 
