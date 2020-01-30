@@ -53,15 +53,14 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	padding-top: 161px;
 }
 
-.list {
+.list_first {
 	width: 547px;
 	height: 125px;
 	margin: 0 0 0 290px;
-	background-color: #eee;
 	font-size: 20px;
 }
 
-.list li:before {
+.list_first li:before {
 	float: left;
 	content: '';
 	width: 25px;
@@ -70,32 +69,73 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	margin-right: 10px;
 }
 
-.list li:nth-child(n) {
+.list_first li:nth-child(n) {
 	height: 19px;
 	line-height: 16px;
 }
 
-.list li:nth-child(1) {
+.list_first li:nth-child(1) {
 	margin-top: 0;
 	text-decoration: line-through;
 	height: 21px;
 	line-height: 18px;
 }
 
-.list li:nth-child(2) {
+.list_first li:nth-child(2) {
 	margin-top: 14px;
 	font-weight: 900;
 	height: 20px;
 }
 
-.list li:nth-child(3) {
+.list_first li:nth-child(3) {
 	margin-top: 16px;
 	font-style: italic;
 }
 
-.list li:nth-child(4) {
+.list_first li:nth-child(4) {
 	margin-top: 16px;
 	text-transform: uppercase;
 	line-height: 14px;
 	margin-bottom: 0px;
+}
+
+.list_second {
+	margin: 75px 0 0 290px;
+	font-size: 20px;
+}
+
+.list_second li:before {}
+
+.list_second li:nth-child(n) {
+	height: 19px;
+}
+
+.list_second li:nth-child(1) {
+	line-height: 18px;
+	text-decoration: none;
+}
+
+.list_second li:nth-child(2) {
+	font-weight: 400;
+}
+
+.list_second li:nth-child(2):hover {
+	color: red;
+}
+
+.list_second li:nth-child(2):hover:before {
+	background: url(../img/check_icon_red.png) 0% 100% no-repeat;
+}
+
+.list_second li:nth-child(3) {
+	font-style: normal;
+}
+
+.list_second li:nth-child(4) {
+	line-height: 14px;
+	text-transform: none;
+}
+
+.buttons {
+	
 }
