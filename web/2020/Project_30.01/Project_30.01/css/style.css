@@ -40,5 +40,59 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 
 .body {
-	
+	color: #273d46;
+	font-family: "Arial MT", sans-serif;
+	font-weight: 400;
+}
+
+.first_section {
+	width: 1440px;
+	height: 1700px;
+	background-color: #e8e8e8;
+	margin: 0 auto;
+	padding-top: 161px;
+}
+
+.list {
+	width: 547px;
+	height: 125px;
+	margin: 0 0 0 290px;
+	background-color: #eee;
+	font-size: 20px;
+}
+
+.list li:before {
+	float: left;
+	content: '';
+	width: 25px;
+	height: 19px;
+	background: url(../img/check_icon.png) 0% 100% no-repeat;
+	margin-right: 10px;
+}
+
+.list li:nth-child(n) {
+	margin-bottom: 20px;
+	height: 19px;
+	line-height: 16px;
+}
+
+.list li:nth-child(1) {
+	text-decoration: line-through;
+	height: 21px;
+	line-height: 18px;
+}
+
+.list li:nth-child(2) {
+	font-weight: 900;
+	height: 20px;
+}
+
+.list li:nth-child(3) {
+	font-style: italic;
+}
+
+.list li:nth-child(4) {
+	text-transform: uppercase;
+	line-height: 14px;
+	margin-bottom: 0px;
 }
