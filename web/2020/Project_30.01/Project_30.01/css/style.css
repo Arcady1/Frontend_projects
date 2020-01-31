@@ -43,6 +43,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	color: #273d46;
 	font-family: "Arial MT", sans-serif;
 	font-weight: 400;
+	background-color: #e8e8e8;
 }
 
 .first_section {
@@ -184,4 +185,24 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 .buttons button:nth-child(3):active {
 	background-color: #818181;
+}
+
+.text_div p:nth-child(n) {
+	width: 762px;
+	height: 80px;
+	font-size: 18px;
+	margin: 111px 0 0 295px;
+	line-height: 28px;
+}
+
+.text_div p:nth-child(1):first-line {
+	color: #ff0000;
+}
+
+.text_div p:nth-child(2) {
+	margin-top: 43px;
+}
+
+.text_div p:nth-child(2):first-letter {
+	color: #ff0000;
 }
