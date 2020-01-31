@@ -139,6 +139,49 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .buttons {
 	width: 790px;
 	height: 44px;
-	background-color: #fff;
 	margin: 137px 0 0 315px;
+}
+
+.buttons button:nth-child(n) {
+	width: 199px;
+	height: 44px;
+	box-shadow: 0 6px 40px rgba(128, 183, 179, 0.54);
+	border-radius: 22px;
+	background: #80b7b3;
+}
+
+.buttons p:nth-child(n) {
+	display: inline-block;
+	color: #fff;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 2.8px;
+	text-align: center;
+	line-height: 10px;
+}
+
+.buttons p:nth-child(n):after {
+	content: '';
+	float: right;
+	width: 21px;
+	height: 14px;
+	background: url(../img/Shape_2.png) no-repeat;
+	margin-top: -1px;
+	margin-left: 8px;
+}
+
+.buttons button:nth-child(2) {
+	margin-left: 93px;
+}
+
+.buttons button:nth-child(2):hover {
+	background-color: #3a5856;
+}
+
+.buttons button:nth-child(3) {
+	margin-left: 92px;
+}
+
+.buttons button:nth-child(3):active {
+	background-color: #818181;
 }
