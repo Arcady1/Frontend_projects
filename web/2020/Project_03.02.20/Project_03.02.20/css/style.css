@@ -72,3 +72,36 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
+.link_2, .link {
+  border-bottom: 2px dashed #777;
+  color: #000;
+}
+
+.block {
+  width: 31.25%;
+  background-color: #777;
+  padding: 30px;
+  line-height: 30px;
+}
+.block .block_text {
+  font-size: 25px;
+}
+.block .block_text span {
+  color: green;
+}
+
+.link {
+  color: red;
+  font-size: 25px;
+}
+.block .link {
+  font-size: 25px;
+}
+.link:hover {
+  color: green;
+}
+
+.link_2 {
+  font-size: 40px;
+  color: #999;
+}

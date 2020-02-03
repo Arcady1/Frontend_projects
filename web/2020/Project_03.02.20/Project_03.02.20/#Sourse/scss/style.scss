@@ -1,38 +1,48 @@
-/*Обнуление*/
-*{
-	padding: 0;
-	margin: 0;
-	border: 0;
+// Файл обнуляющих стилей
+@import "nullstyle.scss";
+
+// Переменные
+$fz: 25px;
+$color: green;
+
+// Шаблоны
+%link_border {
+	border-bottom: 2px dashed #777;
+	color: #000;
 }
-*,*:before,*:after{
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
+
+// Миксины
+@mixin fonz($f, $c) {
+	font-size: $f;
+	color: $c;
 }
-:focus,:active{outline: none;}
-a:focus,a:active{outline: none;}
 
-nav,footer,header,aside{display: block;}
-
-html,body{
-	height: 100%;
-	width: 100%;
-	font-size: 100%;
-	line-height: 1;
-	font-size: 14px;
-	-ms-text-size-adjust: 100%;
-	-moz-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;
+.block {
+	width: 300px / 960px * 100%;
+	background-color: #777;
+	padding: 30px;
+	line-height: 30px;
+	.block_text {
+		font-size: $fz;
+		span {
+			color: $color;
+		}
+	}
 }
-input,button,textarea{font-family:inherit;}
 
-input::-ms-clear{display: none;}
-button{cursor: pointer;}
-button::-moz-focus-inner {padding:0;border:0;}
-a, a:visited{text-decoration: none;}
-a:hover{text-decoration: none;}
-ul li{list-style: none;}
-img{vertical-align: top;}
+.link {
+	color: red;
+	font-size: $fz;
+	.block & {
+		font-size: $fz;
+	}
+	&:hover {
+		color: $color;
+	}
+	@extend %link_border;
+}
 
-h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
-/*--------------------*/
+.link_2 {
+	@include fonz(40px, #999);
+	@extend %link_border;
+}
