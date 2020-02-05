@@ -1,8 +1,7 @@
 .content_header {
 	width: 100%;
 	height: 85px;
-	background: #ddd;
-	padding: 23px 0 0 138px;
+	padding: 21px 0 0 120px;
 }
 
 .content_header_label {
@@ -22,15 +21,15 @@
 	text-transform: uppercase;
 	position: relative;
 	top: 7px;
-	left: 2px;
+	left: 4px;
 	}
 }
 
 .content_header_menu {
-	width: 510px;
+	width: 523px;
 	height: 13px;
 	float: left;
-	margin: 18px 0 0 105px;
+	margin: 18px 0 0 119px;
 	color: #9a9a9a;
 
 	& span {
@@ -42,16 +41,16 @@
 	}
 
 	& span:nth-child(1) {
-		margin: 0px 22px 0 2px;
+		margin: 0px 23px 0 2px;
 	}
 	& span:nth-child(2) {
-		margin-right: 17px;
+		margin-right: 22px;
 	}
 	& span:nth-child(3) {
-		margin-right: 7px;
+		margin-right: 15px;
 	}
 	& span:nth-child(4) {
-		margin-right: 20px;
+		margin-right: 23px;
 	}
 }
 
@@ -62,7 +61,7 @@
 	border-radius: 19px;
 	float: left;
 	text-align: center;
-	margin: 5px 0 0 62px;
+	margin: 5px 0 0 73px;
 
 	& span {
 	opacity: 0.81;
