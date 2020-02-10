@@ -458,7 +458,7 @@ body {
   height: 521px;
   margin-top: 66px;
 }
-.content_featured_projects .content_featured_projects_center div.new_content_1 {
+.content_featured_projects .content_featured_projects_center div.new_content:nth-child(n) {
   display: inline-block;
   width: 300px;
   height: 520px;
@@ -467,12 +467,12 @@ body {
   border-radius: 10px;
   overflow: hidden;
 }
-.content_featured_projects .content_featured_projects_center div.new_content_1 div.new_content_image {
+.content_featured_projects .content_featured_projects_center div.new_content:nth-child(n) div.new_content_image {
   width: 300px;
   height: 226px;
   background: url("../../img/featured_projects/content_featured_projects_angle.svg") top left/74px 74px no-repeat, url("../../img/featured_projects/content_featured_projects_1.png") top left/300px 226px no-repeat;
 }
-.content_featured_projects .content_featured_projects_center div.new_content_1 div.new_content_image span.text_new {
+.content_featured_projects .content_featured_projects_center div.new_content:nth-child(n) div.new_content_image span.text_new {
   display: inline-block;
   position: relative;
   color: #ffffff;
@@ -483,7 +483,7 @@ body {
   top: 15px;
   left: 3px;
 }
-.content_featured_projects .content_featured_projects_center div.new_content_1 div.new_content_image div {
+.content_featured_projects .content_featured_projects_center div.new_content:nth-child(n) div.new_content_image div.text_from_GBR {
   width: 139px;
   height: 35px;
   background-color: #26a6d1;
@@ -492,25 +492,25 @@ body {
   padding-top: 9px;
   margin: 160px 0 0 150px;
 }
-.content_featured_projects .content_featured_projects_center div.new_content_1 div.new_content_image div span:nth-child(n) {
+.content_featured_projects .content_featured_projects_center div.new_content:nth-child(n) div.new_content_image div.text_from_GBR span:nth-child(n) {
   color: #fff;
   font-size: 17px;
   font-weight: 700;
 }
-.content_featured_projects .content_featured_projects_center div.new_content_1 div.new_content_image div span:first-child {
+.content_featured_projects .content_featured_projects_center div.new_content:nth-child(n) div.new_content_image div.text_from_GBR span:first-child {
   font-weight: 400;
 }
-.content_featured_projects .content_featured_projects_center div.new_content_1 div.new_content_text_top {
+.content_featured_projects .content_featured_projects_center div.new_content:nth-child(n) div.new_content_text_top {
   width: 251px;
   height: 114px;
   margin: 29px auto 0;
 }
-.content_featured_projects .content_featured_projects_center div.new_content_1 div.new_content_text_top h2 {
+.content_featured_projects .content_featured_projects_center div.new_content:nth-child(n) div.new_content_text_top h2 {
   color: #484848;
   font-size: 17px;
   font-weight: 700;
 }
-.content_featured_projects .content_featured_projects_center div.new_content_1 div.new_content_text_top p {
+.content_featured_projects .content_featured_projects_center div.new_content:nth-child(n) div.new_content_text_top p {
   width: 100%;
   height: 82px;
   opacity: 0.71;
@@ -519,47 +519,47 @@ body {
   margin-top: 15px;
   line-height: 21px;
 }
-.content_featured_projects .content_featured_projects_center div.new_content_1 div.new_content_bar_top {
+.content_featured_projects .content_featured_projects_center div.new_content:nth-child(n) div.new_content_bar_top {
   width: 254px;
   height: 47px;
   margin: 20px auto 0;
 }
-.content_featured_projects .content_featured_projects_center div.new_content_1 div.new_content_bar_top div.loading_bar {
+.content_featured_projects .content_featured_projects_center div.new_content:nth-child(n) div.new_content_bar_top div.loading_bar {
   width: 100%;
   height: 14px;
   background-color: #e3e3e3;
   border-radius: 7px;
   overflow: hidden;
 }
-.content_featured_projects .content_featured_projects_center div.new_content_1 div.new_content_bar_top div.loading_bar div {
+.content_featured_projects .content_featured_projects_center div.new_content:nth-child(n) div.new_content_bar_top div.loading_bar div {
   width: 38px;
   height: 100%;
   background-color: #add136;
 }
-.content_featured_projects .content_featured_projects_center div.new_content_1 div.new_content_bar_top span:nth-child(n) {
+.content_featured_projects .content_featured_projects_center div.new_content:nth-child(n) div.new_content_bar_top span:nth-child(n) {
   display: inline-block;
   color: #8d8d8d;
   font-size: 13px;
   margin-top: 20px;
 }
-.content_featured_projects .content_featured_projects_center div.new_content_1 div.new_content_bar_top span:nth-child(2) {
+.content_featured_projects .content_featured_projects_center div.new_content:nth-child(n) div.new_content_bar_top span:nth-child(2) {
   float: left;
 }
-.content_featured_projects .content_featured_projects_center div.new_content_1 div.new_content_bar_top span:nth-child(3) {
+.content_featured_projects .content_featured_projects_center div.new_content:nth-child(n) div.new_content_bar_top span:nth-child(3) {
   float: right;
 }
-.content_featured_projects .content_featured_projects_center div.new_content_1 div.new_content_line {
+.content_featured_projects .content_featured_projects_center div.new_content:nth-child(n) div.new_content_line {
   width: 252px;
   height: 1px;
   background-color: #d6d6d6;
   margin: 17px auto 0;
 }
-.content_featured_projects .content_featured_projects_center div.new_content_1 div.new_content_bottom {
+.content_featured_projects .content_featured_projects_center div.new_content:nth-child(n) div.new_content_bottom {
   display: inline-block;
   height: 17px;
   margin: 26px 0 0 110px;
 }
-.content_featured_projects .content_featured_projects_center div.new_content_1 div.new_content_bottom span {
+.content_featured_projects .content_featured_projects_center div.new_content:nth-child(n) div.new_content_bottom span {
   display: inline-block;
   opacity: 0.85;
   color: #484848;
@@ -567,10 +567,16 @@ body {
   position: relative;
   top: 1px;
 }
-.content_featured_projects .content_featured_projects_center div.new_content_1 div.new_content_bottom img {
+.content_featured_projects .content_featured_projects_center div.new_content:nth-child(n) div.new_content_bottom img {
   display: inline-block;
   margin-left: 6px;
 }
-.content_featured_projects .content_featured_projects_center div.new_content_3 {
+.content_featured_projects .content_featured_projects_center div.new_content:nth-child(2) div.new_content_image {
+  background: url("../../img/featured_projects/content_featured_projects_angle.svg") top left/74px 74px no-repeat, url("../../img/featured_projects/content_featured_projects_2.png") top left/300px 226px no-repeat;
+}
+.content_featured_projects .content_featured_projects_center div.new_content:nth-child(2) div.new_content_bar_top div.loading_bar div {
+  width: 168px;
+}
+.content_featured_projects .content_featured_projects_center div.new_content:nth-child(3) {
   margin-right: 0px;
 }

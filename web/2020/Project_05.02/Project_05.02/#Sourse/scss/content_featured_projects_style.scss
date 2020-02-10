@@ -53,7 +53,7 @@
 		height: 521px;
 		margin-top: 66px;
 
-		& div.new_content_1 {
+		& div.new_content:nth-child(n) {
 			display: inline-block;
 			width: 300px;
 			height: 520px;
@@ -80,7 +80,7 @@
 					left: 3px;
 				}
 
-				& div {
+				& div.text_from_GBR {
 					width: 139px;
 					height: 35px;
 					background-color: #26a6d1;
@@ -192,11 +192,22 @@
 			}
 		}
 
-		&.new_content_2 {
-			
+		& div.new_content:nth-child(2) {
+
+			& div.new_content_image {
+				background: url("../../img/featured_projects/content_featured_projects_angle.svg") top left/74px 74px no-repeat, url("../../img/featured_projects/content_featured_projects_2.png") top left/300px 226px no-repeat;
+			}
+
+			& div.new_content_bar_top {
+				& div.loading_bar {
+					& div {
+						width: 168px;
+					}
+				}
+			}
 		}
 
-		& div.new_content_3 {
+		& div.new_content:nth-child(3) {
 			margin-right: 0px;
 		}
 	}
