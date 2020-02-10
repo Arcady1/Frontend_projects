@@ -413,7 +413,7 @@ body {
   width: 978px;
   height: 689px;
   background-color: #eee;
-  margin: 81px auto 0;
+  margin: 81px auto 80px;
 }
 .content_featured_projects .content_featured_projects_top {
   width: 100%;
@@ -555,9 +555,21 @@ body {
   margin: 17px auto 0;
 }
 .content_featured_projects .content_featured_projects_center div.new_content_1 div.new_content_bottom {
-  width: 158px;
+  display: inline-block;
   height: 17px;
-  background-color: #fff;
+  margin: 26px 0 0 110px;
+}
+.content_featured_projects .content_featured_projects_center div.new_content_1 div.new_content_bottom span {
+  display: inline-block;
+  opacity: 0.85;
+  color: #484848;
+  font-size: 15px;
+  position: relative;
+  top: 1px;
+}
+.content_featured_projects .content_featured_projects_center div.new_content_1 div.new_content_bottom img {
+  display: inline-block;
+  margin-left: 6px;
 }
 .content_featured_projects .content_featured_projects_center div:nth-child(3) {
   margin-right: 0px;
