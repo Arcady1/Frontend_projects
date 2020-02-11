@@ -1,8 +1,7 @@
 .content_featured_projects {
 	width: 978px;
 	height: 689px;
-	background-color: #eee;
-	margin: 81px auto 80px;
+	margin: 81px auto 0;
 
 	.content_featured_projects_top {
 		width: 100%;
@@ -193,7 +192,6 @@
 		}
 
 		& div.new_content:nth-child(2) {
-
 			& div.new_content_image {
 				background: url("../../img/featured_projects/content_featured_projects_angle.svg") top left/74px 74px no-repeat, url("../../img/featured_projects/content_featured_projects_2.png") top left/300px 226px no-repeat;
 			}
@@ -209,6 +207,10 @@
 
 		& div.new_content:nth-child(3) {
 			margin-right: 0px;
+
+			& div.new_content_image {
+				background: url("../../img/featured_projects/content_featured_projects_angle.svg") top left/74px 74px no-repeat, url("../../img/featured_projects/content_featured_projects_3.png") top left/300px 226px no-repeat;
+			}
 		}
 	}
 }
