@@ -1,7 +1,7 @@
 @import "nullstyle.scss";
 
 body {
-	background: #fff;
+	background: #eee;
 	font-family: "OpenSans", sans-serif;
 	font-weight: 400;
 }
@@ -9,11 +9,12 @@ body {
 .content {
 	max-width: 1300px;
 	margin: 0 auto;
-}
+	height: 3392px;
+	background: url('../../img/backgrounds/content_bottom_background.png') bottom no-repeat;
 
-@import "header_style.scss";
-@import "content_top_style.scss";
-@import "content_center_style.scss";
-@import "content_center_two_images_style.scss";
-@import "content_featured_projects_style.scss";
-@import "content_bottom_style.scss";
+	@import "header_style.scss";
+	@import "content_top_style.scss";
+	@import "content_center_style.scss";
+	@import "content_center_two_images_style.scss";
+	@import "content_featured_projects_style.scss";
+}
