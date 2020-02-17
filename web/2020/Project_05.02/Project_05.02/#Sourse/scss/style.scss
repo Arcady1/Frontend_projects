@@ -1,20 +1,51 @@
 @import "nullstyle.scss";
 
 body {
-	background: #eee;
+	background: #fff;
 	font-family: "OpenSans", sans-serif;
 	font-weight: 400;
+
+	.content {
+		max-width: 1300px;
+		height: 3392px;
+		margin: 0 auto;
+		background: url('../../img/backgrounds/content_bottom_background.png') bottom no-repeat;
+
+		@import "header_style.scss";
+		@import "content_top_style.scss";
+		@import "content_center_style.scss";
+		@import "content_center_two_images_style.scss";
+		@import "content_featured_projects_style.scss";
+	}
 }
 
-.content {
+.footer {
 	max-width: 1300px;
+	height: 197px;
 	margin: 0 auto;
-	height: 3392px;
-	background: url('../../img/backgrounds/content_bottom_background.png') bottom no-repeat;
+	text-align: center;
 
-	@import "header_style.scss";
-	@import "content_top_style.scss";
-	@import "content_center_style.scss";
-	@import "content_center_two_images_style.scss";
-	@import "content_featured_projects_style.scss";
+	& img {
+		display: inline-block;
+		width: 1028px;
+		height: 45px;
+		margin-top: 45px;
+	}
+
+	& div.footer_line {
+		width: 100%;
+		height: 1px;
+		background-color: #ededed;
+		margin-top: 20px;
+	}
+
+	& p.footer_copyright {
+		width: 100%;
+		height: 13px;
+
+		// Style for "Copyright"
+		color: #848484;
+		font-size: 13px;
+		margin-top: 27px;
+	}
 }
