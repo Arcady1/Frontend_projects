@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap');
+@import "nul_style.scss";
+
+@mixin font_settings($size, $color) {
+    font-size: $size;
+    color: $color;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+
+    .content {
+        max-width: 1700px;
+        height: 6055px;
+        margin: 0 auto;
+        background-color: #fff;
+
+        @import "header_style.scss";
+    }
+}
