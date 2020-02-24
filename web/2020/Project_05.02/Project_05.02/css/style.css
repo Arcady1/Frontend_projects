@@ -81,7 +81,7 @@ body .content {
   max-width: 1300px;
   height: 3392px;
   margin: 0 auto;
-  background: url("../../img/backgrounds/content_bottom_background.png") bottom no-repeat;
+  background: url("../img/backgrounds/content_bottom_background.png") bottom no-repeat;
 }
 body .content .content_header {
   width: 100%;
@@ -152,7 +152,7 @@ body .content .content_header_login_button span {
 body .content .content_top {
   width: 100%;
   height: 570px;
-  background: url("../../img/content_top_image.jpg") center no-repeat;
+  background: url("../img/content_top_image.jpg") center no-repeat;
   color: #fff;
   font-family: "Open Sans - Semibold", sans-serif;
 }
@@ -453,7 +453,7 @@ body .content .content_featured_projects .content_featured_projects_center div.n
 body .content .content_featured_projects .content_featured_projects_center div.new_content:nth-child(n) div.new_content_image {
   width: 300px;
   height: 226px;
-  background: url("../../img/featured_projects/content_featured_projects_angle.svg") top left/74px 74px no-repeat, url("../../img/featured_projects/content_featured_projects_1.png") top left/300px 226px no-repeat;
+  background: url("../img/featured_projects/content_featured_projects_angle.svg") top left/74px 74px no-repeat, url("../img/featured_projects/content_featured_projects_1.png") top left/300px 226px no-repeat;
 }
 body .content .content_featured_projects .content_featured_projects_center div.new_content:nth-child(n) div.new_content_image span.text_new {
   display: inline-block;
@@ -555,7 +555,7 @@ body .content .content_featured_projects .content_featured_projects_center div.n
   margin-left: 6px;
 }
 body .content .content_featured_projects .content_featured_projects_center div.new_content:nth-child(2) div.new_content_image {
-  background: url("../../img/featured_projects/content_featured_projects_angle.svg") top left/74px 74px no-repeat, url("../../img/featured_projects/content_featured_projects_2.png") top left/300px 226px no-repeat;
+  background: url("../img/featured_projects/content_featured_projects_angle.svg") top left/74px 74px no-repeat, url("../img/featured_projects/content_featured_projects_2.png") top left/300px 226px no-repeat;
 }
 body .content .content_featured_projects .content_featured_projects_center div.new_content:nth-child(2) div.new_content_bar_top div.loading_bar div {
   width: 168px;
@@ -564,7 +564,7 @@ body .content .content_featured_projects .content_featured_projects_center div.n
   margin-right: 0px;
 }
 body .content .content_featured_projects .content_featured_projects_center div.new_content:nth-child(3) div.new_content_image {
-  background: url("../../img/featured_projects/content_featured_projects_angle.svg") top left/74px 74px no-repeat, url("../../img/featured_projects/content_featured_projects_3.png") top left/300px 226px no-repeat;
+  background: url("../img/featured_projects/content_featured_projects_angle.svg") top left/74px 74px no-repeat, url("../img/featured_projects/content_featured_projects_3.png") top left/300px 226px no-repeat;
 }
 body .content .content_featured_projects .content_bottom {
   width: 949px;
@@ -605,7 +605,7 @@ body .content .content_featured_projects .content_bottom div.content_bottom_dial
 body .content .content_featured_projects .content_bottom div.content_bottom_dialogs div.content_bottom_dialogs_man_cloud:nth-child(n) {
   width: 397px;
   height: 166px;
-  background: url("../../img/icons/content_bottom_dialog_cloud.svg") left top/397px 166px no-repeat;
+  background: url("../img/icons/content_bottom_dialog_cloud.svg") left top/397px 166px no-repeat;
   text-align: center;
   padding-top: 25px;
 }
