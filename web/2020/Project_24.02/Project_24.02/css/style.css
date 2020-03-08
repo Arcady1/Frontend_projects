@@ -147,6 +147,7 @@ body .content div.banner div.head {
   width: 1083px;
   height: 132px;
   margin: 0 auto;
+  background-color: #ccc;
 }
 body .content div.banner div.head p.head_text {
   width: 753px;
@@ -197,14 +198,23 @@ body .content div.banner div.head div.head_forms div.head_forms_input input:nth-
   line-height: 13px;
   margin-right: 6px;
 }
+body .content div.banner div.head div.head_forms input[type=text]:nth-child(1) {
+  padding-left: 41px;
+}
+body .content div.banner div.head div.head_forms input[type=text]:nth-child(2) {
+  padding-left: 44px;
+}
+body .content div.banner div.head div.head_forms input[type=tel] {
+  padding-left: 41px;
+}
 body .content div.banner div.head div.head_forms div.head_forms_input input:nth-child(1) {
-  background: #fff url("../../img/background/input_full_name.png") top left/13px 15px no-repeat;
+  background: #fff url("../../img/background/input_full_name.png") 15px 50%/13px 15px no-repeat;
 }
 body .content div.banner div.head div.head_forms div.head_forms_input input:nth-child(2) {
-  background: #fff url("../../img/background/input_email.png") top left/13px 15px no-repeat;
+  background: #fff url("../../img/background/input_email.png") 15px 50%/16px 13px no-repeat;
 }
 body .content div.banner div.head div.head_forms div.head_forms_input input:nth-child(3) {
-  background: #fff url("../../img/background/input_phone_number.png") top left/13px 15px no-repeat;
+  background: #fff url("../../img/background/input_phone_number.png") 15px 50%/13px 14px no-repeat;
 }
 body .content div.banner div.head div.head_forms button {
   float: right;

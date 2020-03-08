@@ -22,6 +22,7 @@ div.banner {
         width: 1083px;
         height: 132px;
         margin: 0 auto;
+        background-color: #ccc;
 
         & p.head_text {
             width: 753px;
@@ -58,14 +59,27 @@ div.banner {
                 margin-right: 6px;
             }
 
+            // отступы для фонового текста в поле ввода
+            & input[type=text]:nth-child(1) {
+                padding-left: 28px + 13px;
+            }
+            & input[type=text]:nth-child(2) {
+                padding-left: 28px + 16px;
+            }
+
+            // отступ для фонового текста в поле ввода
+            & input[type=tel] {
+                padding-left: 28px + 13px;
+            }
+
             & div.head_forms_input input:nth-child(1) {
-                background: #fff url('../../img/background/input_full_name.png') top left/13px 15px no-repeat;
+                background: #fff url('../../img/background/input_full_name.png') 15px 50%/13px 15px no-repeat;
             }
             & div.head_forms_input input:nth-child(2) {
-                background: #fff url('../../img/background/input_email.png') top left/13px 15px no-repeat;
+                background: #fff url('../../img/background/input_email.png') 15px 50%/16px 13px no-repeat;
             }
             & div.head_forms_input input:nth-child(3) {
-                background: #fff url('../../img/background/input_phone_number.png') top left/13px 15px no-repeat;
+                background: #fff url('../../img/background/input_phone_number.png') 15px 50%/13px 14px no-repeat;
             }
 
             & button {
