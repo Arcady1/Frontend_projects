@@ -1,0 +1,78 @@
+div.banner {
+    @mixin font_settigs ($color: #fff, $font_size: 14px, $font_weigh: 400, $opacity: 1, $letter_spacing: normal, $text_transform: none) {
+        color: $color;
+        font-size: $font_size;
+        font-weight: $font_weigh;
+        opacity: $opacity;
+        letter-spacing: $letter_spacing;
+        text-transform: $text_transform;
+        line-height: $font_size;            // чтобы не создавались лишние отсутпы
+    }
+
+    width: 100%;
+    height: 689px;
+    background-color: #eee;
+    padding-top: 110px;
+
+    & div.head {
+        width: 1084px;
+        height: 132px;
+        background-color: #ddd;
+        margin: 0 auto;
+
+        & p.head_text {
+            width: 721px;
+            height: 53px;
+            background-color: green;
+            margin: 0 auto;
+            text-align: center;
+
+            & span:nth-child(n) {
+                display: inline-block;
+            }
+
+            // Style for "Boost up your..."
+            & span:nth-child(1) {
+                font-family: "Gotham - Black", sans-serif;
+                @include font_settigs($font_size: 35px, $letter_spacing: -0.88px, $text_transform: uppercase);
+            }
+
+            // Style for "Lorem Ipsum is simply..."
+            & span:nth-child(3) {
+                font-family: "Open Sans", sans-serif;
+                background-color: red;
+                margin-top: 2px;
+                @include font_settigs($font_size: 16px, $font_weigh: 300);
+            }
+        }        
+    }
+}
+
+// /* Style for "Boost up y" */
+// color: #ffffff;
+// font-family: "Open Sans";
+// font-size: 16px;
+// font-weight: 300;
+
+// /* Text style for "Boost up y" */
+// font-family: "Gotham - Black";
+// font-size: 35px;
+// font-weight: 400;
+// letter-spacing: -0.88px;
+// text-transform: uppercase;
+
+// /* Text style for "Lorem Ipsu" */
+// font-family: "Open Sans - Light";
+// font-weight: 300;
+
+// /* Style for "Email Addr" */
+// color: #a9a9a9;
+// font-family: "Open Sans";
+// font-size: 13px;
+// font-weight: 400;
+
+// /* Style for "Email Addr" */
+// color: #a9a9a9;
+// font-family: "Open Sans";
+// font-size: 13px;
+// font-weight: 400;
