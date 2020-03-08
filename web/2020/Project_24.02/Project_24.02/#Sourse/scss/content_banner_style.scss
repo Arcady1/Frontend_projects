@@ -19,9 +19,8 @@ div.banner {
     padding-top: 110px;
 
     & div.head {
-        width: 1084px;
+        width: 1083px;
         height: 132px;
-        background-color: #ddd;
         margin: 0 auto;
 
         & p.head_text {
@@ -50,11 +49,35 @@ div.banner {
             width: 100%;
             height: 46px;
             margin-top: 33px;
-            background-color: #ccc;
 
             & div.head_forms_input input:nth-child(n) {
                 display: inline-block;
+                width: 281px;
+                height: 46px;
                 @include font_settigs($color: #a9a9a9, $font_size: 13px);
+                margin-right: 6px;
+            }
+
+            & div.head_forms_input input:nth-child(1) {
+                background: #fff url('../../img/background/input_full_name.png') top left/13px 15px no-repeat;
+            }
+            & div.head_forms_input input:nth-child(2) {
+                background: #fff url('../../img/background/input_email.png') top left/13px 15px no-repeat;
+            }
+            & div.head_forms_input input:nth-child(3) {
+                background: #fff url('../../img/background/input_phone_number.png') top left/13px 15px no-repeat;
+            }
+
+            & button {
+                float: right;
+                width: 211px;
+                height: 46px;
+                background-color: #ffbb42;
+                @include font_settigs($text_transform: uppercase);
+            }
+
+            & button:hover {
+                background-color: #000;
             }
         }
     }
