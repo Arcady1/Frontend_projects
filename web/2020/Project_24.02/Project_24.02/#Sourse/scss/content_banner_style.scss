@@ -1,5 +1,9 @@
 div.banner {
-    @mixin font_settigs ($color: #fff, $font_size: 14px, $font_weigh: 400, $opacity: 1, $letter_spacing: normal, $text_transform: none) {
+    $default_font_family: "Open Sans", sans-serif;
+    $Gotham_Black_font_family: "Gotham_Black", sans-serif;
+
+    @mixin font_settigs ($font-family: $default_font_family, $color: #fff, $font_size: 14px, $font_weigh: 400, $opacity: 1, $letter_spacing: normal, $text_transform: none) {
+        font-family: $font-family;
         color: $color;
         font-size: $font_size;
         font-weight: $font_weigh;
@@ -21,7 +25,7 @@ div.banner {
         margin: 0 auto;
 
         & p.head_text {
-            width: 721px;
+            width: 753px;
             height: 53px;
             margin: 0 auto;
             text-align: center;
@@ -32,16 +36,26 @@ div.banner {
 
             // Style for "Boost up your..."
             & span:nth-child(1) {
-                @include font_settigs($font_size: 35px, $letter_spacing: -0.88px, $text_transform: uppercase);
-                font-family: "Gotham_Black", sans-serif;
+                @include font_settigs($font-family: $Gotham_Black_font_family, $font_size: 35px, $letter_spacing: -0.88px, $text_transform: uppercase);
             }
 
             // Style for "Lorem Ipsum is simply..."
             & span:nth-child(3) {
                 @include font_settigs ($font_size: 16px, $font_weigh: 300);
-                font-family: "Open Sans", sans-serif;
                 margin-top: 2px;
             }
-        }        
+        }
+
+        & div.head_forms {
+            width: 100%;
+            height: 46px;
+            margin-top: 33px;
+            background-color: #ccc;
+
+            & div.head_forms_input input:nth-child(n) {
+                display: inline-block;
+                @include font_settigs($color: #a9a9a9, $font_size: 13px);
+            }
+        }
     }
 }

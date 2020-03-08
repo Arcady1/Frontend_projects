@@ -25,3 +25,11 @@ body {
     font-style: normal;
     font-weight: 900;
 }
+
+// подключю шрифт Open Sans
+@font-face {
+    font-family: "Open Sans";
+    src: url('../../fonts/Open_Sans/Open_Sans.ttf');
+    font-style: normal;
+    font-weight: 400;
+}

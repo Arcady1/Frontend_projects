@@ -150,7 +150,7 @@ body .content div.banner div.head {
   margin: 0 auto;
 }
 body .content div.banner div.head p.head_text {
-  width: 721px;
+  width: 753px;
   height: 53px;
   margin: 0 auto;
   text-align: center;
@@ -159,6 +159,7 @@ body .content div.banner div.head p.head_text span:nth-child(n) {
   display: inline-block;
 }
 body .content div.banner div.head p.head_text span:nth-child(1) {
+  font-family: "Gotham_Black", sans-serif;
   color: #fff;
   font-size: 35px;
   font-weight: 400;
@@ -166,9 +167,9 @@ body .content div.banner div.head p.head_text span:nth-child(1) {
   letter-spacing: -0.88px;
   text-transform: uppercase;
   line-height: 35px;
-  font-family: "Gotham_Black", sans-serif;
 }
 body .content div.banner div.head p.head_text span:nth-child(3) {
+  font-family: "Open Sans", sans-serif;
   color: #fff;
   font-size: 16px;
   font-weight: 300;
@@ -176,8 +177,24 @@ body .content div.banner div.head p.head_text span:nth-child(3) {
   letter-spacing: normal;
   text-transform: none;
   line-height: 16px;
-  font-family: "Open Sans", sans-serif;
   margin-top: 2px;
+}
+body .content div.banner div.head div.head_forms {
+  width: 100%;
+  height: 46px;
+  margin-top: 33px;
+  background-color: #ccc;
+}
+body .content div.banner div.head div.head_forms div.head_forms_input input:nth-child(n) {
+  display: inline-block;
+  font-family: "Open Sans", sans-serif;
+  color: #a9a9a9;
+  font-size: 13px;
+  font-weight: 400;
+  opacity: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  line-height: 13px;
 }
 
 @font-face {
@@ -185,4 +202,10 @@ body .content div.banner div.head p.head_text span:nth-child(3) {
   src: url("../../fonts/Gotham_Black/Gotham_Black.ttf") format("truetype");
   font-style: normal;
   font-weight: 900;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../../fonts/Open_Sans/Open_Sans.ttf");
+  font-style: normal;
+  font-weight: 400;
 }
