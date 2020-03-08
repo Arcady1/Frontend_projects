@@ -23,7 +23,6 @@ div.banner {
         & p.head_text {
             width: 721px;
             height: 53px;
-            background-color: green;
             margin: 0 auto;
             text-align: center;
 
@@ -33,46 +32,16 @@ div.banner {
 
             // Style for "Boost up your..."
             & span:nth-child(1) {
-                font-family: "Gotham - Black", sans-serif;
                 @include font_settigs($font_size: 35px, $letter_spacing: -0.88px, $text_transform: uppercase);
+                font-family: "Gotham_Black", sans-serif;
             }
 
             // Style for "Lorem Ipsum is simply..."
             & span:nth-child(3) {
+                @include font_settigs ($font_size: 16px, $font_weigh: 300);
                 font-family: "Open Sans", sans-serif;
-                background-color: red;
                 margin-top: 2px;
-                @include font_settigs($font_size: 16px, $font_weigh: 300);
             }
         }        
     }
 }
-
-// /* Style for "Boost up y" */
-// color: #ffffff;
-// font-family: "Open Sans";
-// font-size: 16px;
-// font-weight: 300;
-
-// /* Text style for "Boost up y" */
-// font-family: "Gotham - Black";
-// font-size: 35px;
-// font-weight: 400;
-// letter-spacing: -0.88px;
-// text-transform: uppercase;
-
-// /* Text style for "Lorem Ipsu" */
-// font-family: "Open Sans - Light";
-// font-weight: 300;
-
-// /* Style for "Email Addr" */
-// color: #a9a9a9;
-// font-family: "Open Sans";
-// font-size: 13px;
-// font-weight: 400;
-
-// /* Style for "Email Addr" */
-// color: #a9a9a9;
-// font-family: "Open Sans";
-// font-size: 13px;
-// font-weight: 400;

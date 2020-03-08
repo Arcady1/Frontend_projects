@@ -1,11 +1,6 @@
+// подключю шрифт Lato;
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap');
 @import "nul_style.scss";
-
-// @mixin font_settings($f_size: 13, $color: #fff, $width: 400) {
-//     font-size: $f_size;
-//     color: $color;
-//     width: $width;
-// }
 
 body {
     font-family: "Open Sans", sans-serif;
@@ -21,4 +16,12 @@ body {
         @import "content_header_style.scss";
         @import "content_banner_style.scss";
     }
+}
+
+// подключю шрифт Gotham - Black
+@font-face {
+    font-family: "Gotham_Black";
+    src: url('../../fonts/Gotham_Black/Gotham_Black.ttf') format("truetype");
+    font-style: normal;
+    font-weight: 900;
 }
