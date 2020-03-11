@@ -1,31 +1,89 @@
+%head-text_in-block {
+    color: #394b50;
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+%simple-text-in-block {
+    color: #7b7b7b;
+    font-family: $default_font_family;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
 div.content-service {
-    width: 1165px;
-    height: 565px;
+    width: 1140px;
+    height: 570px;
     background-color: #eee;
     margin: 105px auto 0;
 
     & div.content-service__head {
-        width: 367px;
+        width: 370px;
         height: 47px;
-        background-color: #ddd;
         margin: 0 auto;
+        text-align: center;
+
+        & p:nth-child(1) {
+            @extend %headers;
+            font-size: 30px;
+            letter-spacing: -0.75px;
+            color: #394b50;
+        }
+
+        & p:nth-child(2) {
+            @extend %simple-text-in-block;
+            color: #394b50;
+            font-size: 16px;
+            line-height: 22px;
+        }
     }
 
     & div.content-service__menu {
         width: 100%;
-        height: 428px;
+        height: 427px;
         margin-top: 90px;
 
         & div.content-service__menu__serv:nth-child(n) {
-            width: 523px;
+            width: 526px;
             height: 100%;
-            background-color: #ddd;
 
             & div.content-service__menu__serv__block:nth-child(n) {
                 width: 100%;
-                height: 92px;
-                background-color: #888;
-                margin-top: 76px;
+                height: 95px;
+                background-color: #ddd;
+                margin-top: 74px;
+
+                & img.content-sevice__menu__serv__block_img:nth-child(n) {
+                    display: inline-block;
+                }
+
+                & div.content-service__menu___serv__block_head:nth-child(n) {
+                    width: 427px;
+                    height: 100%;
+                    display: inline-block;
+                    margin-left: 33px;
+
+                    & p:nth-child(n) {
+                        background-color: #fff;
+                    }
+    
+                    & p:nth-child(1) {
+                        @extend %head-text_in-block;
+                    }
+    
+                    & p:nth-child(2) {
+                        @extend %simple-text-in-block;
+                        margin-top: 13px;
+                    }
+                }
+
+                & div.content-service__menu___serv__block_head:nth-child(2) {
+                    // 
+                }
             }
 
             & div.content-service__menu__serv__block:nth-child(1) {

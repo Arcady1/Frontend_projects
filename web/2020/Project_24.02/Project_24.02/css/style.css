@@ -73,7 +73,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
-body .content div.banner div.head p.head_text span:nth-child(1) {
+body .content div.content-service div.content-service__head p:nth-child(1), body .content div.banner div.head p.head_text span:nth-child(1) {
   font-family: "Gotham_Black", sans-serif;
   font-size: 35px;
   letter-spacing: -0.88px;
@@ -259,33 +259,72 @@ body .content div.banner div.laptop div.circle div:nth-child(1) {
 body .content div.banner div.laptop div.circle div:nth-child(3) {
   margin-right: 0;
 }
+body .content div.content-service div.content-service__menu div.content-service__menu__serv:nth-child(n) div.content-service__menu__serv__block:nth-child(n) div.content-service__menu___serv__block_head:nth-child(n) p:nth-child(1) {
+  color: #394b50;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+body .content div.content-service div.content-service__menu div.content-service__menu__serv:nth-child(n) div.content-service__menu__serv__block:nth-child(n) div.content-service__menu___serv__block_head:nth-child(n) p:nth-child(2), body .content div.content-service div.content-service__head p:nth-child(2) {
+  color: #7b7b7b;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 22px;
+}
 body .content div.content-service {
-  width: 1165px;
-  height: 565px;
+  width: 1140px;
+  height: 570px;
   background-color: #eee;
   margin: 105px auto 0;
 }
 body .content div.content-service div.content-service__head {
-  width: 367px;
+  width: 370px;
   height: 47px;
-  background-color: #ddd;
   margin: 0 auto;
+  text-align: center;
+}
+body .content div.content-service div.content-service__head p:nth-child(1) {
+  font-size: 30px;
+  letter-spacing: -0.75px;
+  color: #394b50;
+}
+body .content div.content-service div.content-service__head p:nth-child(2) {
+  color: #394b50;
+  font-size: 16px;
+  line-height: 22px;
 }
 body .content div.content-service div.content-service__menu {
   width: 100%;
-  height: 428px;
+  height: 427px;
   margin-top: 90px;
 }
 body .content div.content-service div.content-service__menu div.content-service__menu__serv:nth-child(n) {
-  width: 523px;
+  width: 526px;
   height: 100%;
-  background-color: #ddd;
 }
 body .content div.content-service div.content-service__menu div.content-service__menu__serv:nth-child(n) div.content-service__menu__serv__block:nth-child(n) {
   width: 100%;
-  height: 92px;
-  background-color: #888;
-  margin-top: 76px;
+  height: 95px;
+  background-color: #ddd;
+  margin-top: 74px;
+}
+body .content div.content-service div.content-service__menu div.content-service__menu__serv:nth-child(n) div.content-service__menu__serv__block:nth-child(n) img.content-sevice__menu__serv__block_img:nth-child(n) {
+  display: inline-block;
+}
+body .content div.content-service div.content-service__menu div.content-service__menu__serv:nth-child(n) div.content-service__menu__serv__block:nth-child(n) div.content-service__menu___serv__block_head:nth-child(n) {
+  width: 427px;
+  height: 100%;
+  display: inline-block;
+  margin-left: 33px;
+}
+body .content div.content-service div.content-service__menu div.content-service__menu__serv:nth-child(n) div.content-service__menu__serv__block:nth-child(n) div.content-service__menu___serv__block_head:nth-child(n) p:nth-child(n) {
+  background-color: #fff;
+}
+body .content div.content-service div.content-service__menu div.content-service__menu__serv:nth-child(n) div.content-service__menu__serv__block:nth-child(n) div.content-service__menu___serv__block_head:nth-child(n) p:nth-child(2) {
+  margin-top: 13px;
 }
 body .content div.content-service div.content-service__menu div.content-service__menu__serv:nth-child(n) div.content-service__menu__serv__block:nth-child(1) {
   margin-top: 0;
