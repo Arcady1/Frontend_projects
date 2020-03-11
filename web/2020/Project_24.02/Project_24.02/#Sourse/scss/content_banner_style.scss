@@ -1,18 +1,15 @@
+@mixin font_settigs ($font-family: $default_font_family, $color: #fff, $font_size: 14px, $font_weigh: 400, $opacity: 1, $letter_spacing: normal, $text_transform: none) {
+    font-family: $font-family;
+    color: $color;
+    font-size: $font_size;
+    font-weight: $font_weigh;
+    opacity: $opacity;
+    letter-spacing: $letter_spacing;
+    text-transform: $text_transform;
+    line-height: $font_size;            // чтобы не создавались лишние отсутпы
+}
+
 div.banner {
-    $default_font_family: "Open Sans", sans-serif;
-    $Gotham_Black_font_family: "Gotham_Black", sans-serif;
-
-    @mixin font_settigs ($font-family: $default_font_family, $color: #fff, $font_size: 14px, $font_weigh: 400, $opacity: 1, $letter_spacing: normal, $text_transform: none) {
-        font-family: $font-family;
-        color: $color;
-        font-size: $font_size;
-        font-weight: $font_weigh;
-        opacity: $opacity;
-        letter-spacing: $letter_spacing;
-        text-transform: $text_transform;
-        line-height: $font_size;            // чтобы не создавались лишние отсутпы
-    }
-
     width: 100%;
     height: 689px;
     padding-top: 110px;
@@ -35,7 +32,8 @@ div.banner {
 
             // Style for "Boost up your..."
             & span:nth-child(1) {
-                @include font_settigs($font-family: $Gotham_Black_font_family, $font_size: 35px, $letter_spacing: -0.88px, $text_transform: uppercase);
+                // @include font_settigs($font-family: $Gotham_Black_font_family, $font_size: 35px, $letter_spacing: -0.88px, $text_transform: uppercase);
+                @extend %headers;
             }
 
             // Style for "Lorem Ipsum is simply..."

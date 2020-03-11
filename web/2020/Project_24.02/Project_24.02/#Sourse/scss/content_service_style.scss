@@ -1,0 +1,44 @@
+div.content-service {
+    width: 1165px;
+    height: 565px;
+    background-color: #eee;
+    margin: 105px auto 0;
+
+    & div.content-service__head {
+        width: 367px;
+        height: 47px;
+        background-color: #ddd;
+        margin: 0 auto;
+    }
+
+    & div.content-service__menu {
+        width: 100%;
+        height: 428px;
+        margin-top: 90px;
+
+        & div.content-service__menu__serv:nth-child(n) {
+            width: 523px;
+            height: 100%;
+            background-color: #ddd;
+
+            & div.content-service__menu__serv__block:nth-child(n) {
+                width: 100%;
+                height: 92px;
+                background-color: #888;
+                margin-top: 76px;
+            }
+
+            & div.content-service__menu__serv__block:nth-child(1) {
+                margin-top: 0;
+            }
+        }
+
+        & div.content-service__menu__serv:nth-child(1) {
+            float: left;
+        }
+
+        & div.content-service__menu__serv:nth-child(2) {
+            float: right;
+        }
+    }
+}

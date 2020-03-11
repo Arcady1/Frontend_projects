@@ -3,6 +3,19 @@
 // обнуляю стили
 @import "nul_style.scss";
 
+// объявляю переменные
+$default_font_family: "Open Sans", sans-serif;
+$Gotham_Black_font_family: "Gotham_Black", sans-serif;
+
+// описываю шаблон для заголовков
+%headers {
+    font-family: $Gotham_Black_font_family;
+    font-size: 35px;
+    letter-spacing: -0.88px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
 body {
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
@@ -16,6 +29,7 @@ body {
 
         @import "content_header_style.scss";
         @import "content_banner_style.scss";
+        @import "content_service_style.scss";
     }
 }
 
