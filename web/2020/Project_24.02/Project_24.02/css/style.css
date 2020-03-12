@@ -73,7 +73,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
-body .content div.content-service div.content-service__head p:nth-child(1), body .content div.banner div.head p.head_text span:nth-child(1) {
+body .content div.content-about-us div.content-about-us__right-block div.content-about-us__text h2, body .content div.content-service div.content-service__head p:nth-child(1), body .content div.banner div.head p.head_text span:nth-child(1) {
   font-family: "Gotham_Black", sans-serif;
   font-size: 35px;
   letter-spacing: -0.88px;
@@ -357,11 +357,55 @@ body .content div.content-service div.content-service__menu div.content-service_
 body .content div.content-service div.content-service__menu div.content-service__menu__serv:nth-child(2) div.content-service__menu__serv__block:nth-child(3) div.content-service__menu___serv__block_head {
   margin-top: 5px;
 }
+body .content div.content-about-us div.content-about-us__right-block div.content-about-us__right-block__form button.button {
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+body .content div.content-about-us div.content-about-us__right-block div.content-about-us__right-block__form button.button {
+  display: block;
+  width: 145px;
+  height: 46px;
+  border: 1px solid #e7ad48;
+  border-radius: 2px;
+  background-color: #ffc155;
+}
 body .content div.content-about-us {
   width: 100%;
   height: 623px;
   margin-top: 155px;
-  background-color: #eee;
+  background: #ffc155 url("../../img/background/content-about-us_bgp.png") top left no-repeat;
+  color: #fff;
+  padding-top: 164px;
+}
+body .content div.content-about-us div.content-about-us__right-block {
+  width: 505px;
+  height: 293px;
+  margin: 0 265px 0 auto;
+}
+body .content div.content-about-us div.content-about-us__right-block div.content-about-us__text {
+  width: 505px;
+  height: 214px;
+}
+body .content div.content-about-us div.content-about-us__right-block div.content-about-us__text h2 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  letter-spacing: -0.75px;
+}
+body .content div.content-about-us div.content-about-us__right-block div.content-about-us__text p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  margin-top: 16px;
+}
+body .content div.content-about-us div.content-about-us__right-block div.content-about-us__right-block__form {
+  margin-top: 33px;
+}
+body .content div.content-about-us div.content-about-us__right-block div.content-about-us__right-block__form button.button:hover {
+  background-color: #000;
 }
 
 @font-face {

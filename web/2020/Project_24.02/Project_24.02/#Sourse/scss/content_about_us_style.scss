@@ -1,8 +1,67 @@
+%button-text {
+    color: #fff;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+%style-for_button {
+    display: block;
+    width: 145px;
+    height: 46px;
+    border: 1px solid #e7ad48;
+    border-radius: 2px;
+    background-color: #ffc155;
+}
+
 div.content-about-us {
     width: 100%;
     height: 623px;
     margin-top: 155px;
-    background-color: #eee;
+    background: #ffc155 url('../../img/background/content-about-us_bgp.png') top left no-repeat;
+    // font-color settings
+    color: #fff;
+    padding-top: 164px;
 
+    & div.content-about-us__right-block {
+        width: 505px;
+        height: 293px;
+        margin: 0 265px 0 auto;
+
+        & div.content-about-us__text {
+            width: 505px;
+            height: 214px;
     
+            // Text style for "About us"
+            & h2 {
+                @extend %headers;
+                font-size: 30px;
+                line-height: 30px;
+                text-transform: uppercase;
+                letter-spacing: -0.75px;
+            }
+    
+            // Text style for "Lorem Ipsum is simply dummy..."
+            & p {
+                font-family: $default_font_family;
+                font-size: 13px;
+                line-height: 24px;
+                margin-top: 16px;
+            }
+        }
+
+        & div.content-about-us__right-block__form {
+            margin-top: 33px;
+            // стиль кнопки "Read more"
+            & button.button {
+                @extend %style-for_button;
+                @extend %button-text;
+            }
+
+            & button.button:hover {
+                background-color: #000;
+            }
+        }
+    }
 }
