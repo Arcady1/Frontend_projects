@@ -73,12 +73,25 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
-body .content div.content-about-us div.content-about-us__right-block div.content-about-us__text a, body .content div.content-service div.content-service__head p:nth-child(1), body .content div.banner div.head p.head_text span:nth-child(1) {
+body .content div.content-choos-your-price div.head p:nth-child(1), body .content div.content-about-us div.content-about-us__right-block div.content-about-us__text a, body .content div.content-service div.content-service__head p:nth-child(1), body .content div.banner div.head p.head_text span:nth-child(1) {
   font-family: "Gotham_Black", sans-serif;
   font-size: 35px;
   letter-spacing: -0.88px;
   text-transform: uppercase;
   color: #fff;
+}
+
+body .content div.content-choos-your-price div.trio-menu div.cards:nth-child(n) form button.button-get-started, body .content div.content-about-us div.content-about-us__right-block div.content-about-us__right-block__form button.button, body .content div.banner div.head div.head_forms button {
+  display: block;
+  width: 145px;
+  height: 46px;
+  background-color: #ffbb42;
+  border-radius: 2px;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 body {
@@ -145,6 +158,10 @@ body .content .header div.menu span:nth-child(6) {
 }
 body .content .header div.menu span:nth-child(7) {
   margin-left: 31px;
+}
+body .content div.content-about-us div.content-about-us__right-block div.content-about-us__right-block__form button.button, body .content div.banner div.head div.head_forms button {
+  float: right;
+  width: 211px;
 }
 body .content div.banner {
   width: 100%;
@@ -213,20 +230,6 @@ body .content div.banner div.head div.head_forms div.head_forms_input input:nth-
 }
 body .content div.banner div.head div.head_forms div.head_forms_input input:nth-child(3) {
   background: #fff url("../../img/background/input_phone_number.png") 15px 50%/13px 14px no-repeat;
-}
-body .content div.banner div.head div.head_forms button {
-  float: right;
-  width: 211px;
-  height: 46px;
-  background-color: #ffbb42;
-  font-family: "Open Sans", sans-serif;
-  color: #fff;
-  font-size: 14px;
-  font-weight: 400;
-  opacity: 1;
-  letter-spacing: normal;
-  text-transform: uppercase;
-  line-height: 14px;
 }
 body .content div.banner div.head div.head_forms button:hover {
   background-color: #000;
@@ -358,19 +361,8 @@ body .content div.content-service div.content-service__menu div.content-service_
 body .content div.content-service div.content-service__menu div.content-service__menu__serv:nth-child(2) div.content-service__menu__serv__block:nth-child(3) div.content-service__menu___serv__block_head {
   margin-top: 5px;
 }
-body .content div.content-about-us div.content-about-us__right-block div.content-about-us__right-block__form button.button {
-  color: #fff;
-  font-family: "Lato", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-body .content div.content-about-us div.content-about-us__right-block div.content-about-us__right-block__form button.button {
-  display: block;
-  width: 145px;
-  height: 46px;
+body .content div.content-about-us div.content-about-us__right-block div.content-about-us__right-block__form button.button, body .content div.banner div.head div.head_forms button {
   border: 1px solid #e7ad48;
-  border-radius: 2px;
   background-color: #ffc155;
 }
 body .content div.content-about-us {
@@ -414,6 +406,139 @@ body .content div.content-about-us div.content-about-us__right-block div.content
 body .content div.content-about-us div.content-about-us__right-block div.content-about-us__right-block__form button.button:hover {
   background-color: #000;
 }
+body .content div.content-choos-your-price div.trio-menu div.cards:nth-child(n) p.head {
+  color: #818b95;
+  font-family: "Lato", sans-serif;
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+body .content div.content-choos-your-price div.trio-menu div.cards:nth-child(n) div.pay-info p:nth-child(1) {
+  color: #ffbb42;
+  font-family: "Lato - Bold", sans-serif;
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-variant: small-caps;
+}
+body .content div.content-choos-your-price div.trio-menu div.cards:nth-child(n) div.pay-info p:nth-child(2) {
+  font-family: "Lato Light", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  color: #818b95;
+  font-weight: 300;
+  font-variant: small-caps;
+}
+body .content div.content-choos-your-price div.trio-menu div.cards:nth-child(n) div.info-list div.info-list_setting:nth-child(n) p {
+  color: #b5bbc1;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+body .content div.content-choos-your-price {
+  width: 100%;
+  height: 898px;
+  background-color: #e7edf3;
+  padding-top: 137px;
+}
+body .content div.content-choos-your-price div.head {
+  height: 47px;
+  margin: 0 auto;
+  text-align: center;
+}
+body .content div.content-choos-your-price div.head p:nth-child(1) {
+  font-size: 28px;
+  letter-spacing: 1.2px;
+  color: #394b50;
+}
+body .content div.content-choos-your-price div.head p:nth-child(2) {
+  font-family: "Lato", sans-serif;
+  color: #75888d;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 300;
+}
+body .content div.content-choos-your-price div.trio-menu {
+  width: 1170px;
+  height: 501px;
+  margin: 51px auto 0;
+  position: relative;
+}
+body .content div.content-choos-your-price div.trio-menu div.cards:nth-child(n) {
+  display: inline-block;
+  width: 391px;
+  height: 441px;
+  border: 1px solid #ccd5df;
+  background-color: #fff;
+  border-radius: 3px;
+  margin-top: 30px;
+  text-align: center;
+  padding-top: 54px;
+}
+body .content div.content-choos-your-price div.trio-menu div.cards:nth-child(n) p.head {
+  display: inline-block;
+}
+body .content div.content-choos-your-price div.trio-menu div.cards:nth-child(n) div.pay-info {
+  width: 102px;
+  height: 77px;
+  margin: 25px auto 0;
+}
+body .content div.content-choos-your-price div.trio-menu div.cards:nth-child(n) div.pay-info p:nth-child(2) {
+  margin-top: -2px;
+}
+body .content div.content-choos-your-price div.trio-menu div.cards:nth-child(n) div.info-list {
+  width: 329px;
+  height: 108px;
+  margin: 0 auto;
+}
+body .content div.content-choos-your-price div.trio-menu div.cards:nth-child(n) div.info-list div.info-list_setting:nth-child(n) {
+  width: 100%;
+  height: 27px;
+  margin-top: 13px;
+}
+body .content div.content-choos-your-price div.trio-menu div.cards:nth-child(n) div.info-list div.info-list_setting:nth-child(n) div {
+  width: 100%;
+  height: 1px;
+  background-color: #e2e9f0;
+}
+body .content div.content-choos-your-price div.trio-menu div.cards:nth-child(n) div.info-list div.info-list_setting:nth-child(n) p {
+  display: inline-block;
+}
+body .content div.content-choos-your-price div.trio-menu div.cards:nth-child(n) div.info-list div.info-list_setting:nth-child(1) {
+  margin-top: 32px;
+}
+body .content div.content-choos-your-price div.trio-menu div.cards:nth-child(n) form button.button-get-started {
+  width: 131px;
+  height: 42px;
+  margin: 35px auto 0;
+}
+body .content div.content-choos-your-price div.trio-menu div.cards:nth-child(n) form button.button-get-started:hover {
+  background-color: #000;
+}
+body .content div.content-choos-your-price div.trio-menu div.cards:nth-child(2) {
+  position: absolute;
+  margin-top: 0;
+  left: 389px;
+  width: 395px;
+  height: 501px;
+  background-color: #709dca;
+}
+body .content div.content-choos-your-price div.trio-menu div.cards:nth-child(2) p.head {
+  color: #fff;
+}
+body .content div.content-choos-your-price div.trio-menu div.cards:nth-child(2) div.pay-info p:nth-child(n) {
+  color: #fff;
+}
+body .content div.content-choos-your-price div.trio-menu div.cards:nth-child(2) div.info-list div.info-list_setting:nth-child(n) p {
+  color: #c2e1ff;
+}
+body .content div.content-choos-your-price div.trio-menu div.cards:nth-child(3) {
+  float: right;
+}
 
 @font-face {
   font-family: "Gotham_Black";
@@ -424,6 +549,18 @@ body .content div.content-about-us div.content-about-us__right-block div.content
 @font-face {
   font-family: "Open Sans";
   src: url("../../fonts/Open_Sans/Open_Sans.ttf");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Lato - Bold";
+  src: url("../../fonts/Lato_Bold/Lato_Bold.ttf");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Lato - Light";
+  src: url("../../fonts/Lato_Light/Lato_Light.ttf");
   font-style: normal;
   font-weight: 400;
 }

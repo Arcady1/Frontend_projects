@@ -1,19 +1,36 @@
-// подключю шрифт Lato 
+// шрифт Lato 
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap');
 // обнуляю стили
 @import "nul_style.scss";
 
-// объявляю переменные
+// переменные
 $default_font_family: "Open Sans", sans-serif;
 $Gotham_Black_font_family: "Gotham_Black", sans-serif;
 
-// описываю шаблон для заголовков
+// шаблон для заголовков
 %headers {
     font-family: $Gotham_Black_font_family;
     font-size: 35px;
     letter-spacing: -0.88px;
     text-transform: uppercase;
     color: #fff;
+}
+
+// общий стиль для кнопок
+%style-for_button {
+    // div свойства кнопок
+    display: block;
+    width: 145px;
+    height: 46px;
+    background-color: #ffbb42;
+    border-radius: 2px;
+
+    // style свойства кнопок
+    color: #fff;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
 }
 
 body {
@@ -32,10 +49,11 @@ body {
         @import "content_banner_style.scss";
         @import "content_service_style.scss";
         @import "content_about_us_style.scss";
+        @import "content_choos_your_price_style.scss";
     }
 }
 
-// подключю шрифт Gotham - Black
+// шрифт Gotham - Black
 @font-face {
     font-family: "Gotham_Black";
     src: url('../../fonts/Gotham_Black/Gotham_Black.ttf') format("truetype");
@@ -43,10 +61,26 @@ body {
     font-weight: 900;
 }
 
-// подключю шрифт Open Sans
+// шрифт Open Sans
 @font-face {
     font-family: "Open Sans";
     src: url('../../fonts/Open_Sans/Open_Sans.ttf');
+    font-style: normal;
+    font-weight: 400;
+}
+
+// шрифт Lato - Bold
+@font-face {
+    font-family: "Lato - Bold";
+    src: url('../../fonts/Lato_Bold/Lato_Bold.ttf');
+    font-style: normal;
+    font-weight: 400;
+}
+
+// шрифт Lato - Light
+@font-face {
+    font-family: "Lato - Light";
+    src: url('../../fonts/Lato_Light/Lato_Light.ttf');
     font-style: normal;
     font-weight: 400;
 }

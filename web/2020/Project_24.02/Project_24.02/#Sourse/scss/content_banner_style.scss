@@ -9,6 +9,11 @@
     line-height: $font_size;            // чтобы не создавались лишние отсутпы
 }
 
+%style-for-this-button {
+    float: right;
+    width: 211px;
+}
+
 div.banner {
     width: 100%;
     height: 689px;
@@ -80,11 +85,8 @@ div.banner {
             }
 
             & button {
-                float: right;
-                width: 211px;
-                height: 46px;
-                background-color: #ffbb42;
-                @include font_settigs($text_transform: uppercase);
+                @extend %style-for_button;
+                @extend %style-for-this-button;
             }
 
             & button:hover {
