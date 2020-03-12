@@ -34,12 +34,20 @@ div.content-about-us {
             height: 214px;
     
             // Text style for "About us"
-            & h2 {
+            & a {
                 @extend %headers;
                 font-size: 30px;
                 line-height: 30px;
                 text-transform: uppercase;
                 letter-spacing: -0.75px;
+            }
+
+            & a:hover {
+                text-decoration: underline;
+            }
+
+            & a:active {
+                color: #000;
             }
     
             // Text style for "Lorem Ipsum is simply dummy..."

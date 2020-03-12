@@ -73,7 +73,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
-body .content div.content-about-us div.content-about-us__right-block div.content-about-us__text h2, body .content div.content-service div.content-service__head p:nth-child(1), body .content div.banner div.head p.head_text span:nth-child(1) {
+body .content div.content-about-us div.content-about-us__right-block div.content-about-us__text a, body .content div.content-service div.content-service__head p:nth-child(1), body .content div.banner div.head p.head_text span:nth-child(1) {
   font-family: "Gotham_Black", sans-serif;
   font-size: 35px;
   letter-spacing: -0.88px;
@@ -88,6 +88,7 @@ body {
 }
 body .content {
   max-width: 1700px;
+  min-width: 1650px;
   height: 6055px;
   margin: 0 auto;
   background-color: #fff;
@@ -389,11 +390,17 @@ body .content div.content-about-us div.content-about-us__right-block div.content
   width: 505px;
   height: 214px;
 }
-body .content div.content-about-us div.content-about-us__right-block div.content-about-us__text h2 {
+body .content div.content-about-us div.content-about-us__right-block div.content-about-us__text a {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
   letter-spacing: -0.75px;
+}
+body .content div.content-about-us div.content-about-us__right-block div.content-about-us__text a:hover {
+  text-decoration: underline;
+}
+body .content div.content-about-us div.content-about-us__right-block div.content-about-us__text a:active {
+  color: #000;
 }
 body .content div.content-about-us div.content-about-us__right-block div.content-about-us__text p {
   font-family: "Open Sans", sans-serif;
