@@ -315,13 +315,10 @@ body .content div.content-service div.content-service__menu div.content-service_
   display: inline-block;
 }
 body .content div.content-service div.content-service__menu div.content-service__menu__serv:nth-child(n) div.content-service__menu__serv__block:nth-child(n) div.content-service__menu___serv__block_head:nth-child(n) {
-  width: 427px;
+  width: 439px;
   height: 100%;
   display: inline-block;
   margin-left: 33px;
-}
-body .content div.content-service div.content-service__menu div.content-service__menu__serv:nth-child(n) div.content-service__menu__serv__block:nth-child(n) div.content-service__menu___serv__block_head:nth-child(n) p:nth-child(n) {
-  background-color: #fff;
 }
 body .content div.content-service div.content-service__menu div.content-service__menu__serv:nth-child(n) div.content-service__menu__serv__block:nth-child(n) div.content-service__menu___serv__block_head:nth-child(n) p:nth-child(2) {
   margin-top: 13px;
@@ -331,6 +328,16 @@ body .content div.content-service div.content-service__menu div.content-service_
 }
 body .content div.content-service div.content-service__menu div.content-service__menu__serv:nth-child(1) {
   float: left;
+}
+body .content div.content-service div.content-service__menu div.content-service__menu__serv:nth-child(1) div.content-service__menu__serv__block:nth-child(2) div.content-service__menu___serv__block_head:nth-child(2) {
+  width: 444px;
+  margin-left: 16px;
+}
+body .content div.content-service div.content-service__menu div.content-service__menu__serv:nth-child(1) div.content-service__menu__serv__block:nth-child(3) {
+  margin-top: 72px;
+}
+body .content div.content-service div.content-service__menu div.content-service__menu__serv:nth-child(1) div.content-service__menu__serv__block:nth-child(3) div.content-service__menu___serv__block_head:nth-child(2) {
+  margin-left: 31px;
 }
 body .content div.content-service div.content-service__menu div.content-service__menu__serv:nth-child(2) {
   float: right;
