@@ -357,6 +357,12 @@ body .content div.content-service div.content-service__menu div.content-service_
 body .content div.content-service div.content-service__menu div.content-service__menu__serv:nth-child(2) div.content-service__menu__serv__block:nth-child(3) div.content-service__menu___serv__block_head {
   margin-top: 5px;
 }
+body .content div.content-about-us {
+  width: 100%;
+  height: 623px;
+  margin-top: 155px;
+  background-color: #eee;
+}
 
 @font-face {
   font-family: "Gotham_Black";
