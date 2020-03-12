@@ -275,10 +275,9 @@ body .content div.content-service div.content-service__menu div.content-service_
   line-height: 22px;
 }
 body .content div.content-service {
-  width: 1140px;
+  width: 1170px;
   height: 570px;
-  background-color: #eee;
-  margin: 105px auto 0;
+  margin: 100px auto 0;
 }
 body .content div.content-service div.content-service__head {
   width: 370px;
@@ -287,8 +286,8 @@ body .content div.content-service div.content-service__head {
   text-align: center;
 }
 body .content div.content-service div.content-service__head p:nth-child(1) {
-  font-size: 30px;
-  letter-spacing: -0.75px;
+  font-size: 28px;
+  letter-spacing: 1.5px;
   color: #394b50;
 }
 body .content div.content-service div.content-service__head p:nth-child(2) {
@@ -299,23 +298,22 @@ body .content div.content-service div.content-service__head p:nth-child(2) {
 body .content div.content-service div.content-service__menu {
   width: 100%;
   height: 427px;
-  margin-top: 90px;
+  margin-top: 92px;
 }
 body .content div.content-service div.content-service__menu div.content-service__menu__serv:nth-child(n) {
-  width: 526px;
+  width: 555px;
   height: 100%;
 }
 body .content div.content-service div.content-service__menu div.content-service__menu__serv:nth-child(n) div.content-service__menu__serv__block:nth-child(n) {
   width: 100%;
   height: 95px;
-  background-color: #ddd;
   margin-top: 74px;
 }
 body .content div.content-service div.content-service__menu div.content-service__menu__serv:nth-child(n) div.content-service__menu__serv__block:nth-child(n) img.content-sevice__menu__serv__block_img:nth-child(n) {
   display: inline-block;
 }
 body .content div.content-service div.content-service__menu div.content-service__menu__serv:nth-child(n) div.content-service__menu__serv__block:nth-child(n) div.content-service__menu___serv__block_head:nth-child(n) {
-  width: 439px;
+  width: 468px;
   height: 100%;
   display: inline-block;
   margin-left: 33px;
@@ -340,7 +338,24 @@ body .content div.content-service div.content-service__menu div.content-service_
   margin-left: 31px;
 }
 body .content div.content-service div.content-service__menu div.content-service__menu__serv:nth-child(2) {
-  float: right;
+  display: inline-block;
+  margin-left: 59px;
+}
+body .content div.content-service div.content-service__menu div.content-service__menu__serv:nth-child(2) div.content-service__menu__serv__block:nth-child(1) div.content-service__menu___serv__block_head {
+  margin: 2px 0 0 2px;
+}
+body .content div.content-service div.content-service__menu div.content-service__menu__serv:nth-child(2) div.content-service__menu__serv__block:nth-child(2) div.content-service__menu___serv__block_head:nth-child(2) {
+  width: 471px;
+  margin-left: 30px;
+}
+body .content div.content-service div.content-service__menu div.content-service__menu__serv:nth-child(2) div.content-service__menu__serv__block:nth-child(3) {
+  margin-top: 68px;
+}
+body .content div.content-service div.content-service__menu div.content-service__menu__serv:nth-child(2) div.content-service__menu__serv__block:nth-child(3) img.content-service__menu__serv__block_img {
+  margin-left: 15px;
+}
+body .content div.content-service div.content-service__menu div.content-service__menu__serv:nth-child(2) div.content-service__menu__serv__block:nth-child(3) div.content-service__menu___serv__block_head {
+  margin-top: 5px;
 }
 
 @font-face {
