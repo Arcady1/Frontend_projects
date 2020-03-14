@@ -1,7 +1,7 @@
 // шрифт Lato 
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap');
 // обнуляю стили
-@import "nul_style.scss";
+@import "null_style.scss";
 
 // переменные
 $default_font_family: "Open Sans", sans-serif;
@@ -61,7 +61,7 @@ body {
         @import "content_banner_style.scss";
         @import "content_service_style.scss";
         @import "content_about_us_style.scss";
-        @import "content_choos_your_price_style.scss";
+        @import "content_choose_your_price_style.scss";
         @import "content_how-it-works_style.scss";
     }
 }
