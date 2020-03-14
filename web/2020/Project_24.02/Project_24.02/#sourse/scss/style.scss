@@ -37,6 +37,18 @@ body {
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 13px;
+    
+    // * div {
+    //     outline: #000 dashed 1px;
+    // }
+
+    // * p {
+    //     outline: #ddd  solid 1px;
+    // }
+
+    // * a {
+    //     outline: #709dca dotted 1px;
+    // }
 
     .content {
         max-width: 1700px;
@@ -50,6 +62,7 @@ body {
         @import "content_service_style.scss";
         @import "content_about_us_style.scss";
         @import "content_choos_your_price_style.scss";
+        @import "content_how-it-works_style.scss";
     }
 }
 

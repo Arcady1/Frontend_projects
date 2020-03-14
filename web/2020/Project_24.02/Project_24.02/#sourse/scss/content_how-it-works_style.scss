@@ -1,0 +1,157 @@
+%steps-section-content-hiw__s-title {
+    color: #394b50;
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+%steps-section-content-hiw_text {
+    color: #7b7b7b;
+    font-family: $default_font_family;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+& div.content-hiw {
+    width: 100%;
+    height: 858px;
+    padding-top: 155px;
+        
+    & div.header {
+        height: 49px;
+        margin: 0 auto;
+        text-align: center;
+    
+        & p.header__title {
+            font-family: $Gotham_Black_font_family;
+            text-transform: uppercase;
+            font-size: 28px;
+            letter-spacing: 1.5px;
+        }
+    
+        & p.header__subtitle {
+            font-family: $default_font_family;
+            font-size: 16px;
+            line-height: 22px;
+        }
+    }
+
+    & div.content-hiw__header_color {
+        color: #394b50;
+    }
+
+    & div.content-hiw__steps-section {
+        width: 1118px;
+        height: 299px;
+        margin: 0 auto;
+
+        & div.steps-section-content-hiw__aside {
+            display: inline-block;
+            width: 213px;
+            height: 100%;
+            vertical-align: top;
+            text-align: center;
+            margin-right: 85px;
+            position: relative;
+
+            & img.steps-section-content-hiw__img {
+                display: block;
+                margin: 0 auto;
+            }
+
+            & img.steps-section-content-hiw__img_margin_top35 {
+                margin-top: 35px;
+            }
+
+            & img.steps-section-content-hiw__img_margin_top40 {
+                margin-top: 40px;
+            }
+
+            & h2.steps-section-content-hiw__s-title {
+                @extend %steps-section-content-hiw__s-title;
+            }
+
+            & p.steps-section-content-hiw__text {
+                @extend %steps-section-content-hiw_text;
+                margin-top: 28px;
+            }
+
+            & p.steps-section-content-hiw__text_margin_top102 {
+                margin-top: 102px;
+            }
+            
+            & p.steps-section-content-hiw__text_margin_top96 {
+                margin-top: 96px;
+            }
+
+            & div.arrow {
+                width: 128px;
+                height: 32px;
+                margin: 30 0 0 300px;
+                position: absolute;
+                top: 0;
+                left: 0;
+            
+                & div.arrow__triangle {
+                    width: 0;
+                    height: 0;
+                    border-bottom: 10px solid #76a1cc;
+                    display: inline-block;
+                }
+            
+                & div.triangle_left {
+                    border-left: 2px solid transparent;
+                    border-right: 8px solid transparent;
+                    float: left;
+                    margin-top: 19px;
+                }
+            
+                & div.arrow__line-between-triangles {
+                    position: absolute;
+                    width: 170px;
+                    height: 170px;
+                    border-radius: 50%;
+                    border-top: 2px dotted #76a1cc;
+                    border-left: 2px dotted transparent;
+                    border-right: 2px dotted transparent;
+                    top: 0px;
+                    left: -21px;
+                }
+            
+                & div.triangle_right {
+                    border-left: 8px solid transparent;
+                    border-right: 2px solid transparent;
+                    float: right;
+                    margin-top: 22px;
+                }
+            }
+
+            & div.content-hiw__steps-section__arrow_postion_up-down {
+                top: -28px;
+                left: -109px;
+            }
+
+            & div.content-hiw__steps-section__arrow_postion_down_up {
+                top: 68px;
+                left: -110px;
+                transform: rotate(-180deg);
+            }
+        }
+
+        & div.steps-section-content-hiw__aside:last-child {
+            margin-right: 0;
+        }
+    }
+
+    & div.steps-section-content-hiw {
+        margin-top: 72px;
+    }
+}
+
+div.content-hiw, div.content-hiw__steps-section, div.steps-section-content-hiw__aside, img,
+    h2.steps-section-content-hiw__s-title, p.steps-section-content-hiw_text, div.arrow {
+    outline: #000 dashed 1px;
+}
