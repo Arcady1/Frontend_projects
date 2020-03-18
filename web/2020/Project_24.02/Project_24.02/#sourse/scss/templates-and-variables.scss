@@ -1,0 +1,29 @@
+// переменные
+$default_font_family: "Open Sans", sans-serif;
+$Gotham_Black_font_family: "Gotham_Black", sans-serif;
+
+// шаблон для заголовков
+%headers {
+    font-family: $Gotham_Black_font_family;
+    font-size: 35px;
+    letter-spacing: -0.88px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+// общий стиль для кнопок
+%style-for_button {
+    // div свойства кнопок
+    display: block;
+    width: 145px;
+    height: 46px;
+    background-color: #ffbb42;
+    border-radius: 2px;
+
+    // style свойства кнопок
+    color: #fff;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}

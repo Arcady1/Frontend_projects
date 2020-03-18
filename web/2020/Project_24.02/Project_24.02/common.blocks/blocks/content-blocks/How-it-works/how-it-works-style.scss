@@ -149,9 +149,15 @@
     & div.steps-section-content-hiw {
         margin-top: 72px;
     }
-}
 
-div.content-hiw, div.content-hiw__steps-section, div.steps-section-content-hiw__aside, img,
-    h2.steps-section-content-hiw__s-title, p.steps-section-content-hiw_text, div.arrow {
-    outline: #000 dashed 1px;
+    & form.form {
+        & button.form__button {
+            @extend %style-for_button;
+            margin: 97px auto 0;
+        }
+
+        & button.form__button_hover:hover {
+            background-color: #000;
+        }
+    }
 }

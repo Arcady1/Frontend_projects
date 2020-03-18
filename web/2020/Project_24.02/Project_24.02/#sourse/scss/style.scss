@@ -1,0 +1,27 @@
+// обнуление стилей
+@import "null-style.scss";
+// подключение файла со шрифтами
+@import "fonts-include.scss";
+// подключение шаблонов и переменных
+@import "templates-and-variables.scss";
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+
+    .content {
+        max-width: 1700px;
+        min-width: 1650px;
+        height: 6055px;
+        margin: 0 auto;
+        background-color: #fff;
+
+        @import "../../common.blocks/blocks/header-blocks/header-style.scss";
+        @import "../../common.blocks/blocks/content-blocks/Banner/banner-style.scss";
+        @import "../../common.blocks/blocks/content-blocks/Service/service-style.scss";
+        @import "../../common.blocks/blocks/content-blocks/About-us/about-us-style.scss";
+        @import "../../common.blocks/blocks/content-blocks/Choose-your-price/choose-your-price-style.scss";
+        @import "../../common.blocks/blocks/content-blocks/How-it-works/how-it-works-style.scss";
+    }
+}

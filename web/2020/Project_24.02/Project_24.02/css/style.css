@@ -1,6 +1,6 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap");
 /*Обнуление*/
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -73,7 +73,31 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
-body .content div.content-about-us div.content-about-us__right-block div.content-about-us__text a, body .content div.content-choos-your-price div.content-choos-your-price__head p:nth-child(1), body .content div.banner div.head p.head_text span:nth-child(1) {
+@font-face {
+  font-family: "Gotham_Black";
+  src: url("../fonts/Gotham_Black/Gotham_Black.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 900;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/Open_Sans/Open_Sans.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Lato - Bold";
+  src: url("../fonts/Lato_Bold/Lato_Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Lato - Light";
+  src: url("../fonts/Lato_Light/Lato_Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+body .content div.content-choos-your-price div.content-choos-your-price__head p:nth-child(1), body .content div.content-about-us div.content-about-us__right-block div.content-about-us__text a, body .content div.content-service div.content-service__head p:nth-child(1), body .content div.banner div.head p.head_text span:nth-child(1) {
   font-family: "Gotham_Black", sans-serif;
   font-size: 35px;
   letter-spacing: -0.88px;
@@ -81,7 +105,7 @@ body .content div.content-about-us div.content-about-us__right-block div.content
   color: #fff;
 }
 
-body .content div.content-about-us div.content-about-us__right-block div.content-about-us__right-block__form button.button, body .content div.content-choos-your-price div.content-choos-your-price__trio-menu div.cards:nth-child(n) form button.button-get-started, body .content div.banner div.head div.head_forms button {
+body .content div.content-hiw form.form button.form__button, body .content div.content-choos-your-price div.content-choos-your-price__trio-menu div.cards:nth-child(n) form button.button-get-started, body .content div.content-about-us div.content-about-us__right-block div.content-about-us__right-block__form button.button, body .content div.banner div.head div.head_forms button {
   display: block;
   width: 145px;
   height: 46px;
@@ -167,7 +191,7 @@ body .content div.banner {
   width: 100%;
   height: 689px;
   padding-top: 110px;
-  background: url("../../img/background/banner_bg.svg") top center no-repeat;
+  background: url("../common.blocks/blocks/content-blocks/Banner/img/background.svg") top center no-repeat;
 }
 body .content div.banner div.head {
   width: 1083px;
@@ -223,13 +247,13 @@ body .content div.banner div.head div.head_forms input[type=tel] {
   padding-left: 41px;
 }
 body .content div.banner div.head div.head_forms div.head_forms_input input:nth-child(1) {
-  background: #fff url("../../img/background/input_full_name.png") 15px 50%/13px 15px no-repeat;
+  background: #fff url("../common.blocks/blocks/content-blocks/Banner/img/Input-img/full-name.png") 15px 50%/13px 15px no-repeat;
 }
 body .content div.banner div.head div.head_forms div.head_forms_input input:nth-child(2) {
-  background: #fff url("../../img/background/input_email.png") 15px 50%/16px 13px no-repeat;
+  background: #fff url("../common.blocks/blocks/content-blocks/Banner/img/Input-img/email.png") 15px 50%/16px 13px no-repeat;
 }
 body .content div.banner div.head div.head_forms div.head_forms_input input:nth-child(3) {
-  background: #fff url("../../img/background/input_phone_number.png") 15px 50%/13px 14px no-repeat;
+  background: #fff url("../common.blocks/blocks/content-blocks/Banner/img/Input-img/number.png") 15px 50%/13px 14px no-repeat;
 }
 body .content div.banner div.head div.head_forms button:hover {
   background-color: #000;
@@ -242,7 +266,7 @@ body .content div.banner div.laptop {
 body .content div.banner div.laptop div.laptop__image {
   width: 100%;
   height: 343px;
-  background: url("../../img/banner_laptop_picture.png") 102px 18px/445px 264px no-repeat, url("../../img/banner_laptop.png") center top/647px 343px no-repeat;
+  background: url("../common.blocks/blocks/content-blocks/Banner/img/laptop-picture.png") 102px 18px/445px 264px no-repeat, url("../common.blocks/blocks/content-blocks/Banner/img/laptop.png") center top/647px 343px no-repeat;
 }
 body .content div.banner div.laptop div.circle {
   width: 63px;
@@ -263,138 +287,103 @@ body .content div.banner div.laptop div.circle div:nth-child(1) {
 body .content div.banner div.laptop div.circle div:nth-child(3) {
   margin-right: 0;
 }
-body .content div.content-choos-your-price div.content-choos-your-price__trio-menu div.cards:nth-child(n) p.head {
-  color: #818b95;
+body .content div.content-service div.content-service__menu div.content-service__menu__serv:nth-child(n) div.content-service__menu__serv__block:nth-child(n) div.content-service__menu___serv__block_head:nth-child(n) p:nth-child(1) {
+  color: #394b50;
   font-family: "Lato", sans-serif;
-  font-size: 25px;
-  font-weight: 300;
-  line-height: 22px;
-  text-transform: uppercase;
-}
-body .content div.content-choos-your-price div.content-choos-your-price__trio-menu div.cards:nth-child(n) div.pay-info p:nth-child(1) {
-  color: #ffbb42;
-  font-family: "Lato - Bold", sans-serif;
-  font-size: 60px;
-  line-height: 60px;
+  font-size: 16px;
   font-weight: 700;
+  line-height: 16px;
   text-transform: uppercase;
-  font-variant: small-caps;
 }
-body .content div.content-choos-your-price div.content-choos-your-price__trio-menu div.cards:nth-child(n) div.pay-info p:nth-child(2) {
-  font-family: "Lato Light", sans-serif;
-  font-size: 20px;
-  line-height: 20px;
-  color: #818b95;
-  font-weight: 300;
-  font-variant: small-caps;
-}
-body .content div.content-choos-your-price div.content-choos-your-price__trio-menu div.cards:nth-child(n) div.info-list div.info-list_setting:nth-child(n) p {
-  color: #b5bbc1;
-  font-family: "Lato", sans-serif;
-  font-size: 14px;
+body .content div.content-service div.content-service__menu div.content-service__menu__serv:nth-child(n) div.content-service__menu__serv__block:nth-child(n) div.content-service__menu___serv__block_head:nth-child(n) p:nth-child(2), body .content div.content-service div.content-service__head p:nth-child(2) {
+  color: #7b7b7b;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
   font-weight: 400;
-  line-height: 40px;
-  text-transform: uppercase;
+  line-height: 22px;
 }
-body .content div.content-choos-your-price {
-  width: 100%;
-  height: 898px;
-  background-color: #e7edf3;
-  padding-top: 137px;
+body .content div.content-service {
+  width: 1170px;
+  height: 570px;
+  margin: 100px auto 0;
 }
-body .content div.content-choos-your-price div.content-choos-your-price__head {
+body .content div.content-service div.content-service__head {
+  width: 370px;
   height: 47px;
   margin: 0 auto;
   text-align: center;
 }
-body .content div.content-choos-your-price div.content-choos-your-price__head p:nth-child(1) {
+body .content div.content-service div.content-service__head p:nth-child(1) {
   font-size: 28px;
-  letter-spacing: 1.2px;
+  letter-spacing: 1.5px;
   color: #394b50;
 }
-body .content div.content-choos-your-price div.content-choos-your-price__head p:nth-child(2) {
-  font-family: "Lato", sans-serif;
-  color: #75888d;
-  font-size: 18px;
+body .content div.content-service div.content-service__head p:nth-child(2) {
+  color: #394b50;
+  font-size: 16px;
   line-height: 22px;
-  font-weight: 300;
 }
-body .content div.content-choos-your-price div.content-choos-your-price__trio-menu {
-  width: 1170px;
-  height: 501px;
-  margin: 51px auto 0;
-  position: relative;
-}
-body .content div.content-choos-your-price div.content-choos-your-price__trio-menu div.cards:nth-child(n) {
-  display: inline-block;
-  width: 391px;
-  height: 441px;
-  border: 1px solid #ccd5df;
-  background-color: #fff;
-  border-radius: 3px;
-  margin-top: 30px;
-  text-align: center;
-  padding-top: 54px;
-}
-body .content div.content-choos-your-price div.content-choos-your-price__trio-menu div.cards:nth-child(n) p.head {
-  display: inline-block;
-}
-body .content div.content-choos-your-price div.content-choos-your-price__trio-menu div.cards:nth-child(n) div.pay-info {
-  width: 102px;
-  height: 77px;
-  margin: 25px auto 0;
-}
-body .content div.content-choos-your-price div.content-choos-your-price__trio-menu div.cards:nth-child(n) div.pay-info p:nth-child(2) {
-  margin-top: -2px;
-}
-body .content div.content-choos-your-price div.content-choos-your-price__trio-menu div.cards:nth-child(n) div.info-list {
-  width: 329px;
-  height: 108px;
-  margin: 0 auto;
-}
-body .content div.content-choos-your-price div.content-choos-your-price__trio-menu div.cards:nth-child(n) div.info-list div.info-list_setting:nth-child(n) {
+body .content div.content-service div.content-service__menu {
   width: 100%;
-  height: 27px;
+  height: 427px;
+  margin-top: 92px;
+}
+body .content div.content-service div.content-service__menu div.content-service__menu__serv:nth-child(n) {
+  width: 555px;
+  height: 100%;
+}
+body .content div.content-service div.content-service__menu div.content-service__menu__serv:nth-child(n) div.content-service__menu__serv__block:nth-child(n) {
+  width: 100%;
+  height: 95px;
+  margin-top: 74px;
+}
+body .content div.content-service div.content-service__menu div.content-service__menu__serv:nth-child(n) div.content-service__menu__serv__block:nth-child(n) img.content-sevice__menu__serv__block_img:nth-child(n) {
+  display: inline-block;
+}
+body .content div.content-service div.content-service__menu div.content-service__menu__serv:nth-child(n) div.content-service__menu__serv__block:nth-child(n) div.content-service__menu___serv__block_head:nth-child(n) {
+  width: 468px;
+  height: 100%;
+  display: inline-block;
+  margin-left: 33px;
+}
+body .content div.content-service div.content-service__menu div.content-service__menu__serv:nth-child(n) div.content-service__menu__serv__block:nth-child(n) div.content-service__menu___serv__block_head:nth-child(n) p:nth-child(2) {
   margin-top: 13px;
 }
-body .content div.content-choos-your-price div.content-choos-your-price__trio-menu div.cards:nth-child(n) div.info-list div.info-list_setting:nth-child(n) div {
-  width: 100%;
-  height: 1px;
-  background-color: #e2e9f0;
-}
-body .content div.content-choos-your-price div.content-choos-your-price__trio-menu div.cards:nth-child(n) div.info-list div.info-list_setting:nth-child(n) p {
-  display: inline-block;
-}
-body .content div.content-choos-your-price div.content-choos-your-price__trio-menu div.cards:nth-child(n) div.info-list div.info-list_setting:nth-child(1) {
-  margin-top: 32px;
-}
-body .content div.content-choos-your-price div.content-choos-your-price__trio-menu div.cards:nth-child(n) form button.button-get-started {
-  width: 131px;
-  height: 42px;
-  margin: 35px auto 0;
-}
-body .content div.content-choos-your-price div.content-choos-your-price__trio-menu div.cards:nth-child(n) form button.button-get-started:hover {
-  background-color: #000;
-}
-body .content div.content-choos-your-price div.content-choos-your-price__trio-menu div.cards:nth-child(2) {
-  position: absolute;
+body .content div.content-service div.content-service__menu div.content-service__menu__serv:nth-child(n) div.content-service__menu__serv__block:nth-child(1) {
   margin-top: 0;
-  left: 389px;
-  width: 395px;
-  height: 501px;
-  background-color: #709dca;
 }
-body .content div.content-choos-your-price div.content-choos-your-price__trio-menu div.cards:nth-child(2) p.head {
-  color: #fff;
+body .content div.content-service div.content-service__menu div.content-service__menu__serv:nth-child(1) {
+  float: left;
 }
-body .content div.content-choos-your-price div.content-choos-your-price__trio-menu div.cards:nth-child(2) div.pay-info p:nth-child(n) {
-  color: #fff;
+body .content div.content-service div.content-service__menu div.content-service__menu__serv:nth-child(1) div.content-service__menu__serv__block:nth-child(2) div.content-service__menu___serv__block_head:nth-child(2) {
+  width: 444px;
+  margin-left: 16px;
 }
-body .content div.content-choos-your-price div.content-choos-your-price__trio-menu div.cards:nth-child(2) div.info-list div.info-list_setting:nth-child(n) p {
-  color: #c2e1ff;
+body .content div.content-service div.content-service__menu div.content-service__menu__serv:nth-child(1) div.content-service__menu__serv__block:nth-child(3) {
+  margin-top: 72px;
 }
-body .content div.content-choos-your-price div.content-choos-your-price__trio-menu div.cards:nth-child(3) {
-  float: right;
+body .content div.content-service div.content-service__menu div.content-service__menu__serv:nth-child(1) div.content-service__menu__serv__block:nth-child(3) div.content-service__menu___serv__block_head:nth-child(2) {
+  margin-left: 31px;
+}
+body .content div.content-service div.content-service__menu div.content-service__menu__serv:nth-child(2) {
+  display: inline-block;
+  margin-left: 59px;
+}
+body .content div.content-service div.content-service__menu div.content-service__menu__serv:nth-child(2) div.content-service__menu__serv__block:nth-child(1) div.content-service__menu___serv__block_head {
+  margin: 2px 0 0 2px;
+}
+body .content div.content-service div.content-service__menu div.content-service__menu__serv:nth-child(2) div.content-service__menu__serv__block:nth-child(2) div.content-service__menu___serv__block_head:nth-child(2) {
+  width: 471px;
+  margin-left: 30px;
+}
+body .content div.content-service div.content-service__menu div.content-service__menu__serv:nth-child(2) div.content-service__menu__serv__block:nth-child(3) {
+  margin-top: 68px;
+}
+body .content div.content-service div.content-service__menu div.content-service__menu__serv:nth-child(2) div.content-service__menu__serv__block:nth-child(3) img.content-service__menu__serv__block_img {
+  margin-left: 15px;
+}
+body .content div.content-service div.content-service__menu div.content-service__menu__serv:nth-child(2) div.content-service__menu__serv__block:nth-child(3) div.content-service__menu___serv__block_head {
+  margin-top: 5px;
 }
 body .content div.content-about-us div.content-about-us__right-block div.content-about-us__right-block__form button.button, body .content div.banner div.head div.head_forms button {
   border: 1px solid #e7ad48;
@@ -404,7 +393,7 @@ body .content div.content-about-us {
   width: 100%;
   height: 623px;
   margin-top: 155px;
-  background: #ffc155 url("../../img/background/content-about-us_bgp.png") top left no-repeat;
+  background: #ffc155 url("../common.blocks/blocks/content-blocks/About-us/img/table-bg.png") top left no-repeat;
   color: #fff;
   padding-top: 164px;
 }
@@ -698,32 +687,9 @@ body .content div.content-hiw div.content-hiw__steps-section div.steps-section-c
 body .content div.content-hiw div.steps-section-content-hiw {
   margin-top: 72px;
 }
-body .content div.content-hiw, body .content div.content-hiw__steps-section, body .content div.steps-section-content-hiw__aside, body .content img,
-body .content h2.steps-section-content-hiw__s-title, body .content p.steps-section-content-hiw_text, body .content div.arrow {
-  outline: #000 dashed 1px;
+body .content div.content-hiw form.form button.form__button {
+  margin: 97px auto 0;
 }
-
-@font-face {
-  font-family: "Gotham_Black";
-  src: url("../../fonts/Gotham_Black/Gotham_Black.ttf") format("truetype");
-  font-style: normal;
-  font-weight: 900;
-}
-@font-face {
-  font-family: "Open Sans";
-  src: url("../../fonts/Open_Sans/Open_Sans.ttf");
-  font-style: normal;
-  font-weight: 400;
-}
-@font-face {
-  font-family: "Lato - Bold";
-  src: url("../../fonts/Lato_Bold/Lato_Bold.ttf");
-  font-style: normal;
-  font-weight: 400;
-}
-@font-face {
-  font-family: "Lato - Light";
-  src: url("../../fonts/Lato_Light/Lato_Light.ttf");
-  font-style: normal;
-  font-weight: 400;
+body .content div.content-hiw form.form button.form__button_hover:hover {
+  background-color: #000;
 }

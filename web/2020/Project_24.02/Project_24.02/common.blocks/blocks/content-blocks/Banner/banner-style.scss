@@ -18,7 +18,7 @@ div.banner {
     width: 100%;
     height: 689px;
     padding-top: 110px;
-    background: url('../../img/background/banner_bg.svg') top center no-repeat;
+    background: url('../common.blocks/blocks/content-blocks/Banner/img/background.svg') top center no-repeat;
 
     & div.head {
         width: 1083px;
@@ -75,13 +75,13 @@ div.banner {
             }
 
             & div.head_forms_input input:nth-child(1) {
-                background: #fff url('../../img/background/input_full_name.png') 15px 50%/13px 15px no-repeat;
+                background: #fff url('../common.blocks/blocks/content-blocks/Banner/img/Input-img/full-name.png') 15px 50%/13px 15px no-repeat;
             }
             & div.head_forms_input input:nth-child(2) {
-                background: #fff url('../../img/background/input_email.png') 15px 50%/16px 13px no-repeat;
+                background: #fff url('../common.blocks/blocks/content-blocks/Banner/img/Input-img/email.png') 15px 50%/16px 13px no-repeat;
             }
             & div.head_forms_input input:nth-child(3) {
-                background: #fff url('../../img/background/input_phone_number.png') 15px 50%/13px 14px no-repeat;
+                background: #fff url('../common.blocks/blocks/content-blocks/Banner/img/Input-img/number.png') 15px 50%/13px 14px no-repeat;
             }
 
             & button {
@@ -103,7 +103,7 @@ div.banner {
         & div.laptop__image {
             width: 100%;
             height: 343px;
-            background: url('../../img/banner_laptop_picture.png') 102px 18px/445px 264px no-repeat, url('../../img/banner_laptop.png') center top/647px 343px no-repeat;
+            background: url('../common.blocks/blocks/content-blocks/Banner/img/laptop-picture.png') 102px 18px/445px 264px no-repeat, url('../common.blocks/blocks/content-blocks/Banner/img/laptop.png') center top/647px 343px no-repeat;
         }
 
         & div.circle {
