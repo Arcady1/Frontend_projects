@@ -57,12 +57,12 @@ body {
         margin: 0 auto;
         background-color: #fff;
 
-        @import "content_header_style.scss";
-        @import "content_banner_style.scss";
-        @import "content_service_style.scss";
-        @import "content_about_us_style.scss";
-        @import "content_choose_your_price_style.scss";
-        @import "content_how-it-works_style.scss";
+        @import "../common.blocks/blocks/header-blocks/header-style.scss";
+        @import "../common.blocks/blocks/content-blocks/Banner/banner-style.scss";
+        @import "../common.blocks/blocks/content-blocks/Choose-your-price/choose-your-price-style.scss";
+        @import "../common.blocks/blocks/content-blocks/About-us/about-us-style.scss";
+        @import "../common.blocks/blocks/content-blocks/Choose-your-price/choose-your-price-style.scss";
+        @import "../common.blocks/blocks/content-blocks/How-it-works/how-it-works-style.scss";
     }
 }
 
