@@ -1,6 +1,10 @@
+%textblock-fulltext {
+    font-family: "Open Sans", sans-serif;
+    }
+
 div.newsletter {
     width: 1170px;
-    height: 792px;
+    height: 794px;
     margin: 154px auto 0;
 
     & div.header {
@@ -19,13 +23,142 @@ div.newsletter {
             font-size: 16px;
             line-height: 22px;
             font-weight: 300;
+            color: #394b50;
         }
     }
-}
 
+    & div.section {
+        width: 1102px;
+        height: 649px;
+        margin: 38px auto 0;
+        background: url('../common.blocks/blocks/content-blocks/Newsletters/img/background/background.png') bottom center no-repeat;
 
+        & form.section__form {
+            width: 934px;
+            height: 47px;
 
+            & input.section__input {
+                border: 1px solid #cbcbcb;
+                border-radius: 2px;
+                background-color: #fff;
+                height: 47px;
+                display: inline-block;
+                vertical-align: top;
+                
+                color: #a9a9a9;
+                font-family: "Open Sans", sans-serif;
+                font-size: 13px;
+                font-weight: 400;
+            }
 
-div.newsletter, div.header {
-    outline: 1px solid #000; 
+            // Input-name settigs
+            & input.section__input_size_small_img {
+                background: url('../common.blocks/blocks/content-blocks/Banner/img/Input-img/full-name.png') 15px 50%/13px 15px no-repeat;
+                width: 308px;
+            }
+            & input.section__input_size_small_img[type=text] {
+                padding-left: 41px;
+            }
+
+            // Input-adress settigs
+            & input.section__input_size_big_img {
+                width: 388px;
+                background: url('../common.blocks/blocks/content-blocks/Banner/img/Input-img/email.png') 16px 50%/16px 13px no-repeat;
+                margin-left: 7px;
+            }
+            & input.section__input_size_big_img[type=text] {
+                padding-left: 45px;
+            }
+
+            // Button
+            & button.section__button {
+                display: inline-block;
+                vertical-align: top;
+                width: 218px;
+                height: 47px;
+                @extend %style-for_button;
+            }
+            & button.section__button:hover {
+                background-color: #000;
+            }
+            & button.section__button_position {
+                float: right;
+            }
+        }
+
+        & form.section__form_position {
+            margin: 0 auto;
+        }
+
+        & div.section__adress {
+            width: 1102px;
+            height: 549px;
+
+            & div.adress__textblock {
+                width: 279px;
+                height: 292px;
+                background: url('../common.blocks/blocks/content-blocks/Newsletters/img/section__adress.png') -3px -3px/285px 298px no-repeat;
+                padding-top: 62px;
+                
+                & div.textblock__fulltext {
+                    width: 142px;
+                    height: 150px;
+                    text-align: center;
+                    @extend %textblock-fulltext;
+
+                    // Text-Style for "Address"
+                    & h2.fulltext__header {
+                        color: #fff;
+                        font-family: "Lato", sans-serif;
+                        font-size: 15px;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                    }
+
+                    // Text-Style for "Business street..."
+                    & p.fulltext__paragraph {
+                        line-height: 24px;
+                            color: #98a3a6;
+
+                        // Text-Style for "info@businessface.com"
+                        & span.paragraph__span {
+                            color: #ffbb42;
+                        }
+                    }
+
+                    & p.fulltext__paragraph_margintop {
+                        margin-top: 11px;
+                    }
+                }
+
+                & div.textblock__fulltext_position {
+                    margin: 0 auto;
+                }
+            }
+
+            & div.adress__textblock_position {
+                margin: 0 auto;
+            }
+
+            & img.adress__label_position {
+                display: block;
+                margin: 5px auto 0;
+            }
+        }
+
+        & div.section__adress_position {
+            margin-top: 53px;
+            padding-top: 40px;
+        }
+    }
+
+    & div.line {
+        width: 100%;
+        height: 1px;
+        background-color: #e3e7ec;
+    }
+
+    & div.line_position {
+        margin: 56px auto 0;
+    }
 }

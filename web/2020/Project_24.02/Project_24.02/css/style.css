@@ -111,7 +111,7 @@ body .content div.newsletter div.header p.header__title, body .content div.happy
   color: #fff;
 }
 
-body .content div.content-hiw form.form button.form__button, body .content div.content-choos-your-price div.content-choos-your-price__trio-menu div.cards:nth-child(n) form button.button-get-started, body .content div.content-about-us div.content-about-us__right-block div.content-about-us__right-block__form button.button, body .content div.banner div.head div.head_forms button {
+body .content div.newsletter div.section form.section__form button.section__button, body .content div.content-hiw form.form button.form__button, body .content div.content-choos-your-price div.content-choos-your-price__trio-menu div.cards:nth-child(n) form button.button-get-started, body .content div.content-about-us div.content-about-us__right-block div.content-about-us__right-block__form button.button, body .content div.banner div.head div.head_forms button {
   display: block;
   width: 145px;
   height: 46px;
@@ -805,9 +805,12 @@ body .content div.happy-clients div.section div.section__asite_position_rb {
 body .content div.happy-clients div.section_position {
   margin: 58px auto 0;
 }
+body .content div.newsletter div.section div.section__adress div.adress__textblock div.textblock__fulltext {
+  font-family: "Open Sans", sans-serif;
+}
 body .content div.newsletter {
   width: 1170px;
-  height: 792px;
+  height: 794px;
   margin: 154px auto 0;
 }
 body .content div.newsletter div.header {
@@ -824,7 +827,111 @@ body .content div.newsletter div.header p.header__subtitle {
   font-size: 16px;
   line-height: 22px;
   font-weight: 300;
+  color: #394b50;
 }
-body .content div.newsletter, body .content div.header {
-  outline: 1px solid #000;
+body .content div.newsletter div.section {
+  width: 1102px;
+  height: 649px;
+  margin: 38px auto 0;
+  background: url("../common.blocks/blocks/content-blocks/Newsletters/img/background/background.png") bottom center no-repeat;
+}
+body .content div.newsletter div.section form.section__form {
+  width: 934px;
+  height: 47px;
+}
+body .content div.newsletter div.section form.section__form input.section__input {
+  border: 1px solid #cbcbcb;
+  border-radius: 2px;
+  background-color: #fff;
+  height: 47px;
+  display: inline-block;
+  vertical-align: top;
+  color: #a9a9a9;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+}
+body .content div.newsletter div.section form.section__form input.section__input_size_small_img {
+  background: url("../common.blocks/blocks/content-blocks/Banner/img/Input-img/full-name.png") 15px 50%/13px 15px no-repeat;
+  width: 308px;
+}
+body .content div.newsletter div.section form.section__form input.section__input_size_small_img[type=text] {
+  padding-left: 41px;
+}
+body .content div.newsletter div.section form.section__form input.section__input_size_big_img {
+  width: 388px;
+  background: url("../common.blocks/blocks/content-blocks/Banner/img/Input-img/email.png") 16px 50%/16px 13px no-repeat;
+  margin-left: 7px;
+}
+body .content div.newsletter div.section form.section__form input.section__input_size_big_img[type=text] {
+  padding-left: 45px;
+}
+body .content div.newsletter div.section form.section__form button.section__button {
+  display: inline-block;
+  vertical-align: top;
+  width: 218px;
+  height: 47px;
+}
+body .content div.newsletter div.section form.section__form button.section__button:hover {
+  background-color: #000;
+}
+body .content div.newsletter div.section form.section__form button.section__button_position {
+  float: right;
+}
+body .content div.newsletter div.section form.section__form_position {
+  margin: 0 auto;
+}
+body .content div.newsletter div.section div.section__adress {
+  width: 1102px;
+  height: 549px;
+}
+body .content div.newsletter div.section div.section__adress div.adress__textblock {
+  width: 279px;
+  height: 292px;
+  background: url("../common.blocks/blocks/content-blocks/Newsletters/img/section__adress.png") -3px -3px/285px 298px no-repeat;
+  padding-top: 62px;
+}
+body .content div.newsletter div.section div.section__adress div.adress__textblock div.textblock__fulltext {
+  width: 142px;
+  height: 150px;
+  text-align: center;
+}
+body .content div.newsletter div.section div.section__adress div.adress__textblock div.textblock__fulltext h2.fulltext__header {
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+body .content div.newsletter div.section div.section__adress div.adress__textblock div.textblock__fulltext p.fulltext__paragraph {
+  line-height: 24px;
+  color: #98a3a6;
+}
+body .content div.newsletter div.section div.section__adress div.adress__textblock div.textblock__fulltext p.fulltext__paragraph span.paragraph__span {
+  color: #ffbb42;
+}
+body .content div.newsletter div.section div.section__adress div.adress__textblock div.textblock__fulltext p.fulltext__paragraph_margintop {
+  margin-top: 11px;
+}
+body .content div.newsletter div.section div.section__adress div.adress__textblock div.textblock__fulltext_position {
+  margin: 0 auto;
+}
+body .content div.newsletter div.section div.section__adress div.adress__textblock_position {
+  margin: 0 auto;
+}
+body .content div.newsletter div.section div.section__adress img.adress__label_position {
+  display: block;
+  margin: 5px auto 0;
+}
+body .content div.newsletter div.section div.section__adress_position {
+  margin-top: 53px;
+  padding-top: 40px;
+}
+body .content div.newsletter div.line {
+  width: 100%;
+  height: 1px;
+  background-color: #e3e7ec;
+}
+body .content div.newsletter div.line_position {
+  margin: 56px auto 0;
 }
