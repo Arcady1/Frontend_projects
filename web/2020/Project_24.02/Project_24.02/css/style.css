@@ -97,7 +97,13 @@ h1, h2, h3, h4, h5, h6 {
   font-style: normal;
   font-weight: 400;
 }
-body .content div.happy-clients div.header p.header__title, body .content div.content-choos-your-price div.content-choos-your-price__head p:nth-child(1), body .content div.content-about-us div.content-about-us__right-block div.content-about-us__text a, body .content div.content-service div.content-service__head p:nth-child(1), body .content div.banner div.head p.head_text span:nth-child(1) {
+@font-face {
+  font-family: "Open Sans Light";
+  src: url("../fonts/Open_Sans/Open_Sans_Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+body .content div.newsletter div.header p.header__title, body .content div.happy-clients div.header p.header__title, body .content div.content-choos-your-price div.content-choos-your-price__head p:nth-child(1), body .content div.content-about-us div.content-about-us__right-block div.content-about-us__text a, body .content div.content-service div.content-service__head p:nth-child(1), body .content div.banner div.head p.head_text span:nth-child(1) {
   font-family: "Gotham_Black", sans-serif;
   font-size: 35px;
   letter-spacing: 1.2px;
@@ -798,4 +804,27 @@ body .content div.happy-clients div.section div.section__asite_position_rb {
 }
 body .content div.happy-clients div.section_position {
   margin: 58px auto 0;
+}
+body .content div.newsletter {
+  width: 1170px;
+  height: 792px;
+  margin: 154px auto 0;
+}
+body .content div.newsletter div.header {
+  height: 51px;
+  margin: 0 auto;
+  text-align: center;
+}
+body .content div.newsletter div.header p.header__title {
+  font-size: 30px;
+  color: #394b50;
+}
+body .content div.newsletter div.header p.header__subtitle {
+  font-family: "Open Sans Light", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 300;
+}
+body .content div.newsletter, body .content div.header {
+  outline: 1px solid #000;
 }

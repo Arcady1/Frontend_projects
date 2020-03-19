@@ -1,0 +1,31 @@
+div.newsletter {
+    width: 1170px;
+    height: 792px;
+    margin: 154px auto 0;
+
+    & div.header {
+        height: 51px;
+        margin: 0 auto;
+        text-align: center;
+    
+        & p.header__title {
+            @extend %headers;
+            font-size: 30px;
+            color: #394b50;
+        }
+    
+        & p.header__subtitle {
+            font-family: "Open Sans Light", sans-serif;
+            font-size: 16px;
+            line-height: 22px;
+            font-weight: 300;
+        }
+    }
+}
+
+
+
+
+div.newsletter, div.header {
+    outline: 1px solid #000; 
+}
