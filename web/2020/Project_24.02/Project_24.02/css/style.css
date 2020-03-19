@@ -258,6 +258,7 @@ body .content div.banner div.head div.head_forms div.head_forms_input input:nth-
 }
 body .content div.banner div.head div.head_forms button:hover {
   background-color: #000;
+  border-color: #000;
 }
 body .content div.banner div.laptop {
   width: 647px;
@@ -694,6 +695,21 @@ body .content div.content-hiw form.form button.form__button {
 body .content div.content-hiw form.form button.form__button_hover:hover {
   background-color: #000;
 }
+body .content div.happy-clients div.section div.section__asite div.section__paragraph p.paragraph__text {
+  color: #7b7b7b;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 22px;
+}
+body .content div.happy-clients div.section div.section__asite p.section__subparagraph span:nth-child(n) {
+  color: #99a9ae;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-transform: uppercase;
+}
 body .content div.happy-clients {
   width: 100%;
   height: 908px;
@@ -714,18 +730,72 @@ body .content div.happy-clients div.header p.header__subtitle {
   line-height: 22px;
   color: #fff;
 }
-body .content div.happy-clients div.content {
+body .content div.happy-clients div.section {
   width: 1170px;
   height: 502px;
 }
-body .content div.happy-clients div.content div.content__asite {
+body .content div.happy-clients div.section div.section__asite {
+  display: inline-block;
   width: 567px;
   height: 241px;
   background-color: #fff;
+  vertical-align: top;
 }
-body .content div.happy-clients div.content_position {
+body .content div.happy-clients div.section div.section__asite img.sction__img {
+  display: inline-block;
+}
+body .content div.happy-clients div.section div.section__asite img.sction__img_position {
+  margin: 43px 0 0 30px;
+}
+body .content div.happy-clients div.section div.section__asite div.section__paragraph {
+  display: inline-block;
+  width: 365px;
+  height: 110px;
+  position: relative;
+}
+body .content div.happy-clients div.section div.section__asite div.section__paragraph img.section__quot {
+  display: inline-block;
+  position: absolute;
+}
+body .content div.happy-clients div.section div.section__asite div.section__paragraph img.section__quot_top {
+  top: 0;
+  left: 0;
+}
+body .content div.happy-clients div.section div.section__asite div.section__paragraph img.section__quot_bottom {
+  top: 99px;
+  left: 163px;
+  transform: rotateY(180deg);
+}
+body .content div.happy-clients div.section div.section__asite div.section__paragraph p.paragraph__text {
+  padding-left: 18px;
+}
+body .content div.happy-clients div.section div.section__asite div.section__paragraph_position {
+  margin: 45px 0 0 11px;
+}
+body .content div.happy-clients div.section div.section__asite p.section__subparagraph {
+  display: inline-block;
+}
+body .content div.happy-clients div.section div.section__asite p.section__subparagraph span:nth-child(1) {
+  color: #f6772c;
+}
+body .content div.happy-clients div.section div.section__asite p.section__subparagraph span:nth-child(2) {
+  color: #394b50;
+}
+body .content div.happy-clients div.section div.section__asite p.section__subparagraph_position {
+  margin: 8px 0 0 184px;
+}
+body .content div.happy-clients div.section div.section__asite_position_lt {
+  margin: 0 0 0 0;
+}
+body .content div.happy-clients div.section div.section__asite_position_rt {
+  margin-left: 32px;
+}
+body .content div.happy-clients div.section div.section__asite_position_lb {
+  margin-top: 20px;
+}
+body .content div.happy-clients div.section div.section__asite_position_rb {
+  margin: 20px 0 0 32px;
+}
+body .content div.happy-clients div.section_position {
   margin: 58px auto 0;
-}
-body .content div.header, body .content div.content, body .content div.content__asite {
-  outline: 1px solid #000;
 }
