@@ -97,10 +97,10 @@ h1, h2, h3, h4, h5, h6 {
   font-style: normal;
   font-weight: 400;
 }
-body .content div.content-choos-your-price div.content-choos-your-price__head p:nth-child(1), body .content div.content-about-us div.content-about-us__right-block div.content-about-us__text a, body .content div.content-service div.content-service__head p:nth-child(1), body .content div.banner div.head p.head_text span:nth-child(1) {
+body .content div.happy-clients div.header p.header__title, body .content div.content-choos-your-price div.content-choos-your-price__head p:nth-child(1), body .content div.content-about-us div.content-about-us__right-block div.content-about-us__text a, body .content div.content-service div.content-service__head p:nth-child(1), body .content div.banner div.head p.head_text span:nth-child(1) {
   font-family: "Gotham_Black", sans-serif;
   font-size: 35px;
-  letter-spacing: -0.88px;
+  letter-spacing: 1.2px;
   text-transform: uppercase;
   color: #fff;
 }
@@ -206,6 +206,7 @@ body .content div.banner div.head p.head_text {
 }
 body .content div.banner div.head p.head_text span:nth-child(n) {
   display: inline-block;
+  letter-spacing: -0.88px;
 }
 body .content div.banner div.head p.head_text span:nth-child(3) {
   font-family: "Open Sans", sans-serif;
@@ -692,4 +693,39 @@ body .content div.content-hiw form.form button.form__button {
 }
 body .content div.content-hiw form.form button.form__button_hover:hover {
   background-color: #000;
+}
+body .content div.happy-clients {
+  width: 100%;
+  height: 908px;
+  background-color: #ffc155;
+  padding-top: 141px;
+}
+body .content div.happy-clients div.header {
+  height: 49px;
+  margin: 0 auto;
+  text-align: center;
+}
+body .content div.happy-clients div.header p.header__title {
+  font-size: 28px;
+}
+body .content div.happy-clients div.header p.header__subtitle {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #fff;
+}
+body .content div.happy-clients div.content {
+  width: 1170px;
+  height: 502px;
+}
+body .content div.happy-clients div.content div.content__asite {
+  width: 567px;
+  height: 241px;
+  background-color: #fff;
+}
+body .content div.happy-clients div.content_position {
+  margin: 58px auto 0;
+}
+body .content div.header, body .content div.content, body .content div.content__asite {
+  outline: 1px solid #000;
 }

@@ -1,0 +1,45 @@
+div.happy-clients {
+    width: 100%;
+    height: 908px;
+    background-color: #ffc155;
+    padding-top: 141px;
+
+    & div.header {
+        height: 49px;
+        margin: 0 auto;
+        text-align: center;
+    
+        & p.header__title {
+            @extend %headers;
+            font-size: 28px;
+        }
+    
+        & p.header__subtitle {
+            font-family: $default_font_family;
+            font-size: 16px;
+            line-height: 22px;
+            color: #fff;
+        }
+    }
+
+    & div.content {
+        width: 1170px;
+        height: 502px;
+
+        & div.content__asite {
+            width: 567px;
+            height: 241px;
+            background-color: #fff;
+        }
+    }
+
+    & div.content_position {
+        margin: 58px auto 0;
+    }
+}
+
+
+
+div.header, div.content, div.content__asite {
+    outline: 1px solid #000;
+}
