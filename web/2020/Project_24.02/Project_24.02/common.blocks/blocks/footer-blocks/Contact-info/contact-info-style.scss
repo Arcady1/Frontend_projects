@@ -1,20 +1,107 @@
+%common-text-style {
+    color: #394b50;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+}
+
+%links-style {
+    font-size: 13px;
+    line-height: 13px;
+    text-transform: uppercase;
+}
+
+%telephone__number-style {
+    font-size: 23px;
+    line-height: 23px;
+}
+
 div.contact-info {
     width: 726px;
-    height: 97px;
+    height: 99px;
     margin: 68px auto 0;
 
     & div.menu {
-        
+        width: 726px;
+        height: 13px;
+
+        & a.menu__link {
+            display: inline-block;
+            vertical-align: top;
+            @extend %common-text-style;
+            @extend %links-style;
+        }
+        // Style for all links (but the last)
+        & a.menu__link {
+            margin-right: 32px;
+        }
+        // Style for "Happy Clients"
+        & a.menu__link:nth-child(6) {
+            margin-right: 0px;
+        }
+        // Style for the last link
+        & a.menu__link:last-child {
+            margin-left: 29px;
+            margin-right: 0px;
+        }
+
+        // Link's interaction
+        & a.menu__link:hover {
+            text-decoration: underline;
+        }
     }
-}
 
+    & div.telephone {
+        width: 187px;
+        height: 23px;
 
+        & img.telephone__img {
+            display: inline-block;
+            vertical-align: top;
+        }
+        & img.telephone__img_position {
+            margin: 4px 0 0 10px;
+        }
 
+        & span.telephone__number {
+            display: inline-block;
+            vertical-align: top;
+            @extend %common-text-style;
+            @extend %telephone__number-style;
+        }
+        & span.telephone__number_position {
+            float: right;
+        }
+    }
 
-div.menu, div.telephone, div.labels {
-    outline: 1px dashed #444;
-}
+    & div.telephone_position {
+        margin: 25px auto 0;
+    }
 
-div.contact-info {
-    outline: 1px dotted #444;
+    & div.labels {
+        display: block;
+        width: 115px;
+        height: 18px;
+
+        // Styles for all 'labels__img'
+        & img.labels__img {
+            display: inline-block;
+            vertical-align: top;
+        }
+        // Style for 'twitter_lable'
+        & img.labels__img:first-child {
+            margin: 2px 14px 0 6px;
+        }
+        // Style for 'facebook_lable'
+        & img.labels__img:nth-child(2) {
+            margin-right: 11px;
+        }
+        // Style for 'google+_lable'
+        & img.labels__img:nth-child(3) {
+            margin-right: 10px;
+        }
+    }
+
+    & div.labels_position {
+        margin: 20px auto 0;
+    }
 }

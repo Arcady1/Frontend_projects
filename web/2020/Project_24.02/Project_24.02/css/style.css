@@ -935,14 +935,85 @@ body .content div.newsletter div.line {
 body .content div.newsletter div.line_position {
   margin: 56px auto 0;
 }
+body .content div.contact-info div.telephone span.telephone__number, body .content div.contact-info div.menu a.menu__link {
+  color: #394b50;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+body .content div.contact-info div.menu a.menu__link {
+  font-size: 13px;
+  line-height: 13px;
+  text-transform: uppercase;
+}
+body .content div.contact-info div.telephone span.telephone__number {
+  font-size: 23px;
+  line-height: 23px;
+}
 body .content div.contact-info {
   width: 726px;
-  height: 97px;
+  height: 99px;
   margin: 68px auto 0;
 }
-body .content div.menu, body .content div.telephone, body .content div.labels {
-  outline: 1px dashed #444;
+body .content div.contact-info div.menu {
+  width: 726px;
+  height: 13px;
 }
-body .content div.contact-info {
-  outline: 1px dotted #444;
+body .content div.contact-info div.menu a.menu__link {
+  display: inline-block;
+  vertical-align: top;
+}
+body .content div.contact-info div.menu a.menu__link {
+  margin-right: 32px;
+}
+body .content div.contact-info div.menu a.menu__link:nth-child(6) {
+  margin-right: 0px;
+}
+body .content div.contact-info div.menu a.menu__link:last-child {
+  margin-left: 29px;
+  margin-right: 0px;
+}
+body .content div.contact-info div.menu a.menu__link:hover {
+  text-decoration: underline;
+}
+body .content div.contact-info div.telephone {
+  width: 187px;
+  height: 23px;
+}
+body .content div.contact-info div.telephone img.telephone__img {
+  display: inline-block;
+  vertical-align: top;
+}
+body .content div.contact-info div.telephone img.telephone__img_position {
+  margin: 4px 0 0 10px;
+}
+body .content div.contact-info div.telephone span.telephone__number {
+  display: inline-block;
+  vertical-align: top;
+}
+body .content div.contact-info div.telephone span.telephone__number_position {
+  float: right;
+}
+body .content div.contact-info div.telephone_position {
+  margin: 25px auto 0;
+}
+body .content div.contact-info div.labels {
+  display: block;
+  width: 115px;
+  height: 18px;
+}
+body .content div.contact-info div.labels img.labels__img {
+  display: inline-block;
+  vertical-align: top;
+}
+body .content div.contact-info div.labels img.labels__img:first-child {
+  margin: 2px 14px 0 6px;
+}
+body .content div.contact-info div.labels img.labels__img:nth-child(2) {
+  margin-right: 11px;
+}
+body .content div.contact-info div.labels img.labels__img:nth-child(3) {
+  margin-right: 10px;
+}
+body .content div.contact-info div.labels_position {
+  margin: 20px auto 0;
 }
