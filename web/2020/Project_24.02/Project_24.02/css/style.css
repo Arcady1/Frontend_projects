@@ -132,7 +132,7 @@ body {
 body .content {
   max-width: 1700px;
   min-width: 1650px;
-  height: 6055px;
+  height: 7000px;
   margin: 0 auto;
   background-color: #fff;
 }
@@ -934,4 +934,15 @@ body .content div.newsletter div.line {
 }
 body .content div.newsletter div.line_position {
   margin: 56px auto 0;
+}
+body .content div.contact-info {
+  width: 726px;
+  height: 97px;
+  margin: 68px auto 0;
+}
+body .content div.menu, body .content div.telephone, body .content div.labels {
+  outline: 1px dashed #444;
+}
+body .content div.contact-info {
+  outline: 1px dotted #444;
 }
