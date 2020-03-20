@@ -13,7 +13,7 @@ body {
     .content {
         max-width: 1700px;
         min-width: 1650px;
-        height: 7000px;
+        height: 6106px;
         margin: 0 auto;
         background-color: #fff;
 
@@ -26,5 +26,6 @@ body {
         @import "../../common.blocks/blocks/content-blocks/Happy-сlients/happy-сlients-style.scss";
         @import "../../common.blocks/blocks/content-blocks/Newsletters/newsletter-style.scss";
         @import "../../common.blocks/blocks/footer-blocks/Contact-info/contact-info-style.scss";
+        @import "../../common.blocks/blocks/footer-blocks/Meta-info/meta-info-style.scss";
     }
 }
