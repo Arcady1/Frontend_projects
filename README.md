@@ -1,5 +1,4 @@
 # Frontend projects
-***
 * Как открыть index.html через GitHub?
 ***
 1. Перейти по ссылке https://raw.githack.com/
