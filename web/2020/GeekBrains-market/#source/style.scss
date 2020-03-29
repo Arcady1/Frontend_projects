@@ -1,0 +1,76 @@
+body {
+    // Общие стили
+    background-color: #f8f8f8;
+
+    // Стили для главного меню
+    .main-menu-list {
+        list-style-type: none;
+
+        a {
+            text-decoration: none;
+            color: #666;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+
+    // Стили для каталога
+    .catalog-list-style {
+        li {
+            list-style-type: none;
+
+            a {
+                text-decoration: none;
+                color: blue;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    // Стили для подразделов товаров каталога
+    .h3-phone-style {
+        color: #000;
+        font-size: 18px;
+        font-weight: 400;
+        background-color: #eaeaea;
+    }
+
+    .phone-description-style {
+        color: #707070;
+        font-size: 14px;
+        font-style: italic;
+        line-height: 16px;
+    }
+
+    .phone-specifications-style {
+        color: #706060;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 400;
+    }
+
+    .phone-appearance-style {
+        color: #484343;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+    }
+
+    // Стили для контактов
+    .contacts-form {
+        .contact-form_style {
+            width: 150px;
+            height: 25px;
+        }
+    }
+
+    .contact-form[type="text"] {
+        color: #000;
+    }
+}

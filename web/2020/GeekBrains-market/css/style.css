@@ -1,0 +1,55 @@
+body {
+  background-color: #f8f8f8;
+}
+body .main-menu-list {
+  list-style-type: none;
+}
+body .main-menu-list a {
+  text-decoration: none;
+  color: #666;
+}
+body .main-menu-list a:hover {
+  text-decoration: underline;
+}
+body .catalog-list-style li {
+  list-style-type: none;
+}
+body .catalog-list-style li a {
+  text-decoration: none;
+  color: blue;
+}
+body .catalog-list-style li a:hover {
+  text-decoration: underline;
+}
+body .h3-phone-style {
+  color: #000;
+  font-size: 18px;
+  font-weight: 400;
+  background-color: #eaeaea;
+}
+body .phone-description-style {
+  color: #707070;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 16px;
+}
+body .phone-specifications-style {
+  color: #706060;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+body .phone-appearance-style {
+  color: #484343;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+body .contacts-form .contact-form_style {
+  width: 150px;
+  height: 25px;
+}
+body .contact-form[type=text] {
+  color: #000;
+}
