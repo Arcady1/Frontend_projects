@@ -63,14 +63,22 @@ body {
     }
 
     // Стили для контактов
-    .contacts-form {
+    .contacts-form__input {
         .contact-form_style {
-            width: 150px;
+            width: 217px;
             height: 25px;
         }
     }
 
-    .contact-form[type="text"] {
+    .contact-form__input[type="text"] {
         color: #000;
+    }
+
+    .contact-form__button {
+        width: 109px;
+    }
+
+    .contact-form__button[value] {
+        font-weight: 900;
     }
 }

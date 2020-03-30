@@ -46,10 +46,16 @@ body .phone-appearance-style {
   line-height: 24px;
   text-align: left;
 }
-body .contacts-form .contact-form_style {
-  width: 150px;
+body .contacts-form__input .contact-form_style {
+  width: 217px;
   height: 25px;
 }
-body .contact-form[type=text] {
+body .contact-form__input[type=text] {
   color: #000;
+}
+body .contact-form__button {
+  width: 109px;
+}
+body .contact-form__button[value] {
+  font-weight: 900;
 }

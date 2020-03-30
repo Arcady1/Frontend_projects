@@ -5,22 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Контакты</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
     <ul class="main-menu-list">
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="../index.html">Главная</a></li>
+        <li><a href="../catalog/catalog.html">Каталог</a></li>
     </ul>
     <hr>
     <h1>Напишите нам</h1>
     <form class="contacts-form" action="#">
-        Имя <input class="contact-form contact-form_style" type="text" placeholder="Ваше имя"> <br>
-        Телефон <input class="contact-form contact-form_style" type="tel" placeholder="Ваш номер телефона"> <br>
-        Email <input class="contact-form contact-form_style" type="email" placeholder="Ваш email"> <br>
-        Тема <input type="color"> <br>
-        Комментарий <br> <textarea cols="30" rows="5"></textarea>
+        Имя <br> <input class="contact-form__input contact-form_style" type="text" placeholder="Ваше имя"> <br>
+        Телефон <br> <input class="contact-form__input contact-form_style" type="tel" placeholder="Ваш номер телефона"> <br>
+        Email <br> <input class="contact-form__input contact-form_style" type="email" placeholder="Ваш email"> <br>
+        Комментарий <br> <textarea cols="25" rows="5"></textarea> <br>
+        <input class="contact-form__button" type="submit" value="Отправить">
+        <input class="contact-form__button" type="reset" value="Очистить">
     </form>
     <h3>Адрес</h3>
     <ul>
