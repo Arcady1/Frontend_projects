@@ -9,34 +9,50 @@
 </head>
 
 <body>
-    <ul class="main-menu-list">
-        <li><a href="../index.html">Главная</a></li>
-        <li><a href="../catalog/catalog.html">Каталог</a></li>
-    </ul>
-    <hr>
-    <h1>Напишите нам</h1>
-    <form class="contacts-form" action="#">
-        Имя <br> <input class="contact-form__input contact-form_style" type="text" placeholder="Ваше имя"> <br>
-        Телефон <br> <input class="contact-form__input contact-form_style" type="tel" placeholder="Ваш номер телефона"> <br>
-        Email <br> <input class="contact-form__input contact-form_style" type="email" placeholder="Ваш email"> <br>
-        Комментарий <br> <textarea cols="25" rows="5"></textarea> <br>
-        <input class="contact-form__button" type="submit" value="Отправить">
-        <input class="contact-form__button" type="reset" value="Очистить">
-    </form>
-    <h3>Адрес</h3>
-    <ul>
-        <li><a href="tel:84952212228">8(495)221-22-28</a></li>
-        <li> <a href="mailto:electroniks@smart-email.me">electroniks@smart-email.me</a></li>
-        <li>
-            <b>Варсонофьевский пер., 10, Москва, 107031</b> <br>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d561.1841624079462!2d37.62690052925886!3d55.7630768533121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a5d6cf15b29%3A0xf48799ad6cc193d6!2z0JLQsNGA0YHQvtC90L7RhNGM0LXQstGB0LrQuNC5INC_0LXRgC4sIDEwLCDQnNC-0YHQutCy0LAsIDEwNzAzMQ!5e0!3m2!1sru!2sru!4v1585424154658!5m2!1sru!2sru"
-                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                tabindex="0"></iframe>
-        </li>
-    </ul>
-    <hr>
-    <p>&copy; Все права защищены</p>
+    <div class="header">
+        <div class="container">
+            <div class="header__menu">
+                <h1 class="header__slogan">Electroniks</h1>
+                <ul class="header__nav">
+                    <li><a href="../index.html">Главная</a></li>
+                    <li><a href="../catalog/catalog.html">Каталог</a></li>
+                    <li> <a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="title">
+            <h2>Напишите нам</h2>
+        </div>
+        <form class="contacts-form" action="#">
+            Имя <br> <input class="contact-form__input contact-form_style" type="text" placeholder="Ваше имя"> <br>
+            Телефон <br> <input class="contact-form__input contact-form_style" type="tel"
+                placeholder="Ваш номер телефона">
+            <br>
+            Email <br> <input class="contact-form__input contact-form_style" type="email" placeholder="Ваш email"> <br>
+            Комментарий <br> <textarea cols="25" rows="5"></textarea> <br>
+            <input class="contact-form__button" type="submit" value="Отправить">
+            <input class="contact-form__button" type="reset" value="Очистить">
+        </form>
+        <h3>Адрес</h3>
+        <ul>
+            <li><a href="tel:84952212228">8(495)221-22-28</a></li>
+            <li> <a href="mailto:electroniks@smart-email.me">electroniks@smart-email.me</a></li>
+            <li>
+                <b>Варсонофьевский пер., 10, Москва, 107031</b> <br>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d561.1841624079462!2d37.62690052925886!3d55.7630768533121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a5d6cf15b29%3A0xf48799ad6cc193d6!2z0JLQsNGA0YHQvtC90L7RhNGM0LXQstGB0LrQuNC5INC_0LXRgC4sIDEwLCDQnNC-0YHQutCy0LAsIDEwNzAzMQ!5e0!3m2!1sru!2sru!4v1585424154658!5m2!1sru!2sru"
+                    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+            </li>
+        </ul>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <p>&copy; Все права защищены</p>
+        </div>
+    </div>
 </body>
 
 </html>

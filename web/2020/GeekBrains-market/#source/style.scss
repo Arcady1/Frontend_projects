@@ -1,84 +1,174 @@
+@import "null-style.scss";
+
 body {
     // Общие стили
-    background-color: #f8f8f8;
+    background-color: #fff;
 
-    // Стили для главного меню
-    .main-menu-list {
-        list-style-type: none;
+    // Стили для шапок сайта и меню
+    .header {
+        width: 100%;
+        height: 100px;
+        background-color: #333;
 
-        a {
-            text-decoration: none;
-            color: #666;
-        }
+        .container {
+            width: 600px;
+            height: 100%x;
 
-        a:hover {
-            text-decoration: underline;
+            .header__menu {
+                width: 100%;
+                height: 200px;
+
+                .header__slogan {
+                    font-size: 2.2em;
+                    font-weight: 600;
+                    color: #fff;
+                }
+
+                .header__nav {}
+
+                .header__nav li a {
+                    color: #ddd;
+                    font-size: 20px;
+                }
+
+                .header__nav li a:hover {
+                    color: #fff;
+                    transition: 0.7s;
+                }
+            }
         }
     }
 
-    // Стили для каталога
-    .catalog-list-style {
-        li {
-            list-style-type: none;
+    .content {
+        width: 100%;
+        min-height: 500px;
 
-            a {
-                text-decoration: none;
+        .info {
+            width: 100%;
+            height: 50px;
+
+            .content__lead {
+                text-align: center;
+                font-size: 18px;
+                line-height: 80px;
+            }
+        }
+
+        // Стили для каталога
+        .catalog {
+            width: 100%;
+
+            .catalog__list {
+                width: 900px;
+            }
+
+            .catalog__list li a {
                 color: blue;
             }
 
-            a:hover {
+            .catalog__list li a:hover {
                 text-decoration: underline;
             }
         }
-    }
 
-    // Стили для подразделов товаров каталога
-    .h3-phone-style {
-        color: #000;
-        font-size: 18px;
-        font-weight: 400;
-        background-color: #eaeaea;
-    }
+        // Стили для подразделов товаров каталога
+        .title {}
 
-    .phone-description-style {
-        color: #707070;
-        font-size: 14px;
-        font-style: italic;
-        line-height: 16px;
-    }
+        .information {
+            .information__title {
+                color: #000;
+                font-size: 18px;
+                font-weight: 400;
+                background-color: #eaeaea;
+            }
 
-    .phone-specifications-style {
-        color: #706060;
-        font-size: 16px;
-        line-height: 20px;
-        font-weight: 400;
-    }
+            .information__list{
+                font-size: 16px;
+                line-height: 19px;
+            }
 
-    .phone-appearance-style {
-        color: #484343;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 24px;
-        text-align: left;
-    }
+            .information__list li {
+                list-style-type: disc;
+                margin-left: 20px;
+            }
 
-    // Стили для контактов
-    .contacts-form__input {
-        .contact-form_style {
-            width: 217px;
-            height: 25px;
+            .description_title {}
+
+            .description__list {
+                color: #707070;
+                font-style: italic;
+            }
+
+            .specifications_title {
+                color: #706060;
+                line-height: 20px;
+            }
+
+            .specifications__list {
+                font-size: 16px;
+            }
+
+            .appearance_title {}
+
+            .appearance__list {
+                color: #484343;
+                text-align: left;
+            }
+        }
+
+        .information__description {}
+
+        .information__specifications {}
+
+        .information__appearance {}
+
+        // ###############################################
+
+        // Стили для контактов
+        .contacts-form__input {
+            .contact-form_style {
+                width: 217px;
+                height: 25px;
+            }
+        }
+
+        .contact-form__input[type="text"] {
+            color: #000;
+        }
+
+        .contact-form__button {
+            width: 109px;
+        }
+
+        .contact-form__button[value] {
+            font-weight: 900;
         }
     }
 
-    .contact-form__input[type="text"] {
-        color: #000;
+    // Стили для подвала страниц
+    .footer {
+        width: 100%;
+        height: 100px;
+        background-color: #f8f8f8;
+
+        .container {
+            width: 800px;
+            height: 100%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .container p::before {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 1px;
+            background-color: #ddd;
+        }
     }
 
-    .contact-form__button {
-        width: 109px;
-    }
-
-    .contact-form__button[value] {
-        font-weight: 900;
+    input,
+    textarea {
+        border: 1px solid #000;
     }
 }
