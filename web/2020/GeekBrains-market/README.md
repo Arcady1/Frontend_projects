@@ -1,2 +1,2 @@
 ## To open the web-page just click on the link
-https://rawcdn.githack.com/Arcady1/Frontend_projects/df80d57f0130676d691426d5a4cf9f10c9d470e6/web/2020/GeekBrains-market/index.html
+https://rawcdn.githack.com/Arcady1/Frontend_projects/8c6996ea63c799c4fa0cf5e658ad16ba9fed6557/web/2020/GeekBrains-market/index.html
