@@ -11,8 +11,10 @@ body {
     // Стили для шапок сайта и меню
     .header {
         width: 100%;
-        height: 100px;
+        height: 113px;
         background-color: #333;
+        position: sticky;
+        top: 0;
 
         .container {
             width: 100%;
@@ -20,15 +22,27 @@ body {
 
             .header__menu {
                 width: 100%;
-                height: 200px;
+                padding: 10px;
+                margin-top: 30px;
+                float: left;
 
                 .header__slogan {
                     font-size: 2.2em;
                     font-weight: 600;
                     color: #fff;
+                    display: inline-block;
+                    margin-left: 50px;
                 }
 
-                .header__nav {}
+                .header__nav {
+                    float: right;
+                    margin-top: 5px;
+                }
+
+                .header__nav li {
+                    display: inline-block;
+                    margin-right: 50px;
+                }
 
                 .header__nav li a {
                     color: #ccc;
@@ -46,54 +60,83 @@ body {
     // Стили для контентной части
     .content {
         width: 100%;
-        min-height: 500px;
+        min-height: 765px;
 
         // Стили для главной страницы
         .info {
-            width: 100%;
-            height: 50px;
+            min-height: 50px;
+            margin: 0 auto;
+            padding: 10px;
 
             .content__lead {
                 text-align: center;
                 font-size: 18px;
-                line-height: 22px;
-                padding: 1%;
+                padding: 15px;
+                line-height:  27px;
             }
         }
 
         // Стили для каталога
         .catalog {
             width: 100%;
+            padding: 10px;
 
             .catalog__list {
-                width: 300px;
-            }
+                display: block;
 
-            .catalog__list li a {
-                color: blue;
-            }
+                li {
+                    width: 300px;
+                    display: inline-block;
+                    margin: 0 auto 25px;
 
-            .catalog__list li a:hover {
-                text-decoration: underline;
-            }
+                    a {
+                        display: block;
+                        color: blue;
+                        margin: 0 auto;
+                    }
 
-            .catalog__model {
-                font-size: 17px;
-                text-align: center;
-            }
+                    img {
+                        display: block;
+                        margin: 0 auto;
+                    }
+
+                    a:hover {
+                        text-decoration: underline;
+                    }
+
+                    .catalog__model {
+                        font-size: 17px;
+                        text-align: center;
+                    }
+                }
+            }            
         }
 
         // Стили для страниц товаров каталога
         .product {
 
             // Шапка с логотипом и картинкой
-            .head {
+            .title {
                 min-width: 320px;
+                display: inline-block;
+                vertical-align: top;
                 
                 .product__model {
-                    font-size: 1.5em;
+                    font-size: 25px;
                     text-align: center;
                     max-width: 500px;
+
+                    font-weight: 900;
+                    font-family: Arial, Helvetica, sans-serif;
+                    line-height: 45px;
+                }
+
+                .product__model::after {
+                    content: "";
+                    display: block;
+                    width: 100vw;
+                    height: 1px;
+                    background-color: #ddd;
                 }
             }
 
@@ -103,9 +146,12 @@ body {
             }
 
             // Информационная часть
-            .information {
-                width: 100%;
+            .information__descr-spec {
+                display: inline-block;
+                margin-top: 46px;
+            }
 
+            .information {
                 .information__title {
                     color: #000;
                     font-size: 18px;
@@ -149,7 +195,9 @@ body {
 
             .information__description {}
     
-            .information__specifications {}
+            .information__specifications {
+                margin-top: 10px;
+            }
 
             .information__table {
                 border-spacing: 0px;
@@ -187,7 +235,7 @@ body {
             }
 
             .information__table_margin {
-                margin: 20px 0 20px 0;
+                margin-top: 20px;
             }
 
     
@@ -298,25 +346,27 @@ body {
         background-color: #f8f8f8;
 
         .container {
-            width: 100%;
+            max-width: 800px;
             height: 100%;
             margin: 0 auto;
             text-align: center;
-        }
+            padding: 10px;
 
-        & p::before {
-            content: "";
-            display: block;
-            width: 100%;
-            height: 1px;
-            background-color: #ddd;
-
-            margin-bottom: 40px;
+            p {
+                float: right;
+                margin-top: 35px;
+            }
         }
+    }
 
-        & .footer__rights {
-            font-size: 1.2em;
-        }
+    .footer::before {
+        content: "";
+        display: block;
+        max-width: 780px;
+        min-width: 200px;
+        margin: 0 auto;
+        height: 2px;
+        background-color: #ddd;
     }
 
     input,
