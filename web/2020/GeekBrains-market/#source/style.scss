@@ -3,6 +3,7 @@
 $fz-form-window: 16px;
 $fz-communication-list: 17px;
 $fz-title: 20px;
+$max-content-width: 1107px;
 
 body {
     // Общие стили
@@ -59,8 +60,9 @@ body {
 
     // Стили для контентной части
     .content {
-        width: 100%;
         min-height: 765px;
+        margin: 0 auto;
+        max-width: $max-content-width;
 
         // Стили для главной страницы
         .info {
@@ -72,7 +74,7 @@ body {
                 text-align: center;
                 font-size: 18px;
                 padding: 15px;
-                line-height:  27px;
+                line-height: 27px;
             }
         }
 
@@ -109,18 +111,19 @@ body {
                         text-align: center;
                     }
                 }
-            }            
+            }
         }
 
         // Стили для страниц товаров каталога
         .product {
+            max-width: $max-content-width;
+            margin: 0 auto;
 
-            // Шапка с логотипом и картинкой
-            .title {
+            // Шапка с моделью телефона
+            .product__title {
                 min-width: 320px;
-                display: inline-block;
                 vertical-align: top;
-                
+
                 .product__model {
                     font-size: 25px;
                     text-align: center;
@@ -130,76 +133,116 @@ body {
                     font-family: Arial, Helvetica, sans-serif;
                     line-height: 45px;
                 }
+            }
 
-                .product__model::after {
-                    content: "";
-                    display: block;
-                    width: 100vw;
-                    height: 1px;
-                    background-color: #ddd;
+            .product__title::after {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 1px;
+                background-color: #ddd;
+            }
+
+            // Верхняя часть страницы: телефон и характеристики
+            .product__main {
+                .product__img-button {
+                    display: inline-block;
+                    vertical-align: top;
+                    max-width: 500px;
+
+                    form {
+                        text-align: center;
+                        margin-top: 20px;
+
+                        .product__buy-bottom {
+                            display: inline-block;
+                            min-width: 240px;
+                            height: 50px;
+                            padding: 10px;
+                            margin: 0 auto;
+                            background-color: #fff;
+
+                            border: 1px solid #999;
+                            border-radius: 5px;
+                            transition: 0.2s;
+
+                            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                            font-size: 18px;
+                        }
+
+                        .product__buy-bottom:hover {
+                            border: 1px solid #000;
+                            transition: 0.5s;
+                        }
+                    }
+                }
+
+                // Информационная часть
+                .product__information {
+                    display: inline-block;
+                    vertical-align: top;
+
+                    .information {
+                        margin-top: 10px;
+
+                        .information__title {
+                            color: #000;
+                            font-size: 18px;
+                            font-weight: 400;
+                            background-color: #eaeaea;
+                        }
+
+                        .information__list {
+                            font-size: 1.2em;
+                            line-height: 19px;
+                        }
+
+                        .information__list li {
+                            list-style-type: disc;
+                            margin-left: 20px;
+                        }
+
+                        .description_title {}
+
+                        .description__list {
+                            color: #707070;
+                            font-style: italic;
+                        }
+
+                        .specifications_title {
+                            color: #706060;
+                            line-height: 20px;
+                        }
+
+                        .specifications__list {
+                            font-size: 16px;
+                        }
+
+                        .appearance_title {}
+
+                        .appearance__list {
+                            color: #484343;
+                            text-align: left;
+                        }
+                    }
+
+                    .information__description {
+                        margin-top: 0;
+                    }
+
+                    .information__specifications {}
+
+                    .information__appearance {}
+                }
+
+                .product__information_margin {
+                    margin-left: 250px;
                 }
             }
 
-            .head img {
-                min-width: 320px;
-                max-width: 100%;
-            }
 
-            // Информационная часть
-            .information__descr-spec {
-                display: inline-block;
-                margin-top: 46px;
-            }
-
-            .information {
-                .information__title {
-                    color: #000;
-                    font-size: 18px;
-                    font-weight: 400;
-                    background-color: #eaeaea;
-                }
-    
-                .information__list{
-                    font-size: 1.2em;
-                    line-height: 19px;
-                }
-    
-                .information__list li {
-                    list-style-type: disc;
-                    margin-left: 20px;
-                }
-    
-                .description_title {}
-    
-                .description__list {
-                    color: #707070;
-                    font-style: italic;
-                }
-    
-                .specifications_title {
-                    color: #706060;
-                    line-height: 20px;
-                }
-    
-                .specifications__list {
-                    font-size: 16px;
-                }
-    
-                .appearance_title {}
-    
-                .appearance__list {
-                    color: #484343;
-                    text-align: left;
-                }
-            }
-
-            .information__description {}
-    
-            .information__specifications {
-                margin-top: 10px;
-            }
-
-            .information__table {
+            // Таблица
+            .product__table {
                 border-spacing: 0px;
 
                 td {
@@ -210,11 +253,11 @@ body {
                     vertical-align: middle;
                     text-align: center;
                 }
-    
+
                 tr td {
                     height: 40px;
                 }
-    
+
                 tr img {
                     height: 300px;
                 }
@@ -230,16 +273,13 @@ body {
                 }
             }
 
-            .information__table tr:first-child td:first-child:hover {
+            .product__table tr:first-child td:first-child:hover {
                 background-color: #e9e9e9;
             }
 
-            .information__table_margin {
+            .product__table_margin {
                 margin-top: 20px;
             }
-
-    
-            .information__appearance {}
         }
 
         // Стили для страницы контактов
@@ -266,6 +306,7 @@ body {
                         width: 217px;
                         height: 30px;
                         font-size: $fz-form-window;
+                        padding: 5px;
                     }
 
                     .form__input[type="text"] {
@@ -286,25 +327,30 @@ body {
                         transition: 0.5s;
                     }
 
-                    .form__input[type="text"] {
-                        color: #000;
-                    }
-                    
-                    .form__input[type="tel"] {
-                        color: #000;
+                    .form__input[type="text"]:focus {
+                        background-color: #eee;
+                        transition: 0.5s;
                     }
 
-                    .form__input[type="email"] {
-                        color: #444;
+                    .form__input[type="tel"]:focus {
+                        background-color: #eee;
+                        transition: 0.5s;
                     }
 
                     .form__input[type="email"]:focus {
-                        background-color: #ddd;
+                        background-color: #eee;
+                        transition: 0.5s;
                     }
 
-                    textarea {
+                    .form__textarea {
                         color: #000;
                         font-size: $fz-form-window;
+                        padding: 5px;
+                    }
+
+                    .form__textarea:focus {
+                        background-color: #eee;
+                        transition: 0.5s;
                     }
                 }
             }
@@ -317,13 +363,13 @@ body {
                     font-weight: 900;
                 }
 
-                .communication-list{
+                .communication-list {
                     margin-left: 20px;
 
                     .communication-list__location {
                         .communication-list__map {
-                            max-width: 100%;
-                            min-height: 450px;
+                            width: 100%;
+                            min-height: 374px;
                             border: 0;
                             padding-right: 20px;
                         }
