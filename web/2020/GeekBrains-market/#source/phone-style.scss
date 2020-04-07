@@ -1,0 +1,50 @@
+// Стили для таблицы на странице продуктов каталога
+@media screen and (max-width: 1050px) {
+    .content .product .product__table {
+        display: none;
+    }
+}
+
+// Стили для информационной части продукта каталога
+@media screen and (max-width: 872px) {
+    .content .product {
+        .product__title .product__model{
+            margin: 0 auto;
+        }
+
+        .product__main {
+            .product__img-button {
+                float: none;
+                display: block;
+                margin: 0 auto 25px;
+            }
+
+            .product__information {
+                float: none;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+// Стили для каталога
+@media screen and (max-width: 960px) {
+    .content .catalog {
+        max-width: 620px;
+    }
+}
+
+@media screen and (max-width: 634px) {
+    .content .catalog {
+        max-width: 300px;
+    }
+}
+
+// Стили для элементов каталога
+@media screen and (max-width: 450px) {
+    .content .catalog .catalog__list li {
+        display: block;
+        margin: 0 auto;
+    }
+}
