@@ -37,21 +37,60 @@ body {
                 .header__nav {
                     float: right;
                     margin-top: 5px;
-                }
 
-                .header__nav li {
-                    display: inline-block;
-                    margin-right: 50px;
-                }
+                    li {
+                        display: inline-block;
+                        min-width: 150px;
+                        text-align: center;
 
-                .header__nav li a {
-                    color: #ccc;
-                    font-size: 1.5em;
-                }
+                        a {
+                            color: #ccc;
+                            font-size: 1.5em;
+                            display: block;
+                            width: 100%;
+                        }
 
-                .header__nav li a:hover {
-                    color: #fff;
-                    transition: 0.5s;
+                        a:hover {
+                            color: #fff;
+                            transition: 0.5s;
+                        }
+
+                        a:after {
+                            content: "";
+                            display: block;
+                            width: 0%;
+                            height: 2px;
+                            background-color: orange;
+                            transition: width 1s ease-in-out;
+                        }
+
+                        a:hover:after {
+                            width: 100%;
+                        }
+
+                        // a:after {
+                        //     content: "";
+                        //     display: block;
+                        //     height: .25rem;
+                        //     margin: 0;
+                        //     width: 25%;
+                        //     background: tomato;
+                        //     border: none;
+                        //     transition: .3s ease-in-out;
+                        // }
+
+                        // a:nth-child(2):hover:after {
+                        //     content: "";
+                        //     display: block;
+                        //     margin-left: 25%;
+                        // }
+
+                        // a:nth-child(3):hover:after {
+                        //     content: "";
+                        //     display: block;
+                        //     margin-left: 50%;
+                        // }
+                    }
                 }
             }
         }
@@ -312,7 +351,7 @@ body {
 
                 .form {
                     width: 100%;
-                    
+
                     .form__name {
                         font-size: 19px;
                     }
