@@ -1,2 +1,11 @@
 // обнуление стилей
 @import "null-style.scss";
+
+body {
+    .header {
+        @import "../../common.blocks/blocks/header-blocks/slider-style.scss";
+    }
+}
+
+// Подключение шрифтов
+@import "fonts.scss";

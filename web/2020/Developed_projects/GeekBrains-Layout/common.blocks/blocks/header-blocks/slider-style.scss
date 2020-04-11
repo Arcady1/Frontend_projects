@@ -1,0 +1,10 @@
+.slider {
+    max-width: 1366px;
+    height: 800px;
+    margin: 0 auto;
+    background-image: url('../common.blocks/blocks/header-blocks/img/slider_bg.jpg');
+
+    padding: 63px 0 0 94px;
+    
+    @import "../../template.blocks/menu/menu-style.scss";
+}
