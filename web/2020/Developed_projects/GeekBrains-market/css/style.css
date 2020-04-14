@@ -289,3 +289,35 @@ h6 {
     background-color: #999;
     margin: -100px auto 0;
 }
+
+@media screen and (max-width: 1010px) {
+    .menu {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .menu .menu__nav {
+        margin-top: 2%;
+    }
+}
+
+@media screen and (max-width: 685px) {
+    .menu {
+        align-items: center;
+    }
+
+    .menu .menu__nav {
+        width: 100px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu .menu__nav .nav__item,
+    .nav__search {
+        margin-top: 10%;
+    }
+
+    .slider__text_margin-top {
+        margin-top: 25%;
+    }
+}
