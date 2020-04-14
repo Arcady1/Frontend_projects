@@ -90,7 +90,7 @@ h6 {
 
 .container {
     margin: 0 auto;
-    min-width: 400px;
+    min-width: 360px;
     max-width: 1170px;
     min-height: 100%;
 
@@ -105,7 +105,7 @@ h6 {
 
 .slider__pos {
     margin: 0 auto;
-    padding: 63px 94px 0;
+    padding: 5.38% 8.03% 0;
     position: relative;
 }
 
@@ -250,7 +250,7 @@ h6 {
 }
 
 .slider__pagination {
-    width: calc(100% - 2*94px);
+    width: calc(100% - 2*8.03%);
     height: 40px;
     display: inline-block;
     text-align: center;
