@@ -1,7 +1,6 @@
 @charset "UTF-8";
 /*Обнуление*/
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,300,700&display=swap");
-@import url("media-style.scss");
 * {
   padding: 0;
   margin: 0;
@@ -74,6 +73,82 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
+@media screen and (max-width: 1010px) {
+  .menu {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .menu .menu__nav {
+    margin-top: 2%;
+  }
+}
+@media screen and (max-width: 685px) {
+  .menu {
+    align-items: center;
+  }
+
+  .menu .menu__nav {
+    width: 100px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .menu .menu__nav .nav__item,
+.nav__search {
+    margin-top: 10%;
+  }
+
+  .slider__text_margin-top {
+    margin-top: 25%;
+  }
+}
+.order-button {
+  display: flex;
+  width: 212px;
+  height: 45px;
+  box-shadow: 0px 2px 5px 0px rgba(33, 33, 33, 0.34);
+  background-color: #fff;
+  border-radius: 22.5px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 1.022%;
+}
+.order-button .order-button__text {
+  font-size: 1.293em;
+  line-height: 250%;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #212121;
+}
+.order-button .order-button__text:after {
+  content: "";
+  width: 8px;
+  height: 12px;
+  display: inline-block;
+  background-image: url("../img/slider-img/arrow.png");
+  margin-left: 17px;
+}
+
+.order-button:hover {
+  background-color: #eff;
+  transition: 0.3s;
+}
+
+.order-button:active {
+  position: relative;
+  top: 2px;
+  left: 2px;
+  box-shadow: -2px -2px rgba(33, 33, 33, 0.34);
+  transition: 0.12s;
+}
+
+html {
+  font-size: 16px;
+}
+
 .container {
   margin: 0 auto;
   min-width: 320px;
@@ -159,45 +234,8 @@ h1, h2, h3, h4, h5, h6 {
 .container .header .slider .slider__text .slider__paragraph_margin-top {
   margin-top: 15px;
 }
-.container .header .slider .slider__text .slider__button {
-  min-width: 212px;
-  height: 45px;
-  display: inline-block;
-  box-shadow: 0 2px 5px 0 rgba(33, 33, 33, 0.34);
-  background-color: #fff;
-  border-radius: 22.5px;
-  padding: 5px;
-}
-.container .header .slider .slider__text .slider__button:hover {
-  background-color: #eff;
-  transition: 0.3s;
-}
-.container .header .slider .slider__text .slider__button:active {
-  position: relative;
-  top: 2px;
-  left: 2px;
-  box-shadow: -2px -2px rgba(33, 33, 33, 0.34);
-  transition: 0.12s;
-}
 .container .header .slider .slider__text .slider__button_margin-top {
   margin-top: 30px;
-}
-.container .header .slider .slider__text .button__text {
-  font-size: 18px;
-  line-height: 35px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  text-align: center;
-  color: #212121;
-}
-.container .header .slider .slider__text .button__text:after {
-  width: 9px;
-  height: 12px;
-  content: "";
-  display: inline-block;
-  background-image: url("../img/slider-img/arrow.png");
-  margin-left: 17px;
 }
 .container .header .slider .slider__text_margin-top {
   margin-top: 283px;
@@ -399,10 +437,11 @@ h1, h2, h3, h4, h5, h6 {
 .container .content .promo-product {
   width: 100%;
   height: 683px;
+  display: flex;
 }
 .container .content .promo-product .product {
   width: 683px;
-  height: 683px;
+  height: 100%;
   padding: 16.815% 18.3% 0 3.762%;
 }
 .container .content .promo-product .product .product__title {
@@ -430,33 +469,14 @@ h1, h2, h3, h4, h5, h6 {
 .container .content .promo-product .product .product__paragraph_margin-top {
   margin-top: 3.6%;
 }
-.container .content .promo-product .product .product__button {
-  display: block;
-  width: 57.315%;
-  height: 9.892%;
-  box-shadow: 0px 2px 5px 0px rgba(33, 33, 33, 0.34);
-  background-color: #fff;
-  border-radius: 22.5px;
-  text-align: center;
-}
-.container .content .promo-product .product .product__button .button__text {
-  font-size: 1.293em;
-  line-height: 250%;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  color: #212121;
-}
 .container .content .promo-product .product .product__button_margin-top {
-  margin-top: 4.6%;
+  margin-top: 30px;
 }
 .container .content .promo-product .product_left {
-  float: left;
-  background: url("../img/promo-product/product_red_chair.jpg") 0 0/683px 683px no-repeat;
+  background: url("../img/promo-product/product_red_chair.jpg") no-repeat;
 }
-.container .content .promo-product .product_righ {
-  float: right;
-  background: url("../img/promo-product/product_wood_chair.jpg") 0 0/683px 683px no-repeat;
+.container .content .promo-product .product_right {
+  background: url("../img/promo-product/product_wood_chair.jpg") no-repeat;
 }
 .container .content .promo-product_margin-top {
   margin-top: 120px;
