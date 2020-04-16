@@ -1,0 +1,38 @@
+.exclusive-product {
+    width: 683px;
+    height: 100%;
+
+    .exclusive-product__title {
+        font-size: 1.286em;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: #1e88e5;
+    }
+
+    .exclusive-product__subtitle {
+        font-size: 2.571em;
+        line-height: 1.2;
+        font-weight: 700;
+        color: #212121;
+    }
+
+    .exclusive-product__subtitle_margin-top {
+        margin-top: 2.6%;
+    }
+
+    .exclusive-product__paragraph {
+        font-size: 1.007em;
+        line-height: 1.714em;
+        font-weight: 300;
+        color: #6c6c6c;
+    }
+
+    .exclusive-product__paragraph_margin-top {
+        margin-top: 3.6%;
+    }
+
+    .exclusive-product__button_margin-top {
+        margin-top: 30px;
+    }
+}
