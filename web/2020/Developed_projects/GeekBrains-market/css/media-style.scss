@@ -2,10 +2,10 @@
     .menu {
         flex-direction: column;
         height: auto;
-    }
 
-    .menu .menu__nav {
-        margin-top: 2%;
+        &menu__nav {
+            margin-top: 2%;
+        }
     }
 }
 
