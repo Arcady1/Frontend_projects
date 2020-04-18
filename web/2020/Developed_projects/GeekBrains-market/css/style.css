@@ -73,6 +73,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
+@media screen and (max-width: 960px) {
+  .container .header .slider .menu .menu__nav {
+    display: none !important;
+  }
+  .container .header .slider .menu .menu__nav-mobile_wrapp {
+    display: block !important;
+  }
+}
 @media screen and (max-width: 1170px) {
   .container .header .slider {
     height: 665px !important;
@@ -270,6 +278,60 @@ html {
   display: block;
   margin: 6px auto 0;
   background-color: #212121;
+}
+.container .header .slider .menu .menu__nav-mobile_wrapp {
+  display: none;
+  height: 27px;
+}
+.container .header .slider .menu .menu__nav-mobile_wrapp .menu__nav-mobile {
+  width: 95px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 27px;
+}
+.container .header .slider .menu .menu__nav-mobile_wrapp .menu__nav-mobile .menu__nav-hover .menu__list {
+  background-color: #ccc;
+  position: absolute;
+  display: none;
+}
+.container .header .slider .menu .menu__nav-mobile_wrapp .menu__nav-mobile .menu__nav-hover:hover .menu__list {
+  display: block;
+}
+.container .header .slider .menu .menu__nav-mobile_wrapp .menu__nav-mobile .menu__nav-hover:hover .menu__list .nav__item, .container .header .slider .menu .menu__nav-mobile_wrapp .menu__nav-mobile .menu__nav-hover:hover .menu__list .nav__search {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 8px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.container .header .slider .menu .menu__nav-mobile_wrapp .menu__nav-mobile .menu__nav-hover:hover .menu__list .nav__item:first-child {
+  padding-top: 1px;
+}
+.container .header .slider .menu .menu__nav-mobile_wrapp .menu__nav-mobile .menu__nav-hover:hover .menu__list .nav__item a {
+  color: #8c8c8c;
+}
+.container .header .slider .menu .menu__nav-mobile_wrapp .menu__nav-mobile .menu__nav-hover:hover .menu__list .nav__item a:hover {
+  color: #212121;
+  transition: 0.3s;
+}
+.container .header .slider .menu .menu__nav-mobile_wrapp .menu__nav-mobile .menu__nav-hover:hover .menu__list .nav__active {
+  font-weight: 700;
+}
+.container .header .slider .menu .menu__nav-mobile_wrapp .menu__nav-mobile .menu__nav-hover:hover .menu__list .nav__active a {
+  color: #212121;
+}
+.container .header .slider .menu .menu__nav-mobile_wrapp .menu__nav-mobile .menu__nav-hover:hover .menu__list .nav__active:after {
+  width: 100%;
+  height: 3px;
+  content: "";
+  display: block;
+  margin: 6px auto 0;
+  background-color: #212121;
+}
+.container .header .slider .menu .menu__nav-mobile_wrapp .menu__nav-mobile:hover {
+  background-color: #ccc;
 }
 .container .header .slider .slider__text {
   max-width: 490px;

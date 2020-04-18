@@ -4,7 +4,11 @@
             .slider {
                 .menu {
                     .menu__nav {
-                        // visibility: hidden;
+                        display: none !important;
+                    }
+
+                    .menu__nav-mobile_wrapp {
+                        display: block !important;
                     }
                 }
             }
