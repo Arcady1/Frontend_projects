@@ -1,22 +1,28 @@
-@media screen and (max-width: 960px) {
+@media (min-width: 1px) and (max-width: 960px) {
     .container {
         .header {
             .slider {
+                height: 700px !important;
+
                 .menu {
                     .menu__nav {
                         display: none !important;
                     }
 
-                    .menu__nav-mobile_wrapp {
+                    .menu__mobile_wrapp {
                         display: block !important;
                     }
                 }
+            }
+
+            .slider__text_margin-top {
+                margin-top: 12% !important;
             }
         }
     }
 }
 
-@media screen and (max-width: 1170px) {
+@media (min-width: 961px) and (max-width: 1170px) {
     .container {
         .header {
             .slider {
@@ -24,7 +30,7 @@
             }
 
             .slider__text_margin-top {
-                margin-top: 22% !important;
+                margin-top: 20% !important;
             }
         }
     }

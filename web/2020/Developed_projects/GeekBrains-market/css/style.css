@@ -73,20 +73,26 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
-@media screen and (max-width: 960px) {
+@media (min-width: 1px) and (max-width: 960px) {
+  .container .header .slider {
+    height: 700px !important;
+  }
   .container .header .slider .menu .menu__nav {
     display: none !important;
   }
-  .container .header .slider .menu .menu__nav-mobile_wrapp {
+  .container .header .slider .menu .menu__mobile_wrapp {
     display: block !important;
   }
+  .container .header .slider__text_margin-top {
+    margin-top: 12% !important;
+  }
 }
-@media screen and (max-width: 1170px) {
+@media (min-width: 961px) and (max-width: 1170px) {
   .container .header .slider {
     height: 665px !important;
   }
   .container .header .slider__text_margin-top {
-    margin-top: 22% !important;
+    margin-top: 20% !important;
   }
 }
 .order-button {
@@ -284,21 +290,25 @@ html {
   width: 96px;
   height: 183px;
   position: relative;
+  display: none;
 }
 .container .header .slider .menu .menu__mobile_wrapp .menu__title {
   line-height: 27px;
   text-transform: uppercase;
   font-weight: 700;
+  text-align: center;
 }
 .container .header .slider .menu .menu__mobile_wrapp .menu__list {
   position: absolute;
   left: 0;
-  top: -130px;
+  top: 27px;
   height: 155px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  transition: all 1s ease-in-out 1s;
+  opacity: 0;
+  transition: 0.3s;
+  text-align: center;
   text-transform: uppercase;
 }
 .container .header .slider .menu .menu__mobile_wrapp .menu__list .list__item a {
@@ -308,7 +318,20 @@ html {
 .container .header .slider .menu .menu__mobile_wrapp .menu__list .list__item a:hover {
   color: #000;
 }
+.container .header .slider .menu .menu__mobile_wrapp .menu__list .list__active a {
+  color: #212121;
+  font-weight: 700;
+}
+.container .header .slider .menu .menu__mobile_wrapp .menu__list .list__active:after {
+  width: 100%;
+  height: 3px;
+  content: "";
+  display: block;
+  margin: 6px auto 0;
+  background-color: #212121;
+}
 .container .header .slider .menu .menu__mobile_wrapp:hover .menu__list {
+  opacity: 1;
   top: 30px;
 }
 .container .header .slider .slider__text {

@@ -96,24 +96,27 @@ html {
                     width: 96px;
                     height: 183px;
                     position: relative;
+                    display: none;
 
                     .menu__title {
                         line-height: 27px;
                         text-transform: uppercase;
                         font-weight: 700;
+                        text-align: center;
                     }
 
                     .menu__list {
                         position: absolute;
                         left: 0;
-                        top: -130px;
+                        top: 27px;
                         height: 155px;
                         display: flex;
                         flex-direction: column;
                         justify-content: space-between;
-                        // visibility: hidden;
-                        transition: all 1s ease-in-out 1s;
+                        opacity: 0;
+                        transition: 0.3s;
 
+                        text-align: center;
                         text-transform: uppercase;
 
                         .list__item a{
@@ -124,81 +127,30 @@ html {
                         .list__item a:hover{
                             color: #000;
                         }
+
+                        .list__active a {
+                            color: #212121;
+                            font-weight: 700;
+                        }
+    
+                        .list__active:after {
+                            width: 100%;
+                            height: 3px;
+                            content: "";
+                            display: block;
+                            margin: 6px auto 0;
+                            background-color: #212121;
+                        }
                     }
 
                 }
 
                 .menu__mobile_wrapp:hover {
                     .menu__list {
-                        // visibility: visible;
+                        opacity: 1;
                         top: 30px;
                     }
                 }
-
-                // .menu__nav-mobile_wrapp {
-                //     display: none;
-                //     height: 27px;
-
-                //     .menu__nav-mobile {
-                //         width: 95px;
-                //         text-align: center;
-                //         text-transform: uppercase;
-                //         font-weight: 700;
-                //         line-height: 27px;
-
-                //         .menu__nav-hover {
-                //             .menu__list {
-                //                 position: absolute;
-                //                 display: none;
-                //             }
-                //         }
-
-                //         .menu__nav-hover:hover {
-                //             .menu__list {
-                //                 display: block;
-
-                //                 .nav__item, .nav__search {
-                //                     display: flex;
-                //                     flex-direction: column;
-                //                     justify-content: flex-start;
-                //                     padding-top: 8px;
-                //                     text-align: center;
-                //                     text-transform: uppercase;
-                //                 }
-
-                //                 .nav__item:first-child {
-                //                     padding-top: 1px;
-                //                 }
-
-                //                 .nav__item a {
-                //                     color: #8c8c8c;
-                //                 }
-
-                //                 .nav__item a:hover {
-                //                     color: #212121;
-                //                     transition: 0.3s;
-                //                 }
-
-                //                 .nav__active {
-                //                     font-weight: 700;
-                //                 }
-
-                //                 .nav__active a {
-                //                     color: #212121;
-                //                 }
-
-                //                 .nav__active:after {
-                //                     width: 100%;
-                //                     height: 3px;
-                //                     content: "";
-                //                     display: block;
-                //                     margin: 6px auto 0;
-                //                     background-color: #212121;
-                //                 }
-                //             }
-                //         }
-                //     }
-                // }
             }
 
             .slider__text {
