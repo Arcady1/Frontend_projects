@@ -1,3 +1,22 @@
+@media (min-width: 1px) and (max-width: 857px) {
+    .container {
+        .content {
+            .promo-product {
+                display: block !important;
+
+                .exclusive-product {
+                    width: 100% !important;
+                    height: 683px;
+                }
+            }
+
+            .hot-deals {
+                background-position: -250px !important;
+            }
+        }
+    }
+}
+
 @media (min-width: 1px) and (max-width: 960px) {
     .container {
         .header {
@@ -16,9 +35,15 @@
             }
 
             .slider__text_margin-top {
-                margin-top: 12% !important;
+                margin-top: 3% !important;
             }
         }
+    }
+}
+
+@media (min-width: 1px) and (max-width: 718px) {
+    html {
+        font-size: 11px !important;
     }
 }
 
