@@ -6,12 +6,17 @@
 
                 .exclusive-product {
                     width: 100% !important;
-                    height: 683px;
                 }
             }
 
-            .hot-deals {
-                background-position: -250px !important;
+            .exclusive-products {
+                display: none !important;
+            }
+
+            .promo-product {
+                .promo-product_padding {
+                    padding: 29% 17.3% 0 3.762% !important;
+                }
             }
         }
     }
@@ -43,8 +48,32 @@
 
 @media (min-width: 1px) and (max-width: 718px) {
     html {
-        font-size: 11px !important;
+        font-size: 14px !important;
     }
+
+    .container {
+        .content {
+            .featured-new {
+                .featured-new__title {
+                    .header {
+                        flex-direction: column !important;
+                        align-items: center !important;
+                    }
+                }
+            }
+    
+            .trending-products {
+                .products__header {
+                    flex-direction: column !important;
+
+                    .products__title {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
 }
 
 @media (min-width: 961px) and (max-width: 1170px) {

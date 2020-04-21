@@ -79,10 +79,12 @@ h1, h2, h3, h4, h5, h6 {
   }
   .container .content .promo-product .exclusive-product {
     width: 100% !important;
-    height: 683px;
   }
-  .container .content .hot-deals {
-    background-position: -250px !important;
+  .container .content .exclusive-products {
+    display: none !important;
+  }
+  .container .content .promo-product .promo-product_padding {
+    padding: 29% 17.3% 0 3.762% !important;
   }
 }
 @media (min-width: 1px) and (max-width: 960px) {
@@ -101,7 +103,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (min-width: 1px) and (max-width: 718px) {
   html {
-    font-size: 11px !important;
+    font-size: 14px !important;
+  }
+
+  .container .content .featured-new .featured-new__title .header {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  .container .content .trending-products .products__header {
+    flex-direction: column !important;
+  }
+  .container .content .trending-products .products__header .products__title {
+    text-align: center;
   }
 }
 @media (min-width: 961px) and (max-width: 1170px) {
@@ -114,8 +127,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 .order-button {
   display: inline-block;
-  min-width: 212px;
-  height: 45px;
+  width: 25vw;
+  max-width: 212px;
+  min-width: 185px;
+  min-height: 45px;
   box-shadow: 0px 2px 5px 0px rgba(33, 33, 33, 0.34);
   background-color: #fff;
   border-radius: 22.5px;
@@ -237,7 +252,7 @@ html {
   font-size: 16px;
 }
 
-.container .content .trending-products .products__list .products__item img, .container .content .featured-new .featured-new__slider .slider__products .product-item .product__img {
+.container .content .trending-products .products__list .products__item img, .container .content .featured-new .featured-new__slider .slider__products .product-item .product__img, .container .header .slider .menu .menu__logo img {
   width: 100%;
   height: auto;
 }
@@ -255,7 +270,7 @@ html {
 .container .header .slider {
   width: 100%;
   height: 800px;
-  background: url("../img/slider-img/slider_bg.jpg") right 0/100% no-repeat;
+  background: url("../img/slider-img/slider_bg.jpg") right 0/100% auto no-repeat;
   background-size: cover;
 }
 .container .header .slider .menu .menu__mobile_wrapp:hover {
@@ -266,11 +281,16 @@ html {
   max-width: 1101px;
   min-height: 27px;
   display: flex;
-  align-items: flex-start;
+  align-items: baseline;
   justify-content: space-between;
   overflow: hidden;
 }
 .container .header .slider .menu .menu__logo {
+  width: 13.698vw;
+  max-width: 185px;
+  min-width: 140px;
+  height: auto;
+  max-height: 22px;
   display: block;
 }
 .container .header .slider .menu .menu__nav {
@@ -408,11 +428,11 @@ html {
 .container .content .featured-new .featured-new__title {
   width: 100%;
   margin: 0 auto;
-  padding: 10.256% 8.03% 0;
+  padding: 0 6.5% 0;
 }
 .container .content .featured-new .featured-new__title .header {
   width: 100%;
-  height: 49px;
+  min-height: 49px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -451,25 +471,23 @@ html {
 .container .content .featured-new .featured-new__title .header .header__pagination .pagination-item_active {
   border-bottom: 3px solid #000;
 }
-.container .content .featured-new .featured-new__title .header .header__pagination_margin-right {
-  margin-right: 15px;
-}
 .container .content .featured-new .featured-new__slider {
-  max-width: 85.652%;
+  max-width: 90.652%;
   margin: 0 auto;
 }
 .container .content .featured-new .featured-new__slider .slider__products {
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  align-content: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .container .content .featured-new .featured-new__slider .slider__products .product-item {
   max-width: 270px;
+  min-width: 220px;
   width: 17.941vw;
   max-height: 270px;
   position: relative;
+  margin: 1.5%;
 }
 .container .content .featured-new .featured-new__slider .slider__products .product-item .product-item_hover {
   width: 100%;
@@ -527,9 +545,12 @@ html {
 .container .content .featured-new .featured-new__slider .slider__products .product-item:hover .product-item_hover {
   visibility: visible;
 }
+.container .content .featured-new_margin-top {
+  margin-top: 120px;
+}
 .container .content .promo-product {
   width: 100%;
-  min-height: 683px;
+  max-height: 1366px;
   display: flex;
   justify-content: space-between;
 }
@@ -538,14 +559,18 @@ html {
 }
 .container .content .promo-product .exclusive-product {
   width: 50%;
+  height: 81vh;
+  max-height: 683px;
 }
-.container .content .promo-product .product_left {
-  background: #e8e9eb url("../img/promo-product/product_red_chair.jpg") right 0/100% no-repeat;
-  background-size: cover;
+.container .content .promo-product .product__left {
+  background: #e8e9eb url("../img/promo-product/product_red_chair.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
 }
-.container .content .promo-product .product_right {
-  background: #f7f7f7 url("../img/promo-product/product_wood_chair.jpg") right 0/100% no-repeat;
-  background-size: cover;
+.container .content .promo-product .product__right {
+  background: #f7f7f7 url("../img/promo-product/product_wood_chair.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
 }
 .container .content .promo-product_margin-top {
   margin-top: 130px;
@@ -575,6 +600,7 @@ html {
 }
 .container .content .trending-products .products__list .products__item {
   max-width: 370px;
+  min-width: 137px;
   width: 23.154vw;
 }
 .container .content .trending-products .products__list .products__item:hover {
@@ -595,10 +621,10 @@ html {
 }
 .container .content .hot-deals {
   width: 100%;
-  height: 800px;
-  background: right url("../img/hot-deals/bg.jpg") no-repeat;
+  height: 128.792vh;
+  max-height: 675px;
+  background: url("../img/hot-deals/bg.jpg") right no-repeat;
   position: relative;
-  overflow: hidden;
 }
 .container .content .hot-deals .exclusive-product .exclusive-product__title {
   color: #e53f3b;
@@ -639,8 +665,9 @@ html {
   background: url("../img/exclusive-products/product_left.jpg") no-repeat;
   background-size: cover;
 }
-.container .content .exclusive-products .products__left-big .exclusive-product_margin {
-  margin: 32.6316% 0 0 4.561%;
+.container .content .exclusive-products .products__left-big .exclusive-product_margin-padding {
+  margin: 15.6316% 0 0 4.561%;
+  padding-right: 33%;
 }
 .container .content .exclusive-products .products__left-big_margin-right {
   margin-right: 0.5%;
