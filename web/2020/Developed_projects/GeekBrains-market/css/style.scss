@@ -1,8 +1,5 @@
 @import "null-style.scss";
 
-// Подключение шрифта Montserrat
-@import url("https://fonts.googleapis.com/css?family=Montserrat:100,300,700&display=swap");
-
 // Подключение media
 @import 'media-style.scss';
 
@@ -20,23 +17,12 @@
 @import '../source/variables.scss';
 @import '../source/templates.scss';
 
-// Стили меню
-@import '../blocks/template-blocks/menu/menu-style.scss';
-
-// Стили footer
-@import '../blocks/template-blocks/footer/footer-style.scss';
-
 html {
     font-size: 16px;
 }
 
-.container {
-    max-width: $content-width;
-    min-width: 320px;
-    height: 100%;
-    margin: 0 auto;
-
-    font-family: "Montserrat", sans-serif;
+.main-container {
+    @extend %container-style;
 
     .header {
         width: 100%;
@@ -46,6 +32,8 @@ html {
             height: 800px;
             background: url("../img/slider-img/slider_bg.jpg") right 0/100% auto no-repeat;
             background-size: cover;
+
+            @import '../blocks/template-blocks/menu/menu-style.scss';
 
             .slider__text {
                 max-width: 490px;
@@ -527,7 +515,20 @@ html {
         }
     }
 
+    @import '../blocks/template-blocks/footer/footer-style.scss';
     .footer_padding {
         padding-top: 8.785%;
     }
+}
+
+.product-container {
+    @extend %container-style;
+
+    .header {
+        
+    }
+
+    .content {}
+
+    .footer {}
 }
