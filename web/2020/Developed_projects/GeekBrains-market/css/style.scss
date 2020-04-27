@@ -1,8 +1,5 @@
 @import "null-style.scss";
 
-// Подключение media
-@import 'media-style.scss';
-
 // Стили кнопок
 @import '../blocks/template-blocks/buttons/order-button/order-button-style.scss';
 @import '../blocks/template-blocks/buttons/explore-all/explore-all-style.scss';
@@ -13,9 +10,13 @@
 // Стили блоков текста
 @import '../blocks/template-blocks/text-blocks/exclusive-product/exclusive-product-style.scss';
 
-// Подключение переменных и шаблонов
+// Подключение переменных, шаблонов и миксинов
 @import '../source/variables.scss';
 @import '../source/templates.scss';
+@import '../source/mixins';
+
+// Подключение media
+@import 'media-style.scss';
 
 html {
     font-size: 16px;
@@ -516,6 +517,7 @@ html {
     }
 
     @import '../blocks/template-blocks/footer/footer-style.scss';
+
     .footer_padding {
         padding-top: 8.785%;
     }
@@ -525,7 +527,29 @@ html {
     @extend %container-style;
 
     .header {
-        
+        width: 100%;
+        background-color: #f5f5f5;
+
+        .header-inner {
+            @import '../blocks/template-blocks/menu/menu-style';
+
+            .header__paragraph {
+                font-size: 3.875rem;
+                line-height: 3.875rem;
+                font-weight: 100;
+                color: #212121;
+            }
+
+            .header__paragraph_margin-top {
+                margin-top: calc(68px + 100*(100vw - 320px)/(1366 - 320));;
+            }
+        }
+
+        .header-inner_padding {
+            padding-top: calc(35px + 28*($visible-width - 320px)/(1366 - 320));
+            padding-right: calc(10px + 157*($visible-width - 320px)/(1366 - 320));
+            padding-left: calc(10px + 88*($visible-width - 320px)/(1366 - 320));
+        }
     }
 
     .content {}
