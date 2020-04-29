@@ -563,6 +563,66 @@ html {
             padding-left: calc(10px + 88*(100vw - 320px)/(1366 - 320));
             padding-right: calc(10px + 88*(100vw - 320px)/(1366 - 320));
         }
+
+        .header {
+            width: 100%;
+            background-color: #fff;
+
+            .header__pagination {
+                max-width: 654px;
+                height: $header__pagination-width;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                font-size: 1.125rem;
+                position: relative;
+
+                .pagination-item {
+                    flex-grow: 1;
+                    text-align: center;
+                }
+
+                .pagination-item a {
+                    font-size: 1em;
+                    line-height: $header__pagination-width - $height-of-underline;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    letter-spacing: 0.1em;
+                    color: #6c6c6c;
+                }
+
+                .pagination-item_active a {
+                    color: #212121;
+                }
+
+                .pagination-item_active {
+                    border-bottom: $height-of-underline solid #000;
+                }
+
+                .pagination-item_padding {
+                    padding: 0 5px;
+                }
+            }
+
+            .header__pagination:after {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 1px;
+                position: absolute;
+                background-color: #000;
+                bottom: 1px;
+            }
+        }
+
+        .products {
+            // width: 100%;
+            // outline: 1px solid #000;
+        }
+    }
+
+    .content_margin-top {
+        margin-top: calc(31px + 40*(100vw - 320px)/(1366 - 320));
     }
 
     .footer {}

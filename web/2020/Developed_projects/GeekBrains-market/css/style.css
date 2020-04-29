@@ -254,6 +254,11 @@ h1, h2, h3, h4, h5, h6 {
     padding: 29% 17.3% 0 3.762% !important;
   }
 }
+@media (min-width: 1px) and (max-width: 857px) {
+  .product-container .content .header .header__pagination {
+    font-size: 0.8rem !important;
+  }
+}
 @media (min-width: 1px) and (max-width: 960px) {
   .main-container .header .slider {
     height: 700px !important;
@@ -283,12 +288,19 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 @media (min-width: 1366px) and (max-width: 100vw) {
+  .product-container .header .header-inner .header__paragraph_margin-top {
+    margin-top: 168px !important;
+  }
   .product-container .header .header-inner_padding {
     padding: 63px 167px 44px 98px !important;
   }
 
   .content .content-inner_padding {
     padding: 0 98px 0 !important;
+  }
+
+  .content_margin-top {
+    margin-top: 73px !important;
   }
 }
 html {
@@ -467,7 +479,7 @@ html {
   margin-bottom: 4.274%;
 }
 .main-container .content .featured-new .featured-new__title .header .header__pagination {
-  width: 263px;
+  width: 35px;
   height: 100%;
   display: flex;
   justify-content: space-around;
@@ -1072,4 +1084,50 @@ html {
 .product-container .content .content-inner_padding {
   padding-left: calc(10px + 88*(100vw - 320px)/(1366 - 320));
   padding-right: calc(10px + 88*(100vw - 320px)/(1366 - 320));
+}
+.product-container .content .header {
+  width: 100%;
+  background-color: #fff;
+}
+.product-container .content .header .header__pagination {
+  max-width: 654px;
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 1.125rem;
+  position: relative;
+}
+.product-container .content .header .header__pagination .pagination-item {
+  flex-grow: 1;
+  text-align: center;
+}
+.product-container .content .header .header__pagination .pagination-item a {
+  font-size: 1em;
+  line-height: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #6c6c6c;
+}
+.product-container .content .header .header__pagination .pagination-item_active a {
+  color: #212121;
+}
+.product-container .content .header .header__pagination .pagination-item_active {
+  border-bottom: 3px solid #000;
+}
+.product-container .content .header .header__pagination .pagination-item_padding {
+  padding: 0 5px;
+}
+.product-container .content .header .header__pagination:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  background-color: #000;
+  bottom: 1px;
+}
+.product-container .content_margin-top {
+  margin-top: calc(31px + 40*(100vw - 320px)/(1366 - 320));
 }
