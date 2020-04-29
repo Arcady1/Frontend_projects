@@ -220,6 +220,10 @@ h1, h2, h3, h4, h5, h6 {
   .menu .menu__mobile_wrapp {
     display: block !important;
   }
+
+  .product-container .header .header-inner .header__paragraph_margin-top {
+    margin-top: 0 !important;
+  }
 }
 @media (min-width: 1px) and (max-width: 320px) {
   html {
@@ -280,7 +284,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (min-width: 1366px) and (max-width: 100vw) {
   .product-container .header .header-inner_padding {
-    padding: 63px 167px 0 98px !important;
+    padding: 63px 167px 44px 98px !important;
+  }
+
+  .content .content-inner_padding {
+    padding: 0 98px 0 !important;
   }
 }
 html {
@@ -1052,7 +1060,16 @@ html {
   margin-top: calc(68px + 100*(100vw - 320px)/(1366 - 320));
 }
 .product-container .header .header-inner_padding {
-  padding-top: calc(35px + 28*($visible-width - 320px)/(1366 - 320));
-  padding-right: calc(10px + 157*($visible-width - 320px)/(1366 - 320));
-  padding-left: calc(10px + 88*($visible-width - 320px)/(1366 - 320));
+  padding-top: calc(35px + 28*(100vw - 320px)/(1366 - 320));
+  padding-right: calc(10px + 157*(100vw - 320px)/(1366 - 320));
+  padding-left: calc(10px + 88*(100vw - 320px)/(1366 - 320));
+  padding-bottom: calc(30px + 14*(100vw - 320px)/(1366 - 320));
+}
+.product-container .content .content-inner {
+  width: 100%;
+  outline: 1px dotted #000;
+}
+.product-container .content .content-inner_padding {
+  padding-left: calc(10px + 88*(100vw - 320px)/(1366 - 320));
+  padding-right: calc(10px + 88*(100vw - 320px)/(1366 - 320));
 }

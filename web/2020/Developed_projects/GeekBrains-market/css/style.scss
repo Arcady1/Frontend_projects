@@ -541,18 +541,29 @@ html {
             }
 
             .header__paragraph_margin-top {
-                margin-top: calc(68px + 100*(100vw - 320px)/(1366 - 320));;
+                margin-top: calc(68px + 100*(100vw - 320px)/(1366 - 320));
             }
         }
 
         .header-inner_padding {
-            padding-top: calc(35px + 28*($visible-width - 320px)/(1366 - 320));
-            padding-right: calc(10px + 157*($visible-width - 320px)/(1366 - 320));
-            padding-left: calc(10px + 88*($visible-width - 320px)/(1366 - 320));
+            padding-top: calc(35px + 28*(100vw - 320px)/(1366 - 320));
+            padding-right: calc(10px + 157*(100vw - 320px)/(1366 - 320));
+            padding-left: calc(10px + 88*(100vw - 320px)/(1366 - 320));
+            padding-bottom: calc(30px + 14*(100vw - 320px)/(1366 - 320));
         }
     }
 
-    .content {}
+    .content {
+        .content-inner {
+            width: 100%;
+            outline: 1px dotted #000;
+        }
+
+        .content-inner_padding {
+            padding-left: calc(10px + 88*(100vw - 320px)/(1366 - 320));
+            padding-right: calc(10px + 88*(100vw - 320px)/(1366 - 320));
+        }
+    }
 
     .footer {}
 }
