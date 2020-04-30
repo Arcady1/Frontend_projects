@@ -525,7 +525,9 @@ html {
 
 .product-container {
     @extend %container-style;
+    height: 3000px;
 
+    // шапка страницы
     .header {
         width: 100%;
         background-color: #f5f5f5;
@@ -553,76 +555,76 @@ html {
         }
     }
 
+    // контентная часть
     .content {
+        width: 100%;
+
         .content-inner {
             width: 100%;
-            outline: 1px dotted #000;
         }
 
-        .content-inner_padding {
-            padding-left: calc(10px + 88*(100vw - 320px)/(1366 - 320));
-            padding-right: calc(10px + 88*(100vw - 320px)/(1366 - 320));
-        }
-
-        .header {
-            width: 100%;
-            background-color: #fff;
-
-            .header__pagination {
-                max-width: 654px;
-                height: $header__pagination-width;
-                display: flex;
-                justify-content: space-between;
-                align-items: flex-start;
-                font-size: 1.125rem;
-                position: relative;
-
-                .pagination-item {
-                    flex-grow: 1;
-                    text-align: center;
-                }
-
-                .pagination-item a {
-                    font-size: 1em;
-                    line-height: $header__pagination-width - $height-of-underline;
-                    font-weight: 700;
-                    text-transform: uppercase;
-                    letter-spacing: 0.1em;
-                    color: #6c6c6c;
-                }
-
-                .pagination-item a:hover {
-                    color: #212121;
-                    transition: 0.3s;
-                }
-
-                .pagination-item_active a {
-                    color: #212121;
-                }
-
-                .pagination-item_active {
-                    border-bottom: $height-of-underline solid #000;
-                }
-
-                .pagination-item_padding {
-                    padding: 0 5px;
-                }
-            }
-
-            .header__pagination:after {
-                content: "";
-                display: block;
-                width: 100%;
-                height: 1px;
-                position: absolute;
-                background-color: #000;
-                bottom: 1px;
-            }
-        }
-
+        // товары каталога
         .products {
             width: 100%;
 
+            // меню ALL HOME ...
+            .header {
+                width: 100%;
+                background-color: #fff;
+    
+                .header__pagination {
+                    max-width: 654px;
+                    height: $header__pagination-width;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    font-size: 1.125rem;
+                    position: relative;
+    
+                    .pagination-item {
+                        flex-grow: 1;
+                        text-align: center;
+                    }
+    
+                    .pagination-item a {
+                        font-size: 1em;
+                        line-height: $header__pagination-width - $height-of-underline;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        letter-spacing: 0.1em;
+                        color: #6c6c6c;
+                    }
+    
+                    .pagination-item a:hover {
+                        color: #212121;
+                        transition: 0.3s;
+                    }
+    
+                    .pagination-item_active a {
+                        color: #212121;
+                    }
+    
+                    .pagination-item_active {
+                        border-bottom: $height-of-underline solid #000;
+                    }
+    
+                    .pagination-item_padding {
+                        padding: 0 5px;
+                    }
+                }
+    
+                .header__pagination:after {
+                    content: "";
+                    display: block;
+                    width: 100%;
+                    height: 1px;
+                    position: absolute;
+                    background-color: #000;
+                    bottom: 1px;
+                }
+            }
+
+            // список товаров каталога
             .products__list {
                 width: 100%;
                 display: flex;
@@ -655,16 +657,97 @@ html {
                     transition: 0.3s;
                 }
             }
+
+            .products__list_margin-top {
+                margin-top: calc(15px + 35*(100vw - 320px)/(1366 - 320));
+            }
+
+            // кнопка reresh
+            .products__button {
+                display: block;
+                width: 5.637%;
+                max-width: 42px;
+                min-width: 30px;
+
+                img {
+                    @extend %img-settings_2;
+                }
+            }
+
+            .products__button:hover {
+                @extend %button-img-hover-set
+            }
+
+            .products__button_margin {
+                margin: 0 auto;
+                margin-top: calc(20px + 20*(100vw - 320px)/(1366 - 320));
+            }
         }
 
-        .products_margin-top {
-            margin-top: calc(20px + 30*(100vw - 320px)/(1366 - 320));
+        .products_padding {
+            padding-left: calc(10px + 88*(100vw - 320px)/(1366 - 320));
+            padding-right: calc(10px + 88*(100vw - 320px)/(1366 - 320));
+        }
+
+        // эксклюзивные товары
+        .exclusive-products {
+            width: 100%;
+            max-height: 683px;
+
+            .products {
+                width: 100%;
+                height: inherit;
+                display: flex;
+
+                .products-item {
+                    width: 50%;
+                    height: 683px;
+                    font-size: 1.125rem;
+
+
+                    .product__title {
+                        font-size: 1em;
+                        line-height: calc(3 / 1.125rem);
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        letter-spacing: 0.1em;
+                        color: #1e88e5;
+                    }
+
+                    .product__subtitle {
+                        font-size: 2em;
+                        line-height: 1.2;
+                        font-weight: 700;
+                        color: #212121;
+                    }
+
+                    .product__paragraph {
+                        font-size: calc(0.99141rem / 1.125);
+                        line-height: calc(1.5 / 1.125rem);
+                        font-weight: 300;
+                        color: #6c6c6c;
+                    }
+                }
+
+                .product__left {
+                    @include bg-img-set('../img/promo-product/product_red_chair.jpg');
+                }
+
+                .product__right {
+                    @include bg-img-set('../img/promo-product/product_wood_chair.jpg');
+                }
+            }
+
+            .products_padding {
+                padding-top: calc(px + 28*(100vw - 320px)/(1366 - 320));
+            }
         }
     }
 
     .content_margin-top {
-        margin-top: calc(31px + 40*(100vw - 320px)/(1366 - 320));
+        margin-top: calc(23px + 50*(100vw - 320px)/(1366 - 320));
     }
 
+    // подвал страницы
     .footer {}
 }

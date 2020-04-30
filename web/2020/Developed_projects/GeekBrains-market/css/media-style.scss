@@ -94,9 +94,13 @@
 @media (min-width: 1px) and (max-width: 857px) {
     .product-container {
         .content {
-            .header {
-                .header__pagination {
-                    font-size: 0.8rem !important;
+            .content-inner {
+                .products {
+                    .header {
+                        .header__pagination {
+                            font-size: 0.8rem !important;
+                        }
+                    }
                 }
             }
         }
@@ -175,11 +179,8 @@
 
     .product-container {
         .content {
-            .content-inner_padding {
-                padding: 0 98px 0 !important;
-            }
-
             .products {
+                // список товаров каталога
                 .products__list {
                     .products__item {
                         margin-bottom: 30px !important;
@@ -190,10 +191,19 @@
                         margin-right: 30px !important;
                     }
                 }
+
+                .products__list_margin-top {
+                    margin-top: 50px !important;
+                }
+
+                // кнопка refresh
+                .products__button_margin {
+                    margin-top: 40px !important;
+                }
             }
 
-            .products_margin-top {
-                margin-top: 90px !important;
+            .products_padding {
+                padding: 0 98px 0 !important;
             }
         }
     }
