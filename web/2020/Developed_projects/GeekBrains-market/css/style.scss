@@ -675,7 +675,8 @@ html {
             }
 
             .products__button:hover {
-                @extend %button-img-hover-set
+                transform: rotateZ(-360deg);
+                transition: 0.8s;
             }
 
             .products__button_margin {

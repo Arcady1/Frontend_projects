@@ -218,11 +218,6 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 10px;
 }
 
-.product-container .content .products .products__button:hover {
-  opacity: 0.7;
-  transition: 0.3s;
-}
-
 @media (min-width: 1px) and (max-width: 960px) {
   .menu .menu__nav {
     display: none !important;
@@ -1208,6 +1203,10 @@ html {
   width: 5.637%;
   max-width: 42px;
   min-width: 30px;
+}
+.product-container .content .products .products__button:hover {
+  transform: rotateZ(-360deg);
+  transition: 0.8s;
 }
 .product-container .content .products .products__button_margin {
   margin: 0 auto;
