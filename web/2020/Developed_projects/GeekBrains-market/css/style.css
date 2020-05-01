@@ -72,17 +72,39 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
+.product-container, .main-container {
+  max-width: 1366px;
+  min-width: 320px;
+  height: 100%;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+}
+
+.product-container .header .header-inner .menu .menu__logo img, .main-container .content .trending-products .products__list .products__item img, .main-container .content .featured-new .featured-new__slider .slider__products .product-item .product__img, .main-container .header .slider .menu .menu__logo img {
+  width: 100%;
+  height: auto;
+}
+
+.product-container .content .products .products__button img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.product-container .header .header-inner .menu .menu__mobile_wrapp:hover, .main-container .header .slider .menu .menu__mobile_wrapp:hover {
+  background-color: #fff;
+  border-radius: 10px;
+}
+
 .order-button {
   display: inline-block;
-  width: 25vw;
-  max-width: 212px;
-  min-width: 185px;
-  min-height: 45px;
+  min-width: 115px;
+  min-height: 30px;
+  max-height: 45px;
   box-shadow: 0px 2px 5px 0px rgba(33, 33, 33, 0.34);
   background-color: #fff;
   border-radius: 22.5px;
   text-align: center;
-  padding: 0 8px 0;
+  padding: 0 20px 0;
 }
 .order-button .order-button__text {
   display: block;
@@ -98,7 +120,8 @@ h1, h2, h3, h4, h5, h6 {
   width: 8px;
   height: 12px;
   display: inline-block;
-  background-image: url("../img/slider-img/arrow.png");
+  vertical-align: middle;
+  background: url("../img/slider-img/arrow.png") no-repeat;
   margin-left: 17px;
 }
 
@@ -113,6 +136,10 @@ h1, h2, h3, h4, h5, h6 {
   left: 2px;
   box-shadow: -2px -2px rgba(33, 33, 33, 0.34);
   transition: 0.12s;
+}
+
+.order-button_margin {
+  margin: 0;
 }
 
 .explore-all {
@@ -195,29 +222,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 30px;
 }
 
-.product-container, .main-container {
-  max-width: 1366px;
-  min-width: 320px;
-  height: 100%;
-  margin: 0 auto;
-  font-family: "Montserrat", sans-serif;
-}
-
-.product-container .header .header-inner .menu .menu__logo img, .main-container .content .trending-products .products__list .products__item img, .main-container .content .featured-new .featured-new__slider .slider__products .product-item .product__img, .main-container .header .slider .menu .menu__logo img {
-  width: 100%;
-  height: auto;
-}
-
-.product-container .content .products .products__button img {
-  width: 100%;
-  object-fit: cover;
-}
-
-.product-container .header .header-inner .menu .menu__mobile_wrapp:hover, .main-container .header .slider .menu .menu__mobile_wrapp:hover {
-  background-color: #fff;
-  border-radius: 10px;
-}
-
 @media (min-width: 1px) and (max-width: 960px) {
   .menu .menu__nav {
     display: none !important;
@@ -245,6 +249,19 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 14px !important;
   }
 }
+@media (min-width: 321px) and (max-width: 485px) {
+  .product-container .content .exclusive-products .products .products-item_padding {
+    padding-right: calc(130px + 10*(100vw - 320px)/(1366 - 320)) !important;
+  }
+}
+@media (min-width: 1px) and (max-width: 375px) {
+  .order-button {
+    height: 30px !important;
+  }
+  .order-button .order-button__text {
+    line-height: 30px !important;
+  }
+}
 @media (min-width: 1px) and (max-width: 768px) {
   .product-container .content .products .products__list .products__item {
     flex-basis: calc(100% / 3) !important;
@@ -256,6 +273,9 @@ h1, h2, h3, h4, h5, h6 {
   }
   .product-container .content .products .products__list .products__item:nth-child(2n) {
     margin-left: 0 !important;
+  }
+  .product-container .exclusive-products .products .products-item {
+    height: calc(300px + 383*(100vw - 320px)/(1366 - 320)) !important;
   }
 }
 @media (min-width: 1px) and (max-width: 857px) {
@@ -271,8 +291,7 @@ h1, h2, h3, h4, h5, h6 {
   .main-container .content .promo-product .promo-product_padding {
     padding: 29% 17.3% 0 3.762% !important;
   }
-}
-@media (min-width: 1px) and (max-width: 857px) {
+
   .product-container .content .content-inner .products .header .header__pagination {
     font-size: 0.8rem !important;
   }
@@ -305,6 +324,11 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 20% !important;
   }
 }
+@media (min-width: 1px) and (max-width: 1180px) {
+  .product-container .content .exclusive-products .products .products-item {
+    flex-basis: 100% !important;
+  }
+}
 @media (min-width: 1366px) and (max-width: 100vw) {
   .product-container .header .header-inner .header__paragraph_margin-top {
     margin-top: 168px !important;
@@ -328,6 +352,21 @@ h1, h2, h3, h4, h5, h6 {
   }
   .product-container .content .products_padding {
     padding: 0 98px 0 !important;
+  }
+  .product-container .content .exclusive-products .products .products-item_padding {
+    padding: 228px 245px 0 46px !important;
+  }
+  .product-container .content .exclusive-products .products .products-item .product__subtitle_margin-top {
+    margin-top: 18px !important;
+  }
+  .product-container .content .exclusive-products .products .products-item .product__paragraph_margin-top {
+    margin-top: 24px !important;
+  }
+  .product-container .content .exclusive-products .products .products-item .order-button_margin {
+    margin-top: 33px !important;
+  }
+  .product-container .content .exclusive-products_margin-top {
+    margin-top: 140px !important;
   }
 
   .content_margin-top {
@@ -1113,6 +1152,7 @@ html {
 }
 .product-container .content {
   width: 100%;
+  height: 3000px;
 }
 .product-container .content .content-inner {
   width: 100%;
@@ -1203,10 +1243,10 @@ html {
   width: 5.637%;
   max-width: 42px;
   min-width: 30px;
+  transition: all 0.8s ease;
 }
 .product-container .content .products .products__button:hover {
   transform: rotateZ(-360deg);
-  transition: 0.8s;
 }
 .product-container .content .products .products__button_margin {
   margin: 0 auto;
@@ -1218,15 +1258,17 @@ html {
 }
 .product-container .content .exclusive-products {
   width: 100%;
-  max-height: 683px;
 }
 .product-container .content .exclusive-products .products {
   width: 100%;
-  height: inherit;
   display: flex;
+  flex-wrap: wrap;
+  justify-items: flex-start;
+  justify-content: flex-start;
 }
 .product-container .content .exclusive-products .products .products-item {
-  width: 50%;
+  flex-grow: 1;
+  flex-basis: calc(100% / 2);
   height: 683px;
   font-size: 1.125rem;
 }
@@ -1244,24 +1286,40 @@ html {
   font-weight: 700;
   color: #212121;
 }
+.product-container .content .exclusive-products .products .products-item .product__subtitle_margin-top {
+  margin-top: calc(10px + 8*(100vw - 320px)/(1366 - 320));
+}
 .product-container .content .exclusive-products .products .products-item .product__paragraph {
   font-size: calc(0.99141rem / 1.125);
   line-height: calc(1.5 / 1.125rem);
   font-weight: 300;
   color: #6c6c6c;
 }
+.product-container .content .exclusive-products .products .products-item .product__paragraph_margin-top {
+  margin-top: calc(12px + 12*(100vw - 320px)/(1366 - 320));
+}
+.product-container .content .exclusive-products .products .products-item .order-button_margin {
+  margin-top: calc(20px + 13*(100vw - 320px)/(1366 - 320));
+}
+.product-container .content .exclusive-products .products .products-item_padding {
+  padding-top: calc(40px + 188*(100vw - 320px)/(1366 - 320));
+  padding-right: calc(50px + 195*(100vw - 320px)/(1366 - 320));
+  padding-left: calc(16px + 30*(100vw - 320px)/(1366 - 320));
+}
 .product-container .content .exclusive-products .products .product__left {
   background: url("../img/promo-product/product_red_chair.jpg") no-repeat;
   background-size: auto 100%;
   background-position: right bottom;
+  background-color: #e8e9eb;
 }
 .product-container .content .exclusive-products .products .product__right {
   background: url("../img/promo-product/product_wood_chair.jpg") no-repeat;
   background-size: auto 100%;
   background-position: right bottom;
+  background-color: #f7f7f7;
 }
-.product-container .content .exclusive-products .products_padding {
-  padding-top: calc(px + 28*(100vw - 320px)/(1366 - 320));
+.product-container .content .exclusive-products_margin-top {
+  margin-top: calc(40px + 100*(100vw - 320px)/(1366 - 320));
 }
 .product-container .content_margin-top {
   margin-top: calc(23px + 50*(100vw - 320px)/(1366 - 320));
