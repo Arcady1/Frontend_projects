@@ -37,14 +37,12 @@
 
             .product__paragraph {
                 font-size: calc(0.99141rem / 1.125);
-                line-height: calc(1.5 / 1.125rem);
+                line-height: calc(1.7rem / 1.125);
                 font-weight: 300;
                 color: #6c6c6c;
             }
 
             .product__paragraph_margin-top {
-                // margin-top: 6.125%;
-                // margin-top: 24px;
                 margin-top: calc(12px + 12*(100vw - 320px)/(1366 - 320));
             }
 

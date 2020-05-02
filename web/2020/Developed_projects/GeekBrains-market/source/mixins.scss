@@ -1,9 +1,3 @@
-// @mixin padding-mix ($min-pad, $max-pad) {
-//     padding-top: ($min-pad + $max-pad*(100vw - 320px)/(1366 - 320));
-//     padding-right: ($min-pad + $max-pad*(100vw - 320px)/(1366 - 320));
-//     padding-left: ($min-pad + $max-pad*(100vw - 320px)/(1366 - 320));
-// }
-
 // padding-top: calc(35px + 28*(100vw - 320px)/(1366 - 320));
 
 @mixin bg-img-set ($img) {

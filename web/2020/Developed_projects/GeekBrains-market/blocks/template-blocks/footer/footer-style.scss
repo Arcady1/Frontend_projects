@@ -1,77 +1,67 @@
 .footer {
     width: 100%;
     background-color: #f7f7f7;
+    font-size: 1rem; // 14px
 
-    .footer__content {
-        max-width: 85.725%;
-        min-height: 17.13%;
-        margin: 0 auto;
+    .footer__inner {
+        width: 100%;
 
         .content__top {
             width: 100%;
-            min-height: 12.553%;
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
-            flex-wrap: wrap;
+            // flex-wrap: wrap;
 
-            .content__item {
-                padding: 0 1%;
+            // Contact us, Useful info...
+            .content__block {
+                flex-grow: 1;
+                padding: 0 .5%;
+
                 .title {
-                    font-size: 1.125rem;
+                    font-size: 1em;
                     font-weight: 700;
                     text-transform: uppercase;
                     letter-spacing: 0.1em;
                     color: #6c6c6c;
-                    margin-bottom: 22px;
+                }
+
+                .title_margin-bottom {
+                    margin-bottom: calc(3px + 19*(100vw - 320px)/(1366 - 320));
                 }
 
                 .subtitle {
-                    font-size: 0.875rem;
-                    line-height: 22px;
+                    font-size: 0.8em;
+                    line-height: calc(22 / 14);
                     font-weight: 300;
                     color: #212121;
                 }
             }
 
-            .content__item:first-child {
-                min-width: 187px;
-            }
-
-            .content__item:nth-child(2) {
-                min-width: 355px;
-            }
-
-            .content__item:nth-child(3) {
-                min-width: 233px;
-            }
-
+            // Contact Us
             .contact-us {
-                max-width: 19.3%;
-                min-height: 11.87%;
+                max-width: 223px;
 
-                .subtitle:last-child {
-                    margin-top: 13.28%;
+                .sub-subtitle_margin-top {
+                    margin-top: calc(5px + 25*(100vw - 320px)/(1366 - 320));
                 }
             }
 
+            // Useful Information
             .useful-information {
-                width: 37%;
-                min-height: 8.625%;
+                min-width: 216px;
+                max-width: 430px;
 
                 .subtitle__list {
                     width: 100%;
-                    height: 100%;
                     display: flex;
                     justify-content: space-between;
                     align-items: flex-start;
 
                     .list {
-                        min-height: 14.692%;
-
                         .list__item {
-                            font-size: 0.875rem;
-                            line-height: 26px;
+                            font-size: 0.9em;
+                            line-height: 1.85em;
                             font-weight: 700;
                             text-transform: uppercase;
                             letter-spacing: 0.05em;
@@ -80,66 +70,51 @@
                     }
 
                     .list:nth-child(1) {
-                        max-width: 41.6%;
-                    }
-
-                    .list:nth-child(2) {
-                        max-width: 58.5%;
+                        padding-right: 4px;
                     }
                 }
             }
 
+            // Let’s Stay in Touch!
             .stay-in-touch {
-                max-width: 31.597%;
-                min-height: 12.553%;
-                display: flex;
-                flex-direction: column;
+                max-width: 351px;
 
-                .under-title {
+                .stay-in-touch__form {
                     width: 100%;
-                    min-height: 110px;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
+                    position: relative;
 
-                    .stay-in-touch__form {
+                    .form__email {
                         width: 100%;
-                        min-width: 12.972%;
-                        position: relative;
+                        // min-width: 171px;
+                        height: 48px;
+                        border: 1px solid #d9dee1;
+                        background-color: #fff;
+                        padding: 4.595% 14.9% 4.595% 4.595%;
+                        transition: 0.5s;
+                    }
 
-                        .form__email {
-                            width: 100%;
-                            min-width: 171px;
-                            height: 48px;
-                            border: 1px solid #d9dee1;
-                            background-color: #fff;
-                            padding: 4.595% 14.9% 4.595% 4.595%;
-                        }
+                    .form__email[placeholder="your email adress"] {
+                        font-size: 0.875rem;
+                        line-height: 22px;
+                        font-weight: 300;
+                        color: #6c6c6c;
+                    }
 
-                        .form__email[placeholder="your email adress"] {
-                            font-size: 0.875rem;
-                            line-height: 22px;
-                            font-weight: 300;
-                            color: #6c6c6c;
-                        }
+                    .form__email:hover,
+                    .form__email:focus {
+                        box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+                    }
 
-                        .form__email:hover,
-                        .form__email:focus {
-                            box-shadow: 0 0 10px rgba(0, 0, 0, .5);
-                            transition: 0.5s;
-                        }
+                    .form__plane {
+                        position: absolute;
+                        top: 32.3%;
+                        right: 2%;
+                        background-color: #fff;
+                    }
 
-                        .form__plane {
-                            position: absolute;
-                            top: 32.3%;
-                            right: 2%;
-                            background-color: #fff;
-                        }
-
-                        .form__plane:hover {
-                            opacity: 0.6;
-                            transition: 0.3s;
-                        }
+                    .form__plane:hover {
+                        opacity: 0.6;
+                        transition: 0.3s;
                     }
                 }
             }
@@ -183,4 +158,10 @@
             margin-top: 10%;
         }
     }
+}
+
+.footer_padding {
+    padding-top: calc(60px + 60*(100vw - 320px)/(1366 - 320));
+    padding-right: calc(20px + 76*(100vw - 320px)/(1366 - 320));
+    padding-left: calc(20px + 76*(100vw - 320px)/(1366 - 320));
 }
