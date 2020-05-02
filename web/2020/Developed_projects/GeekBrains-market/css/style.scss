@@ -281,6 +281,8 @@ html {
             }
         }
 
+        @import '../blocks/template-blocks/exclusieve-products/exclusive-products-style';
+
         .promo-product_margin-top {
             margin-top: 130px;
         }
@@ -378,7 +380,7 @@ html {
             margin-top: 110px;
         }
 
-        .exclusive-products {
+        .exclusive-collage {
             width: 85.652%;
             max-height: $products-height;
             display: flex;
@@ -433,7 +435,7 @@ html {
             }
         }
 
-        .exclusive-products_margin {
+        .exclusive-collage_margin {
             margin: 120px auto 0;
         }
 
@@ -697,79 +699,7 @@ html {
         }
 
         // эксклюзивные товары
-        .exclusive-products {
-            width: 100%;
-
-            .products {
-                width: 100%;
-                display: flex;
-                flex-wrap: wrap;
-                justify-items: flex-start;
-                justify-content: flex-start;
-
-                // элементы
-                .products-item {
-                    flex-grow: 1;
-                    flex-basis: calc(100% / 2);
-                    height: $ex-product-height;
-                    font-size: 1.125rem;
-
-                    .product__title {
-                        font-size: 1em;
-                        line-height: calc(3 / 1.125rem);
-                        font-weight: 700;
-                        text-transform: uppercase;
-                        letter-spacing: 0.1em;
-                        color: #1e88e5;
-                    }
-
-                    .product__subtitle {
-                        font-size: 2em;
-                        line-height: 1.2;
-                        font-weight: 700;
-                        color: #212121;
-                    }
-
-                    .product__subtitle_margin-top {
-                        margin-top: calc(10px + 8*(100vw - 320px)/(1366 - 320));
-                    }
-
-                    .product__paragraph {
-                        font-size: calc(0.99141rem / 1.125);
-                        line-height: calc(1.5 / 1.125rem);
-                        font-weight: 300;
-                        color: #6c6c6c;
-                    }
-
-                    .product__paragraph_margin-top {
-                        // margin-top: 6.125%;
-                        // margin-top: 24px;
-                        margin-top: calc(12px + 12*(100vw - 320px)/(1366 - 320));
-                    }
-
-                    // margin для кнопки
-                    .order-button_margin {
-                        margin-top: calc(20px + 13*(100vw - 320px)/(1366 - 320));
-                    }
-                }
-
-                .products-item_padding {
-                    padding-top: calc(40px + 188*(100vw - 320px)/(1366 - 320));
-                    padding-right: calc(50px + 195*(100vw - 320px)/(1366 - 320));
-                    padding-left: calc(16px + 30*(100vw - 320px)/(1366 - 320));
-                }
-
-                .product__left {
-                    @include bg-img-set('../img/promo-product/product_red_chair.jpg');
-                    background-color: #e8e9eb;
-                }
-
-                .product__right {
-                    @include bg-img-set('../img/promo-product/product_wood_chair.jpg');
-                    background-color: #f7f7f7;
-                }
-            }
-        }
+        @import '../blocks/template-blocks/exclusieve-products/exclusive-products-style';
 
         .exclusive-products_margin-top {
             margin-top: calc(40px + 100*(100vw - 320px)/(1366 - 320));

@@ -42,9 +42,9 @@
     }
 }
 
-// .product-container .content .exclusive-products .products .products-item_padding
+// .exclusive-products .products .products-item_padding
 @media (min-width: 321px) and (max-width: 485px) {
-    .product-container .content .exclusive-products .products .products-item_padding {
+    .exclusive-products .products .products-item_padding {
         padding-right: calc(130px + 10*(100vw - 320px)/(1366 - 320)) !important;
     }
 }
@@ -60,9 +60,13 @@
     }
 }
 
+// .exclusive-products .products .products-item
 // .product-container .content .products  .products__list .products__item
-// .product-container .content .exclusive-products .products .products-item
 @media (min-width: 1px) and (max-width: 768px) {
+    .exclusive-products .products .products-item {
+        height: calc(300px + 383*(100vw - 320px)/(1366 - 320)) !important;
+    }
+
     .product-container {
         .content {
             .products {
@@ -83,10 +87,6 @@
                 }
             }
         }
-
-        .exclusive-products .products .products-item {
-            height: calc(300px + 383*(100vw - 320px)/(1366 - 320)) !important;
-        }
     }
 }
 
@@ -94,15 +94,8 @@
 @media (min-width: 1px) and (max-width: 857px) {
     .main-container {
         .content {
-            .promo-product {
-                display: block !important;
 
-                .exclusive-product {
-                    width: 100% !important;
-                }
-            }
-
-            .exclusive-products {
+            .exclusive-collage {
                 display: none !important;
             }
 
@@ -186,16 +179,12 @@
     }
 }
 
-// product-container
+// exclusive-products
 @media (min-width: 1px) and (max-width: 1180px) {
-    .product-container {
-        .content {
-            .exclusive-products {
-                .products {
-                    .products-item {
-                        flex-basis: 100% !important;
-                    }
-                }
+    .exclusive-products {
+        .products {
+            .products-item {
+                flex-basis: 100% !important;
             }
         }
     }
@@ -203,6 +192,35 @@
 
 // width > $content-width
 @media (min-width: $content-width) and (max-width: 100vw) {
+
+    // эксклюзивные товары
+    .exclusive-products {
+        .products {
+            .products-item_padding {
+                padding: 228px 245px 0 46px !important;
+            }
+
+            .products-item {
+                .product__subtitle_margin-top {
+                    margin-top: 18px !important;
+                }
+
+                .product__paragraph_margin-top {
+                    margin-top: 24px !important;
+                }
+
+                .order-button_margin {
+                    margin-top: 33px !important;
+                }
+            }
+        }
+    }
+
+    .exclusive-products_margin-top {
+        margin-top: 140px !important;
+    }
+
+    // каталог
     .product-container {
         .header {
             .header-inner {
@@ -215,9 +233,7 @@
                 padding: 63px 167px 44px 98px !important;
             }
         }
-    }
 
-    .product-container {
         .content {
 
             // товары каталога
@@ -247,33 +263,6 @@
 
             .products_padding {
                 padding: 0 98px 0 !important;
-            }
-
-            // эксклюзивные товары
-            .exclusive-products {
-                .products {
-                    .products-item_padding {
-                        padding: 228px 245px 0 46px !important;
-                    }
-
-                    .products-item {
-                        .product__subtitle_margin-top {
-                            margin-top: 18px !important;
-                        }
-
-                        .product__paragraph_margin-top {
-                            margin-top: 24px !important;
-                        }
-
-                        .order-button_margin {
-                            margin-top: 33px !important;
-                        }
-                    }
-                }
-            }
-
-            .exclusive-products_margin-top {
-                margin-top: 140px !important;
             }
         }
     }
