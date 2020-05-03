@@ -1,0 +1,48 @@
+@import '../../GitHub_Repository/Frontend_projects/web/null-style.scss';
+
+.container {
+    max-width: 1366px;
+    height: 1000px;
+    margin: 0 auto;
+    background-color: #eee;
+
+    .container-inner {
+        width: 100%;
+        padding-top: 100px;
+
+        .slider {
+            width: 300px;
+            height: 225px;
+            outline: 1px solid #000;            
+            margin: 0 auto;
+            overflow: hidden;
+
+            .line {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                position: relative;
+                left: 0;
+                transition: all .5s ease-in-out;
+            }
+
+            .line img {
+                display: block;
+            }
+        }
+
+        .swipe-button {
+            display: block;
+            width: 140px;
+            height: 50px;
+            font-size: 24px;
+            margin: 15px auto 0;
+            border-radius: 10px;
+            transition: .2s ease-in-out;
+        }
+
+        .swipe-button:hover {
+            background-color: #ccc;
+        }
+    }
+}
