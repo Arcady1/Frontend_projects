@@ -1,7 +1,5 @@
 .order-button {
     display: inline-block;
-    // width: 25vw;
-    // max-width: 212px;
     min-width: 115px;
     min-height: $order-us-min-height;
     max-height: $order-us-max-height;
@@ -10,6 +8,7 @@
     border-radius: 22.5px;
     text-align: center;
     padding: 0 20px 0;
+    transition: 0.3s;
 
     .order-button__text {
         display: block;

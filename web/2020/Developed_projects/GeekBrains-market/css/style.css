@@ -105,6 +105,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 22.5px;
   text-align: center;
   padding: 0 20px 0;
+  transition: 0.3s;
 }
 .order-button .order-button__text {
   display: block;
@@ -309,6 +310,18 @@ h1, h2, h3, h4, h5, h6 {
   }
   .main-container .content .trending-products .products__header .products__title {
     text-align: center;
+  }
+}
+@media (min-width: 1px) and (max-width: 880px) {
+  .footer .footer__inner .content__top {
+    flex-direction: column !important;
+  }
+  .footer .footer__inner .content__top .content__block {
+    flex-basis: 100% !important;
+    margin-bottom: 30px !important;
+  }
+  .footer .footer__inner .content__top .content__block:last-child {
+    margin-bottom: 0 !important;
   }
 }
 @media (min-width: 1px) and (max-width: 990px) {
@@ -946,6 +959,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  flex-wrap: wrap;
 }
 .main-container .footer .footer__inner .content__top .content__block {
   flex-grow: 1;
@@ -959,7 +973,7 @@ html {
   color: #6c6c6c;
 }
 .main-container .footer .footer__inner .content__top .content__block .title_margin-bottom {
-  margin-bottom: calc(3px + 19*(100vw - 320px)/(1366 - 320));
+  margin-bottom: calc(3px + 12*(100vw - 320px)/(1366 - 320));
 }
 .main-container .footer .footer__inner .content__top .content__block .subtitle {
   font-size: 0.8em;
@@ -969,13 +983,14 @@ html {
 }
 .main-container .footer .footer__inner .content__top .contact-us {
   max-width: 223px;
+  min-width: 147px;
 }
 .main-container .footer .footer__inner .content__top .contact-us .sub-subtitle_margin-top {
-  margin-top: calc(5px + 25*(100vw - 320px)/(1366 - 320));
+  margin-top: calc(5px + 9*(100vw - 320px)/(1366 - 320));
 }
 .main-container .footer .footer__inner .content__top .useful-information {
-  min-width: 216px;
   max-width: 430px;
+  min-width: 253px;
 }
 .main-container .footer .footer__inner .content__top .useful-information .subtitle__list {
   width: 100%;
@@ -996,22 +1011,23 @@ html {
 }
 .main-container .footer .footer__inner .content__top .stay-in-touch {
   max-width: 351px;
+  min-width: 212px;
 }
 .main-container .footer .footer__inner .content__top .stay-in-touch .stay-in-touch__form {
   width: 100%;
   position: relative;
+  font-size: 1rem;
 }
 .main-container .footer .footer__inner .content__top .stay-in-touch .stay-in-touch__form .form__email {
   width: 100%;
-  height: 48px;
+  height: 3rem;
   border: 1px solid #d9dee1;
   background-color: #fff;
   padding: 4.595% 14.9% 4.595% 4.595%;
   transition: 0.5s;
 }
 .main-container .footer .footer__inner .content__top .stay-in-touch .stay-in-touch__form .form__email[placeholder="your email adress"] {
-  font-size: 0.875rem;
-  line-height: 22px;
+  font-size: 0.95em;
   font-weight: 300;
   color: #6c6c6c;
 }
@@ -1024,6 +1040,9 @@ html {
   top: 32.3%;
   right: 2%;
   background-color: #fff;
+}
+.main-container .footer .footer__inner .content__top .stay-in-touch .stay-in-touch__form .form__plane img {
+  width: 1.5em;
 }
 .main-container .footer .footer__inner .content__top .stay-in-touch .stay-in-touch__form .form__plane:hover {
   opacity: 0.6;
@@ -1060,7 +1079,7 @@ html {
   margin-top: 10%;
 }
 .main-container .footer_padding {
-  padding-top: calc(60px + 60*(100vw - 320px)/(1366 - 320));
+  padding-top: calc(30px + 90*(100vw - 320px)/(1366 - 320));
   padding-right: calc(20px + 76*(100vw - 320px)/(1366 - 320));
   padding-left: calc(20px + 76*(100vw - 320px)/(1366 - 320));
 }
@@ -1372,6 +1391,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  flex-wrap: wrap;
 }
 .product-container .footer .footer__inner .content__top .content__block {
   flex-grow: 1;
@@ -1385,7 +1405,7 @@ html {
   color: #6c6c6c;
 }
 .product-container .footer .footer__inner .content__top .content__block .title_margin-bottom {
-  margin-bottom: calc(3px + 19*(100vw - 320px)/(1366 - 320));
+  margin-bottom: calc(3px + 12*(100vw - 320px)/(1366 - 320));
 }
 .product-container .footer .footer__inner .content__top .content__block .subtitle {
   font-size: 0.8em;
@@ -1395,13 +1415,14 @@ html {
 }
 .product-container .footer .footer__inner .content__top .contact-us {
   max-width: 223px;
+  min-width: 147px;
 }
 .product-container .footer .footer__inner .content__top .contact-us .sub-subtitle_margin-top {
-  margin-top: calc(5px + 25*(100vw - 320px)/(1366 - 320));
+  margin-top: calc(5px + 9*(100vw - 320px)/(1366 - 320));
 }
 .product-container .footer .footer__inner .content__top .useful-information {
-  min-width: 216px;
   max-width: 430px;
+  min-width: 253px;
 }
 .product-container .footer .footer__inner .content__top .useful-information .subtitle__list {
   width: 100%;
@@ -1422,22 +1443,23 @@ html {
 }
 .product-container .footer .footer__inner .content__top .stay-in-touch {
   max-width: 351px;
+  min-width: 212px;
 }
 .product-container .footer .footer__inner .content__top .stay-in-touch .stay-in-touch__form {
   width: 100%;
   position: relative;
+  font-size: 1rem;
 }
 .product-container .footer .footer__inner .content__top .stay-in-touch .stay-in-touch__form .form__email {
   width: 100%;
-  height: 48px;
+  height: 3rem;
   border: 1px solid #d9dee1;
   background-color: #fff;
   padding: 4.595% 14.9% 4.595% 4.595%;
   transition: 0.5s;
 }
 .product-container .footer .footer__inner .content__top .stay-in-touch .stay-in-touch__form .form__email[placeholder="your email adress"] {
-  font-size: 0.875rem;
-  line-height: 22px;
+  font-size: 0.95em;
   font-weight: 300;
   color: #6c6c6c;
 }
@@ -1450,6 +1472,9 @@ html {
   top: 32.3%;
   right: 2%;
   background-color: #fff;
+}
+.product-container .footer .footer__inner .content__top .stay-in-touch .stay-in-touch__form .form__plane img {
+  width: 1.5em;
 }
 .product-container .footer .footer__inner .content__top .stay-in-touch .stay-in-touch__form .form__plane:hover {
   opacity: 0.6;
@@ -1486,7 +1511,7 @@ html {
   margin-top: 10%;
 }
 .product-container .footer_padding {
-  padding-top: calc(60px + 60*(100vw - 320px)/(1366 - 320));
+  padding-top: calc(30px + 90*(100vw - 320px)/(1366 - 320));
   padding-right: calc(20px + 76*(100vw - 320px)/(1366 - 320));
   padding-left: calc(20px + 76*(100vw - 320px)/(1366 - 320));
 }

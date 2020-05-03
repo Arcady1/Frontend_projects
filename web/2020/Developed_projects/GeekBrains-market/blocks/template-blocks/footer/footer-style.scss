@@ -11,7 +11,7 @@
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
-            // flex-wrap: wrap;
+            flex-wrap: wrap;
 
             // Contact us, Useful info...
             .content__block {
@@ -27,7 +27,7 @@
                 }
 
                 .title_margin-bottom {
-                    margin-bottom: calc(3px + 19*(100vw - 320px)/(1366 - 320));
+                    margin-bottom: calc(3px + 12*(100vw - 320px)/(1366 - 320));
                 }
 
                 .subtitle {
@@ -41,16 +41,17 @@
             // Contact Us
             .contact-us {
                 max-width: 223px;
+                min-width: 147px;
 
                 .sub-subtitle_margin-top {
-                    margin-top: calc(5px + 25*(100vw - 320px)/(1366 - 320));
+                    margin-top: calc(5px + 9*(100vw - 320px)/(1366 - 320));
                 }
             }
 
             // Useful Information
             .useful-information {
-                min-width: 216px;
                 max-width: 430px;
+                min-width: 253px;
 
                 .subtitle__list {
                     width: 100%;
@@ -78,15 +79,17 @@
             // Let’s Stay in Touch!
             .stay-in-touch {
                 max-width: 351px;
+                min-width: 212px;
 
                 .stay-in-touch__form {
                     width: 100%;
                     position: relative;
+                    font-size: 1rem;
 
                     .form__email {
                         width: 100%;
                         // min-width: 171px;
-                        height: 48px;
+                        height: 3rem;
                         border: 1px solid #d9dee1;
                         background-color: #fff;
                         padding: 4.595% 14.9% 4.595% 4.595%;
@@ -94,8 +97,7 @@
                     }
 
                     .form__email[placeholder="your email adress"] {
-                        font-size: 0.875rem;
-                        line-height: 22px;
+                        font-size: 0.95em;
                         font-weight: 300;
                         color: #6c6c6c;
                     }
@@ -110,6 +112,10 @@
                         top: 32.3%;
                         right: 2%;
                         background-color: #fff;
+
+                        img {
+                            width: 1.5em;
+                        }
                     }
 
                     .form__plane:hover {
@@ -161,7 +167,7 @@
 }
 
 .footer_padding {
-    padding-top: calc(60px + 60*(100vw - 320px)/(1366 - 320));
+    padding-top: calc(30px + 90*(100vw - 320px)/(1366 - 320));
     padding-right: calc(20px + 76*(100vw - 320px)/(1366 - 320));
     padding-left: calc(20px + 76*(100vw - 320px)/(1366 - 320));
 }
