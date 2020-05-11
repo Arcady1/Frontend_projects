@@ -1,0 +1,32 @@
+.nav {
+    width: 100%;
+    height: $nav-height;
+    display: flex;
+    justify-content: space-between;
+
+    .nav__label {
+        height: 100%;
+    }
+
+    .nav__burger {
+        height: 100%;
+
+        .menu-text {
+            line-height: $nav-height;
+            font-size: 1rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #fff;
+        }
+
+        .menu-text:after {
+            content: "";
+            display: inline-block;
+            width: 18px;
+            height: 12px;
+            background: url('../../../img/templates/nav/burger.png') no-repeat;
+            margin-left: 2px;
+        }
+    }
+}
