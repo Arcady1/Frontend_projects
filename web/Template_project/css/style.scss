@@ -1,4 +1,30 @@
 // обнуление стилей
-@import "null-style.scss";
+@import 'null-style';
+// шрифты
+@import '../fonts/fonts';
+// переменные
+@import '../source/var';
+// шаблоны
+@import '../source/templ';
+// миксины
+@import '../source/mixin';
 // медиа стили
-@import "media-style.scss";
+@import "media-style";
+
+html {
+    font-size: 16px;
+}
+
+.index {
+    .header {
+        .header__inner {
+            // импорт навигации
+        }
+    }
+
+    .index__content {}
+
+    .footer {
+        // импорт footer'а
+    }
+}
