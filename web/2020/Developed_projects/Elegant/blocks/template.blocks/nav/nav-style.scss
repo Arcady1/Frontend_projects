@@ -1,22 +1,26 @@
+@import '../../../source/var';
+
 .nav {
     width: 100%;
-    height: $nav-height;
+    height: $navHeight;
     display: flex;
     justify-content: space-between;
 
     .nav__label {
-        height: 100%;
+        img {
+            height: 100%;
+        }
     }
 
     .nav__burger {
-        height: 100%;
+        height: $navHeight;
 
         .menu-text {
-            line-height: $nav-height;
             font-size: 1rem;
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 0.05em;
+            line-height: $navHeight;
             color: #fff;
         }
 
