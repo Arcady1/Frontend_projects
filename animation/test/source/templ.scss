@@ -1,0 +1,27 @@
+%container-style {
+    max-width: $maxWidth;
+    min-width: 320px;
+    height: 100%;
+    margin: 0 auto;
+    font-family: "Montserrat", sans-serif;
+}
+
+%img-settings {
+    width: 100%;
+    height: auto;
+}
+
+%img-settings_2 {
+    width: 100%;
+    object-fit: cover;
+}
+
+%menu__mobile-hover {
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+%button-img-hover-set {
+    opacity: 0.7;
+    transition: 0.3s;
+}
