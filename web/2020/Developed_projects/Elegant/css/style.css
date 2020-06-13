@@ -8,6 +8,7 @@
 }
 
 *, *:before, *:after {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -78,11 +79,13 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 11px !important;
   }
 }
+
 @media (min-width: 601px) and (max-width: 900px) {
   html {
     font-size: 13px !important;
   }
 }
+
 html {
   font-size: 16px;
 }
@@ -91,30 +94,40 @@ html {
   max-width: 1280px;
   min-width: 320px;
   margin: 0 auto;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
+
 .index .header {
   width: 100%;
   height: 699px;
   color: #fff;
 }
+
 .index .header .header__inner {
   width: inherit;
   height: inherit;
   background: url("../img/header/thread.png") center top/540px 513px no-repeat, url("../img/header/bg.jpg") center no-repeat;
 }
+
 .index .header .header__inner .nav {
   width: 100%;
   height: 2.625rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
+
 .index .header .header__inner .nav .nav__label img {
   height: 100%;
 }
+
 .index .header .header__inner .nav .nav__burger {
   height: 2.625rem;
 }
+
 .index .header .header__inner .nav .nav__burger .menu-text {
   font-size: 1rem;
   font-weight: 600;
@@ -123,6 +136,7 @@ html {
   line-height: 2.625rem;
   color: #fff;
 }
+
 .index .header .header__inner .nav .nav__burger .menu-text:after {
   content: "";
   display: inline-block;
@@ -131,24 +145,30 @@ html {
   background: url("../../../img/templates/nav/burger.png") no-repeat;
   margin-left: 2px;
 }
+
 .index .header .header__inner .intro {
   font-size: 5rem;
   font-weight: 300;
   letter-spacing: 0.05em;
   text-align: center;
 }
+
 .index .header .header__inner .intro span:first-child {
   font-style: italic;
 }
+
 .index .header .header__inner .intro_margin-top {
   margin-top: calc(160px + 85*(100% - 320px)/(1280 - 320));
 }
+
 .index .header .header__inner_padding {
   padding-top: 16px;
   padding-right: calc(10px + 38*(100% - 320px)/(1280 - 320));
   padding-left: calc(10px + 38*(100% - 320px)/(1280 - 320));
 }
+
 .index .index__content .aboutYourself {
   width: 100%;
   outline: 1px solid #000;
 }
+/*# sourceMappingURL=style.css.map */

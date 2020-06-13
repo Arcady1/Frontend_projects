@@ -1,15 +1,22 @@
 .nav {
   width: 100%;
   height: 2.625rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
+
 .nav .nav__label img {
   height: 100%;
 }
+
 .nav .nav__burger {
   height: 2.625rem;
 }
+
 .nav .nav__burger .menu-text {
   font-size: 1rem;
   font-weight: 600;
@@ -18,6 +25,7 @@
   line-height: 2.625rem;
   color: #fff;
 }
+
 .nav .nav__burger .menu-text:after {
   content: "";
   display: inline-block;
@@ -26,3 +34,4 @@
   background: url("../../../img/templates/nav/burger.png") no-repeat;
   margin-left: 2px;
 }
+/*# sourceMappingURL=nav-style.css.map */
