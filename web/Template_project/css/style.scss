@@ -15,16 +15,14 @@ html {
     font-size: 16px;
 }
 
-.index {
+.index-container {
     .header {
         .header__inner {
             // импорт навигации
         }
     }
 
-    .index__content {}
-
-    .footer {
-        // импорт footer'а
-    }
+    .index-content {}
 }
+
+// импорт footer'а
