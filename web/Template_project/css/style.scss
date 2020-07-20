@@ -16,6 +16,8 @@ html {
 }
 
 .index-container {
+    max-width: $maxWidth;
+    
     .header {
         .header__inner {
             // импорт навигации
