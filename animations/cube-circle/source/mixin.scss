@@ -1,7 +1,0 @@
-// padding-top: calc(35px + 28*(100vw - 320px)/(1366 - 320));
-
-@mixin bg-img-set ($img) {
-    background: url($img) no-repeat;
-    background-size: auto 100%;
-    background-position: right bottom;
-}

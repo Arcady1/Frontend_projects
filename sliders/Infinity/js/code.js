@@ -1,1 +1,0 @@
-let count;function swipeLeft(){let t;t=document.getElementById("line"),3==count?(t.style.left="0px",count=1):(t.style.left=-1*count*300+"px",count++)}count=1;
