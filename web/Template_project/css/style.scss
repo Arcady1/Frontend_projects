@@ -1,15 +1,9 @@
-// обнуление стилей
 @import 'null-style';
-// шрифты
 @import '../fonts/fonts';
-// переменные
 @import '../source/var';
-// шаблоны
 @import '../source/templ';
-// миксины
 @import '../source/mixin';
-// медиа стили
-@import "media-style";
+@import 'media-style';
 
 html {
     font-size: 16px;
@@ -20,11 +14,11 @@ html {
     
     .header {
         .header__inner {
-            // импорт навигации
+            // nav import
         }
     }
 
     .index-content {}
 }
 
-// импорт footer'а
+// footer import
